@@ -2,6 +2,7 @@
 #include "SDL.h"
 
 #include "core.h"
+#include "graphics.h"
 
 int main(int argc, char* argv[]) {
     // Main stuff
@@ -23,6 +24,8 @@ int main(int argc, char* argv[]) {
 
         SDL_SetRenderDrawColor(sdlSettings.renderer, 0, 0, 0, 255);
         SDL_RenderClear(sdlSettings.renderer);
+
+        draw::DrawRect(sdlSettings.renderer, {0, 0, 50, 50}, 255, 0, 0);
 
         SDL_RenderPresent(sdlSettings.renderer);
         SDL_Delay(1000 / sdlSettings.fps);
