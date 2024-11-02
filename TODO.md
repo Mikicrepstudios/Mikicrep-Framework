@@ -1,0 +1,9 @@
+- frame, timeS, timeM, timeH
+- Random number
+- Are rects touching
+- Does mouse touch
+- Image loading
+- MouseX, MouseY
+- File support
+
+- Keybindings?
