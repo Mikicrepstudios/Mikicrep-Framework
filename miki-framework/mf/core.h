@@ -8,7 +8,7 @@ namespace core {
     struct SDL_Settings {
         int width = 1280;
         int height = 800;
-        int fps = 60;
+        int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
 
         SDL_Window* window = {};
         SDL_Renderer* renderer = {};
