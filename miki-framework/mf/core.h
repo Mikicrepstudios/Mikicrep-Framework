@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include "SDL.h"
 #include "SDL_ttf.h"
 
@@ -16,4 +17,5 @@ namespace core {
     };
 
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
+    void miki(core::SDL_Settings sdlSettings); // Best function ever
 }
