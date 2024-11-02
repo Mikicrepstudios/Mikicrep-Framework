@@ -1,7 +1,7 @@
 #include <string>
 #include "SDL.h"
 
-#include "core.h"
+#include "mf/core.h"
 
 namespace core {
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height) {

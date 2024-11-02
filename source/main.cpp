@@ -1,8 +1,8 @@
 #include <string>
 #include "SDL.h"
 
-#include "core.h"
-#include "graphics.h"
+#include "mf/core.h"
+#include "mf/graphics.h"
 
 int main(int argc, char* argv[]) {
     // Main stuff
