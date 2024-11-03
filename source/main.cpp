@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include "SDL.h"
 
@@ -5,6 +6,9 @@
 #include "mf/graphics.h"
 
 int main(int argc, char* argv[]) {
+    std::cout << "Mikicrep Framework" << std::endl
+    << "Copyright Mikicrep Studios 2024" << std::endl;
+
     // Main stuff
     std::string title = "Mikicrep Framework";
     core::SDL_Settings sdlSettings = {};
