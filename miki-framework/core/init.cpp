@@ -1,3 +1,7 @@
+/**
+ * @brief Initilize env
+*/
+
 #include <string>
 #include "SDL.h"
 
