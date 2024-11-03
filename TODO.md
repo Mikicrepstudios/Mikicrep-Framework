@@ -11,7 +11,5 @@
 - Keybindings?
 
 # Unfinished docs
-- init.cpp
-- colors.h
 - core.h
 - graphics.h
