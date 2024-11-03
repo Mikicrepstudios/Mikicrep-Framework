@@ -4,6 +4,7 @@
 
 #include "mf/core.h"
 #include "mf/graphics.h"
+#include "mf/logic.h"
 
 int main(int argc, char* argv[]) {
     std::cout << "Mikicrep Framework" << std::endl

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['miki_0',['miki',['../d9/d0f/namespacecore.html#a7b7a50bd94b533df1f46f60543faa0a2',1,'core']]],
-  ['miki_2ecpp_1',['miki.cpp',['../dc/db8/miki_8cpp.html',1,'']]]
+  ['logic_0',['logic',['../d7/df0/namespacelogic.html',1,'']]],
+  ['logic_2eh_1',['logic.h',['../d3/daa/logic_8h.html',1,'']]]
 ];
