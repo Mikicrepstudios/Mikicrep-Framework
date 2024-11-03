@@ -11,4 +11,3 @@
 - Keybindings?
 
 # Unfinished docs
-- graphics.h
