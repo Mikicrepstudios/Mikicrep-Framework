@@ -14,6 +14,9 @@ namespace core {
         int height = 800;
         int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
 
+        int mouseX = 0;
+        int mouseY = 0;
+
         SDL_Window* window = {};
         SDL_Renderer* renderer = {};
         SDL_Event event = {};
