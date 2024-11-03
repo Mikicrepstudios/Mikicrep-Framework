@@ -1,3 +1,7 @@
+/**
+ * @brief This namespace contains stuff that are required for Mikicrep Framework to work correctly
+ */
+
 #pragma once
 
 #include <string>
