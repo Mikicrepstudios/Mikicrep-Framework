@@ -1,5 +1,4 @@
 # Very soon
-- Random number
 - Are rects touching
 - Does mouse touch
 - Image loading
