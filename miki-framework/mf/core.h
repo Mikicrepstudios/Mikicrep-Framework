@@ -18,8 +18,16 @@ namespace core {
         SDL_Renderer* renderer = {};
         SDL_Event event = {};
         TTF_Font* font = {};
+
+        // How long window existed
+        int frame = 0;
+        int timeS = 0;
+        int timeM = 0;
+        int timeH = 0;
     };
 
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
+    void TimeCount(core::SDL_Settings &sdlSettings);
+
     void miki(core::SDL_Settings sdlSettings); // Best function ever
 }

@@ -1,5 +1,3 @@
-
-
 #include "mf/core.h"
 #include "mf/colors.h"
 #include "mf/graphics.h"
