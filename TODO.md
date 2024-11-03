@@ -3,7 +3,6 @@
 - Are rects touching
 - Does mouse touch
 - Image loading
-- MouseX, MouseY
 - File support
 
 # Maybe
