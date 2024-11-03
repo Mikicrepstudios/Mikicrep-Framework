@@ -11,5 +11,4 @@
 - Keybindings?
 
 # Unfinished docs
-- core.h
 - graphics.h
