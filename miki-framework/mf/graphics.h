@@ -1,3 +1,7 @@
+/**
+ * @brief This namespace contains functions for drawing elements
+ */
+
 #pragma once
 
 #include <SDL_ttf.h>
