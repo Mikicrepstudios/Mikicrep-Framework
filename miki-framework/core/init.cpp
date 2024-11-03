@@ -1,7 +1,3 @@
-/**
- * @brief Initilize env
-*/
-
 #include <string>
 #include "SDL.h"
 
@@ -9,6 +5,14 @@
 
 namespace core {
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height) {
+        /**
+         * @brief Initilizes window and stuff related to it
+         * @param sdlSettings Stuct that contains information about window
+         * @param title Title of the window
+         * @param width Width of the window
+         * @param height Height of the window
+         */
+
         // Update settings
         sdlSettings.width = width;
         sdlSettings.height = height;
