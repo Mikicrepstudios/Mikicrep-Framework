@@ -12,7 +12,6 @@
 
 # Unfinished docs
 - init.cpp
-- draw.cpp
 - colors.h
 - core.h
 - graphics.h

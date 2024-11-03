@@ -1,7 +1,3 @@
-/**
- * @brief This file contains functions for drawing elements on window
-*/
-
 #include <iostream>
 #include "SDL2/SDL.h"
 #include <SDL_ttf.h>
@@ -18,6 +14,7 @@ namespace draw {
 		 * @param mouseX X position of mouse
 		 * @param mouseY Y position of mouse
 		 */
+
 		if (mouseX >= rect.x && mouseX <= rect.x + rect.w &&
 			mouseY >= rect.y && mouseY <= rect.y + rect.h) {
 			colorR *= .25;
@@ -40,6 +37,7 @@ namespace draw {
 		 * @param colorG G amount from RGB
 		 * @param colorB B amount from RGB
 		 */
+
 		SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, 255);
 		SDL_RenderFillRect(renderer, &rect);
 	}
@@ -51,6 +49,7 @@ namespace draw {
 		 * @param rect Cords of rectangle
 		 * @param texture Texture for the rect, must be SDL_Texture*
 		 */
+
 		SDL_RenderCopy(renderer, texture, NULL, &rect);
 	}
 
@@ -62,6 +61,7 @@ namespace draw {
 		 * @param text Text that will be drawn, must be char*, you can convert std::string to it using .c_str()
 		 * @param textColor Color of text, must be SDL_Color, you can use colors::text::white, replace white with your wanted color
 		 */
+		
 		SDL_Surface* textSurface = TTF_RenderText_Solid(font, text, textColor);
 		SDL_Texture* textTexture = SDL_CreateTextureFromSurface(renderer, textSurface);
 		SDL_RenderCopy(renderer, textTexture, NULL, &rect);
