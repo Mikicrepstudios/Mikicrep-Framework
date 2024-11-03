@@ -18,6 +18,10 @@ int main(int argc, char* argv[]) {
 
     bool running = true;
     while(running) {
+        // Prepare next frame
+        SDL_GetMouseState(&sdlSettings.mouseX, &sdlSettings.mouseY);
+
+        // Check for events
         while(SDL_PollEvent(&event) != 0) {
             sdlSettings.event = event;
             if(event.type == SDL_QUIT) running = false;
@@ -26,9 +30,11 @@ int main(int argc, char* argv[]) {
             }
         }
 
+        // Clear frame
         SDL_SetRenderDrawColor(sdlSettings.renderer, 0, 0, 0, 255);
         SDL_RenderClear(sdlSettings.renderer);
 
+        // Draw stuff
         core::miki(sdlSettings);
 
         // Finish frame
