@@ -1,0 +1,98 @@
+\doxysection{draw Namespace Reference}
+\hypertarget{namespacedraw}{}\label{namespacedraw}\index{draw@{draw}}
+
+
+This file contains functions for drawing elements on window.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacedraw_a006272d27ed58b3a8bb5a79b550cbbd0}{Draw\+Button}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, int colorR, int colorG, int colorB, int mouseX, int mouseY)
+\item 
+void \mbox{\hyperlink{namespacedraw_a664c0b7748542e08da6bb59a38148808}{Draw\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, int colorR, int colorG, int colorB)
+\item 
+void \mbox{\hyperlink{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c}{Draw\+Texture\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
+\item 
+void \mbox{\hyperlink{namespacedraw_a1b9dfd5f904ba3b9d931e43b9f143c75}{Draw\+Text}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}font, SDL\+\_\+\+Rect rect, const char \texorpdfstring{$\ast$}{*}text, SDL\+\_\+\+Color text\+Color)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains functions for drawing elements on window. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedraw_a006272d27ed58b3a8bb5a79b550cbbd0}\index{draw@{draw}!DrawButton@{DrawButton}}
+\index{DrawButton@{DrawButton}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawButton()}{DrawButton()}}
+{\footnotesize\ttfamily \label{namespacedraw_a006272d27ed58b3a8bb5a79b550cbbd0} 
+void draw\+::\+Draw\+Button (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{int}]{colorR}{, }\item[{int}]{colorG}{, }\item[{int}]{colorB}{, }\item[{int}]{mouseX}{, }\item[{int}]{mouseY}{}\end{DoxyParamCaption})}
+
+Draws button which gets darker on mouse hover 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of button \\
+\hline
+{\em colorR} & R amount from RGB \\
+\hline
+{\em colorG} & G amount from RGB \\
+\hline
+{\em colorB} & B amount from RGB \\
+\hline
+{\em mouseX} & X position of mouse \\
+\hline
+{\em mouseY} & Y position of mouse\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a664c0b7748542e08da6bb59a38148808}\index{draw@{draw}!DrawRect@{DrawRect}}
+\index{DrawRect@{DrawRect}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}}
+{\footnotesize\ttfamily \label{namespacedraw_a664c0b7748542e08da6bb59a38148808} 
+void draw\+::\+Draw\+Rect (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{int}]{colorR}{, }\item[{int}]{colorG}{, }\item[{int}]{colorB}{}\end{DoxyParamCaption})}
+
+Draws simple rectangle 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of rectangle \\
+\hline
+{\em colorR} & R amount from RGB \\
+\hline
+{\em colorG} & G amount from RGB \\
+\hline
+{\em colorB} & B amount from RGB\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a1b9dfd5f904ba3b9d931e43b9f143c75}\index{draw@{draw}!DrawText@{DrawText}}
+\index{DrawText@{DrawText}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawText()}{DrawText()}}
+{\footnotesize\ttfamily \label{namespacedraw_a1b9dfd5f904ba3b9d931e43b9f143c75} 
+void draw\+::\+Draw\+Text (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}}]{font}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{text}{, }\item[{SDL\+\_\+\+Color}]{text\+Color}{}\end{DoxyParamCaption})}
+
+Draws text on screen 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of text box \\
+\hline
+{\em text} & Text that will be drawn, must be char\texorpdfstring{$\ast$}{*}, you can convert std\+::string to it using .c\+\_\+str() \\
+\hline
+{\em text\+Color} & Color of text, must be SDL\+\_\+\+Color, you can use colors\+::text\+::white, replace white with your wanted color\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c}\index{draw@{draw}!DrawTextureRect@{DrawTextureRect}}
+\index{DrawTextureRect@{DrawTextureRect}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawTextureRect()}{DrawTextureRect()}}
+{\footnotesize\ttfamily \label{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c} 
+void draw\+::\+Draw\+Texture\+Rect (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{texture}{}\end{DoxyParamCaption})}
+
+Draws simple rectangle with specified texture 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of rectangle \\
+\hline
+{\em texture} & Texture for the rect, must be SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*}\\
+\hline
+\end{DoxyParams}

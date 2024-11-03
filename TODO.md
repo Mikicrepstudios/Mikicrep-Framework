@@ -1,3 +1,4 @@
+# Very soon
 - frame, timeS, timeM, timeH
 - Random number
 - Are rects touching
@@ -6,4 +7,12 @@
 - MouseX, MouseY
 - File support
 
+# Maybe
 - Keybindings?
+
+# Unfinished docs
+- init.cpp
+- draw.cpp
+- colors.h
+- core.h
+- graphics.h
