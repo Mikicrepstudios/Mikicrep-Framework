@@ -21,7 +21,7 @@ namespace core {
         SDL_Init(SDL_INIT_EVERYTHING);
 	    TTF_Init();
 
-        sdlSettings.font = TTF_OpenFont("mf/font.ttf", 96);
+        sdlSettings.font = TTF_OpenFont("mf/font.ttf", 96); // Increase 2nd number if you want better quality font
 
         // Create window and renderer
         sdlSettings.window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sdlSettings.width, sdlSettings.height, 0);
