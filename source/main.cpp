@@ -31,7 +31,9 @@ int main(int argc, char* argv[]) {
 
         core::miki(sdlSettings);
 
+        // Finish frame
         SDL_RenderPresent(sdlSettings.renderer);
+        core::TimeCount(sdlSettings);
         SDL_Delay(1000 / sdlSettings.fps);
     }
 

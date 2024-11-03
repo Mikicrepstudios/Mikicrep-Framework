@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['whitetextcolor_0',['whiteTextColor',['../d9/da7/namespacecolors_1_1text.html#a537481bef9a19552cfc2864066afd2cc',1,'colors::text']]],
-  ['width_1',['width',['../d1/d2d/structcore_1_1SDL__Settings.html#a7a598c06f02549a5382cd9927c31af87',1,'core::SDL_Settings']]],
-  ['window_2',['window',['../d1/d2d/structcore_1_1SDL__Settings.html#a55ea9a6e89cbf8189bfd21d816686bd1',1,'core::SDL_Settings']]]
+  ['timeh_0',['timeH',['../d1/d2d/structcore_1_1SDL__Settings.html#adafcb37e59771445dcd5bcf8e263ecf8',1,'core::SDL_Settings']]],
+  ['timem_1',['timeM',['../d1/d2d/structcore_1_1SDL__Settings.html#a6d875797153fd08026f61e0a69bd5dc3',1,'core::SDL_Settings']]],
+  ['times_2',['timeS',['../d1/d2d/structcore_1_1SDL__Settings.html#a0d7ff2518c47e0cb71ad623e085abaaf',1,'core::SDL_Settings']]]
 ];

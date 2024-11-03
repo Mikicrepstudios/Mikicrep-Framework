@@ -1,5 +1,4 @@
 # Very soon
-- frame, timeS, timeM, timeH
 - Random number
 - Are rects touching
 - Does mouse touch
