@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['genrandnum_2ecpp_0',['genrandnum.cpp',['../d4/dfd/genrandnum_8cpp.html',1,'']]],
-  ['genrannum_1',['GenRanNum',['../d7/df0/namespacelogic.html#a2097bfdcb36ac647c66a40f180508a22',1,'logic']]],
-  ['graphics_2eh_2',['graphics.h',['../d7/d04/graphics_8h.html',1,'']]]
+  ['font_0',['font',['../d1/d2d/structcore_1_1SDL__Settings.html#aaff04804cdf70c8b9d96adf7d8dfbbc2',1,'core::SDL_Settings']]],
+  ['fps_1',['fps',['../d1/d2d/structcore_1_1SDL__Settings.html#a2bd1d659af72b0fa744d8a6348689718',1,'core::SDL_Settings']]],
+  ['frame_2',['frame',['../d1/d2d/structcore_1_1SDL__Settings.html#aa88e7fa20ae2b01a25cb58143fd59404',1,'core::SDL_Settings']]]
 ];
