@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logic_0',['logic',['../d7/df0/namespacelogic.html',1,'']]],
-  ['logic_2eh_1',['logic.h',['../d3/daa/logic_8h.html',1,'']]]
+  ['init_2ecpp_0',['init.cpp',['../d0/dc9/init_8cpp.html',1,'']]],
+  ['initwindow_1',['InitWindow',['../d9/d0f/namespacecore.html#a85c483d6350b82caf16dae1e3c9dfc4f',1,'core']]]
 ];
