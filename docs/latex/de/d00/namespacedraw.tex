@@ -12,6 +12,8 @@ void \mbox{\hyperlink{namespacedraw_a006272d27ed58b3a8bb5a79b550cbbd0}{Draw\+But
 \item 
 void \mbox{\hyperlink{namespacedraw_a664c0b7748542e08da6bb59a38148808}{Draw\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, int colorR, int colorG, int colorB)
 \item 
+void \mbox{\hyperlink{namespacedraw_a1d58697e14f8510a141321c9f5f78f51}{Draw\+Trans\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, int colorR, int colorG, int colorB, int colorA)
+\item 
 void \mbox{\hyperlink{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c}{Draw\+Texture\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
 \item 
 void \mbox{\hyperlink{namespacedraw_a1b9dfd5f904ba3b9d931e43b9f143c75}{Draw\+Text}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}font, SDL\+\_\+\+Rect rect, const char \texorpdfstring{$\ast$}{*}text, SDL\+\_\+\+Color text\+Color)
@@ -94,5 +96,26 @@ Draws simple rectangle with specified texture
 {\em rect} & Cords of rectangle \\
 \hline
 {\em texture} & Texture for the rect, must be SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*}\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a1d58697e14f8510a141321c9f5f78f51}\index{draw@{draw}!DrawTransRect@{DrawTransRect}}
+\index{DrawTransRect@{DrawTransRect}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawTransRect()}{DrawTransRect()}}
+{\footnotesize\ttfamily \label{namespacedraw_a1d58697e14f8510a141321c9f5f78f51} 
+void draw\+::\+Draw\+Trans\+Rect (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{int}]{colorR}{, }\item[{int}]{colorG}{, }\item[{int}]{colorB}{, }\item[{int}]{colorA}{}\end{DoxyParamCaption})}
+
+Draws simple transparent rectangle 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of rectangle \\
+\hline
+{\em colorR} & R amount from RGB \\
+\hline
+{\em colorG} & G amount from RGB \\
+\hline
+{\em colorB} & B amount from RGB \\
+\hline
+{\em colorA} & Opacity of rect (255 -\/ visible, 0 -\/ transparent)\\
 \hline
 \end{DoxyParams}
