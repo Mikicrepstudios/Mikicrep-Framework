@@ -13,9 +13,11 @@ namespace core {
         draw::DrawText(sdlSettings.renderer, sdlSettings.font, {sdlSettings.width / 2 - 400, 0, 800, 50}, "Mikicrep Framework is working", colors::text::whiteTextColor);
     
         SDL_Rect rect1 = {50, 50, 50, 50};
-        draw::DrawTransRect(sdlSettings.renderer, rect1, 255, 0, 0, 128);
+        SDL_Rect rect2 = {75, 50, 50, 50};
+        SDL_Rect rect3 = {62, 75, 50, 50};
 
-        SDL_Rect rect2 = {75, 75, 50, 50};
-        draw::DrawTransRect(sdlSettings.renderer, rect2, 0, 0, 255, 128);
+        draw::DrawTransRect(sdlSettings.renderer, rect1, 255, 0, 0, 255);
+        draw::DrawTransRect(sdlSettings.renderer, rect2, 0, 0, 255, 150);
+        draw::DrawTransRect(sdlSettings.renderer, rect3, 0, 255, 0, 150);
     }
 }
