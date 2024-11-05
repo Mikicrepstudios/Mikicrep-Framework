@@ -42,6 +42,21 @@ namespace draw {
 		SDL_RenderFillRect(renderer, &rect);
 	}
 
+	void DrawTransRect(SDL_Renderer* renderer, SDL_Rect rect, int colorR, int colorG, int colorB, int colorA) {
+		/**
+		 * @brief Draws simple transparent rectangle
+		 * @param renderer Window renderer
+		 * @param rect Cords of rectangle
+		 * @param colorR R amount from RGB
+		 * @param colorG G amount from RGB
+		 * @param colorB B amount from RGB
+		 * @param colorA Opacity of rect (255 - visible, 0 - transparent)
+		 */
+
+		SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, colorA);
+		SDL_RenderFillRect(renderer, &rect);
+	}
+
 	void DrawTextureRect(SDL_Renderer* renderer, SDL_Rect rect, SDL_Texture* texture) {
 		/**
 		 * @brief Draws simple rectangle with specified texture
