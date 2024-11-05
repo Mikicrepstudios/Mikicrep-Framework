@@ -26,5 +26,7 @@ namespace core {
         // Create window and renderer
         sdlSettings.window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, sdlSettings.width, sdlSettings.height, 0);
         sdlSettings.renderer = SDL_CreateRenderer(sdlSettings.window, -1, 0);
+
+        SDL_SetRenderDrawBlendMode(sdlSettings.renderer, SDL_BLENDMODE_BLEND); // Transparency
     }
 }
