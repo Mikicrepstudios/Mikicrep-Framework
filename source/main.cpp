@@ -7,7 +7,7 @@
 #include "mf/logic.h"
 
 int main(int argc, char* argv[]) {
-    std::cout << "Mikicrep Framework" << std::endl
+    std::cout << "-------Mikicrep Framework-------" << std::endl
               << "Copyright Mikicrep Studios 2024" << std::endl;
 
     // Main stuff
