@@ -3,6 +3,5 @@
 - File support
 
 # Maybe
-- Keybindings?
 
 # Unfinished docs
