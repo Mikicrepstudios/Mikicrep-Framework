@@ -1,7 +1,7 @@
 #include "SDL2/SDL.h"
 
 namespace logic {
-    bool AreRectsTouching(const SDL_Rect& rect1, const SDL_Rect& rect2) {
+    bool AreRectsTouching(const SDL_Rect& rect1, SDL_Rect& rect2) {
         /**
          * @brief This function compares 2 rectangles, and returns 1 if they are touching
          * @param rect1 First rect
