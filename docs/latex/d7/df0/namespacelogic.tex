@@ -8,9 +8,11 @@ This namespace contains functions with useful utilities.
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{namespacelogic_ac6fb740bf4e4b9358352f3c5cd38fb34}{Are\+Rects\+Touching}} (const SDL\+\_\+\+Rect \&rect1, const SDL\+\_\+\+Rect \&rect2)
+bool \mbox{\hyperlink{namespacelogic_a45419233f017d9dd624f403feae8b266}{Are\+Rects\+Touching}} (const SDL\+\_\+\+Rect \&rect1, SDL\+\_\+\+Rect \&rect2)
 \item 
 int \mbox{\hyperlink{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}{Gen\+Ran\+Num}} (int min, int max)
+\item 
+bool \mbox{\hyperlink{namespacelogic_a280be3d8537425d568759dd95a3c801c}{Is\+Mouse\+Touching}} (int mouseX, int mouseY, SDL\+\_\+\+Rect \&rect)
 \end{DoxyCompactItemize}
 
 
@@ -18,11 +20,11 @@ int \mbox{\hyperlink{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}{Gen\+Ran\
 This namespace contains functions with useful utilities. 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{namespacelogic_ac6fb740bf4e4b9358352f3c5cd38fb34}\index{logic@{logic}!AreRectsTouching@{AreRectsTouching}}
+\Hypertarget{namespacelogic_a45419233f017d9dd624f403feae8b266}\index{logic@{logic}!AreRectsTouching@{AreRectsTouching}}
 \index{AreRectsTouching@{AreRectsTouching}!logic@{logic}}
 \doxysubsubsection{\texorpdfstring{AreRectsTouching()}{AreRectsTouching()}}
-{\footnotesize\ttfamily \label{namespacelogic_ac6fb740bf4e4b9358352f3c5cd38fb34} 
-bool logic\+::\+Are\+Rects\+Touching (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Rect \&}]{rect1}{, }\item[{const SDL\+\_\+\+Rect \&}]{rect2}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacelogic_a45419233f017d9dd624f403feae8b266} 
+bool logic\+::\+Are\+Rects\+Touching (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Rect \&}]{rect1}{, }\item[{SDL\+\_\+\+Rect \&}]{rect2}{}\end{DoxyParamCaption})}
 
 This function compares 2 rectangles, and returns 1 if they are touching 
 \begin{DoxyParams}{Parameters}
@@ -42,5 +44,20 @@ Returns random number
 {\em min} & Minimum number (includes) \\
 \hline
 {\em max} & Maximum number (includes)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacelogic_a280be3d8537425d568759dd95a3c801c}\index{logic@{logic}!IsMouseTouching@{IsMouseTouching}}
+\index{IsMouseTouching@{IsMouseTouching}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{IsMouseTouching()}{IsMouseTouching()}}
+{\footnotesize\ttfamily \label{namespacelogic_a280be3d8537425d568759dd95a3c801c} 
+bool logic\+::\+Is\+Mouse\+Touching (\begin{DoxyParamCaption}\item[{int}]{mouseX}{, }\item[{int}]{mouseY}{, }\item[{SDL\+\_\+\+Rect \&}]{rect}{}\end{DoxyParamCaption})}
+
+This function compares mouse position and rect, and returns 1 if they are touching 
+\begin{DoxyParams}{Parameters}
+{\em mouseX} & X axis of mouse \\
+\hline
+{\em mouseY} & Y axis of mouse \\
+\hline
+{\em rect} & Second rect\\
 \hline
 \end{DoxyParams}
