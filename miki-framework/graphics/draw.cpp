@@ -15,6 +15,7 @@ namespace draw {
 		 * @param mouseY Y position of mouse
 		 */
 
+		// If mouse hovers button then darken it, if not then dont darken
 		if (mouseX >= rect.x && mouseX <= rect.x + rect.w &&
 			mouseY >= rect.y && mouseY <= rect.y + rect.h) {
 			colorR *= .25;
