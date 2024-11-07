@@ -8,18 +8,18 @@ This namespace contains stuff that are required for Mikicrep Framework to work c
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structcore_1_1SDL__Settings}{SDL\+\_\+\+Settings}}
+struct \mbox{\hyperlink{structcore_1_1MF__Window}{MF\+\_\+\+Window}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacecore_a85c483d6350b82caf16dae1e3c9dfc4f}{Init\+Window}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&sdl\+Settings, std\+::string title, int width, int height)
+void \mbox{\hyperlink{namespacecore_a8212b0d8d84b728269f248d4d91a5b3b}{Init\+Window}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window, std\+::string title, int width, int height)
 \item 
 SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{Load\+Img}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, std\+::string path)
 \item 
-void \mbox{\hyperlink{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2}{miki}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} sdl\+Settings)
+void \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} window)
 \item 
-void \mbox{\hyperlink{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd}{Time\+Count}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&sdl\+Settings)
+void \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{Time\+Count}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window)
 \end{DoxyCompactItemize}
 
 
@@ -27,15 +27,15 @@ void \mbox{\hyperlink{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd}{Time\+Cou
 This namespace contains stuff that are required for Mikicrep Framework to work correctly. 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{namespacecore_a85c483d6350b82caf16dae1e3c9dfc4f}\index{core@{core}!InitWindow@{InitWindow}}
+\Hypertarget{namespacecore_a8212b0d8d84b728269f248d4d91a5b3b}\index{core@{core}!InitWindow@{InitWindow}}
 \index{InitWindow@{InitWindow}!core@{core}}
 \doxysubsubsection{\texorpdfstring{InitWindow()}{InitWindow()}}
-{\footnotesize\ttfamily \label{namespacecore_a85c483d6350b82caf16dae1e3c9dfc4f} 
-void core\+::\+Init\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&}]{sdl\+Settings}{, }\item[{std\+::string}]{title}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacecore_a8212b0d8d84b728269f248d4d91a5b3b} 
+void core\+::\+Init\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&}]{window}{, }\item[{std\+::string}]{title}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
 
 Initilizes window and stuff related to it 
 \begin{DoxyParams}{Parameters}
-{\em sdl\+Settings} & Stuct that contains information about window \\
+{\em window} & Stuct that contains information about window \\
 \hline
 {\em title} & Title of the window \\
 \hline
@@ -57,17 +57,17 @@ This function loads image and returns it as SDL\+\_\+\+Texture\texorpdfstring{$\
 {\em path} & Path to image (recommended to use / for paths)\\
 \hline
 \end{DoxyParams}
-\Hypertarget{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2}\index{core@{core}!miki@{miki}}
+\Hypertarget{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}\index{core@{core}!miki@{miki}}
 \index{miki@{miki}!core@{core}}
 \doxysubsubsection{\texorpdfstring{miki()}{miki()}}
-{\footnotesize\ttfamily \label{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2} 
-void core\+::miki (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}}}]{sdl\+Settings}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacecore_a5d8838dafc5234631da7a7931ec97bc7} 
+void core\+::miki (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}}}]{window}{}\end{DoxyParamCaption})}
 
-This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd}\index{core@{core}!TimeCount@{TimeCount}}
+This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}\index{core@{core}!TimeCount@{TimeCount}}
 \index{TimeCount@{TimeCount}!core@{core}}
 \doxysubsubsection{\texorpdfstring{TimeCount()}{TimeCount()}}
-{\footnotesize\ttfamily \label{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd} 
-void core\+::\+Time\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&}]{sdl\+Settings}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c} 
+void core\+::\+Time\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
 
 This function increases time since window is spawned 
 \begin{DoxyParams}{Parameters}

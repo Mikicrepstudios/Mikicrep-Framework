@@ -9,44 +9,41 @@
 \DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}SDL\_ttf.h"{}}}
 \DoxyCodeLine{00006\ }
 \DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMF__Color}{MF\_Color}}\ \{}
-\DoxyCodeLine{00011\ \ \ \ \ }
-\DoxyCodeLine{00012\ }
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMF__Color_a152bfd865e11e64387b89450a4a39dea}{r}}\ =\ 0;}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMF__Color_a692f464601d1bf8786f6f41eb059494f}{g}}\ =\ 0;}
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMF__Color_a4aee1aa2b82d27a0b7b932c7c5e9fded}{b}}\ =\ 0;}
-\DoxyCodeLine{00016\ \};}
-\DoxyCodeLine{00017\ }
-\DoxyCodeLine{00021\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacecore}{core}}\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1SDL__Settings}{SDL\_Settings}}\ \{}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a7a598c06f02549a5382cd9927c31af87}{width}}\ =\ 1280;}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a57fb518cdc152b7cd043d78bed21f16a}{height}}\ =\ 800;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a2bd1d659af72b0fa744d8a6348689718}{fps}}\ =\ 60;\ \textcolor{comment}{//\ THIS\ IS\ NOT\ FPS\ COUNTER,\ IT\ IS\ MAXIMUM\ FPS}}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_ae8951a9d6bb49ebdde1459672b0d7740}{mouseX}}\ =\ 0;}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_ad6c47674ac69d8243fe63bc082220bb2}{mouseY}}\ =\ 0;}
-\DoxyCodeLine{00029\ }
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a55ea9a6e89cbf8189bfd21d816686bd1}{window}}\ =\ \{\};}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{structcore_1_1SDL__Settings_ad7288aa3d749143f6203e13872d4dffd}{renderer}}\ =\ \{\};}
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ SDL\_Event\ \textcolor{keyword}{event}\ =\ \{\};}
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ TTF\_Font*\ \mbox{\hyperlink{structcore_1_1SDL__Settings_aaff04804cdf70c8b9d96adf7d8dfbbc2}{font}}\ =\ \{\};}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ How\ long\ window\ existed}}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_aa88e7fa20ae2b01a25cb58143fd59404}{frame}}\ =\ 0;}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a0d7ff2518c47e0cb71ad623e085abaaf}{timeS}}\ =\ 0;}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_a6d875797153fd08026f61e0a69bd5dc3}{timeM}}\ =\ 0;}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1SDL__Settings_adafcb37e59771445dcd5bcf8e263ecf8}{timeH}}\ =\ 0;}
-\DoxyCodeLine{00040\ \ \ \ \ \};}
-\DoxyCodeLine{00041\ }
-\DoxyCodeLine{00042\ \ \ \ \ }
-\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Big\ stuff}}
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a85c483d6350b82caf16dae1e3c9dfc4f}{InitWindow}}(\mbox{\hyperlink{structcore_1_1SDL__Settings}{core::SDL\_Settings}}\ \&sdlSettings,\ std::string\ title,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd}{TimeCount}}(\mbox{\hyperlink{structcore_1_1SDL__Settings}{core::SDL\_Settings}}\ \&sdlSettings);}
+\DoxyCodeLine{00011\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structMF__Color_a5b801b5ce6928431e63c66fee81c0b68}{r}}\ =\ 0;}
+\DoxyCodeLine{00012\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structMF__Color_a76e9f5e0bfebb0ccbce21f5384dbe52a}{g}}\ =\ 0;}
+\DoxyCodeLine{00013\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structMF__Color_a0a64a78ea69ecd37eaa0e541e5352ab6}{b}}\ =\ 0;}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacecore}{core}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1MF__Window}{MF\_Window}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9b5084a7fc4af3d1c1cc36033361f405}{width}}\ =\ 1280;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_af13d979a31c42d7207ede3fba2b231a1}{height}}\ =\ 800;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a651efe7c62bc6395c08230e0e562b113}{fps}}\ =\ 60;\ \textcolor{comment}{//\ THIS\ IS\ NOT\ FPS\ COUNTER,\ IT\ IS\ MAXIMUM\ FPS}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a144e65ca76cbabe094bb7218c094972c}{mouseX}}\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_aeabd996b922896783ae6c889ab23f188}{mouseY}}\ =\ 0;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{structcore_1_1MF__Window_a504e0b5bb813dade447d1e7f6224e3e9}{window}}\ =\ \{\};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{structcore_1_1MF__Window_a02406a6886b58f0b4cbc5dd24b16f6e0}{renderer}}\ =\ \{\};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ SDL\_Event\ \textcolor{keyword}{event}\ =\ \{\};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ TTF\_Font*\ \mbox{\hyperlink{structcore_1_1MF__Window_abdade776f43045dcec5f5fa01a6bcb59}{font}}\ =\ \{\};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ How\ long\ window\ existed}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9d3027da600daa9dd57eef05b370a182}{frame}}\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_afc23ddb048a540ddec356bb955f53a70}{timeS}}\ =\ 0;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9ee6bb9fe9732a259a3829f9b92c2fce}{timeM}}\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a4279b6adc48661ea584828a84bf7dd6a}{timeH}}\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Big\ stuff}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a8212b0d8d84b728269f248d4d91a5b3b}{InitWindow}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window,\ std::string\ title,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{TimeCount}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Addional\ stuff}}
+\DoxyCodeLine{00045\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{LoadImg}}(SDL\_Renderer*\ renderer,\ std::string\ path);}
 \DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Addional\ stuff}}
-\DoxyCodeLine{00048\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{LoadImg}}(SDL\_Renderer*\ renderer,\ std::string\ path);}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ 69\ Chad\ function}}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2}{miki}}(\mbox{\hyperlink{structcore_1_1SDL__Settings}{core::SDL\_Settings}}\ sdlSettings);\ \textcolor{comment}{//\ Best\ function\ ever}}
-\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ 69\ Chad\ function}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ window);\ \textcolor{comment}{//\ Best\ function\ ever}}
+\DoxyCodeLine{00049\ \}}
 
 \end{DoxyCode}
