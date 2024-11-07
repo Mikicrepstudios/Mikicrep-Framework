@@ -103,6 +103,8 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a85c483d6350b82caf16dae1e3c9dfc4f" id="r_a85c483d6350b82caf16dae1e3c9dfc4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85c483d6350b82caf16dae1e3c9dfc4f">InitWindow</a> (<a class="el" href="../../d1/d2d/structcore_1_1SDL__Settings.html">core::SDL_Settings</a> &amp;sdlSettings, std::string title, int width, int height)</td></tr>
 <tr class="separator:a85c483d6350b82caf16dae1e3c9dfc4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311f090785dd949a5647864c112f9e3f" id="r_a311f090785dd949a5647864c112f9e3f"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a311f090785dd949a5647864c112f9e3f">LoadImg</a> (SDL_Renderer *renderer, std::string path)</td></tr>
+<tr class="separator:a311f090785dd949a5647864c112f9e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b7a50bd94b533df1f46f60543faa0a2" id="r_a7b7a50bd94b533df1f46f60543faa0a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b7a50bd94b533df1f46f60543faa0a2">miki</a> (<a class="el" href="../../d1/d2d/structcore_1_1SDL__Settings.html">core::SDL_Settings</a> sdlSettings)</td></tr>
 <tr class="separator:a7b7a50bd94b533df1f46f60543faa0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52223203f4e82b9a9d348e5a8b2c1ccd" id="r_a52223203f4e82b9a9d348e5a8b2c1ccd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52223203f4e82b9a9d348e5a8b2c1ccd">TimeCount</a> (<a class="el" href="../../d1/d2d/structcore_1_1SDL__Settings.html">core::SDL_Settings</a> &amp;sdlSettings)</td></tr>
@@ -145,6 +147,34 @@ Functions</h2></td></tr>
     <tr><td class="paramname">title</td><td>Title of the window </td></tr>
     <tr><td class="paramname">width</td><td>Width of the window </td></tr>
     <tr><td class="paramname">height</td><td>Height of the window</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a311f090785dd949a5647864c112f9e3f" name="a311f090785dd949a5647864c112f9e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311f090785dd949a5647864c112f9e3f">&#9670;&#160;</a></span>LoadImg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture * core::LoadImg </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *</td>          <td class="paramname"><span class="paramname"><em>renderer</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function loads image and returns it as SDL_Texture* </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>Renderer of your window </td></tr>
+    <tr><td class="paramname">path</td><td>Path to image (recommended to use / for paths)</td></tr>
   </table>
   </dd>
 </dl>
