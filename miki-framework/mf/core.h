@@ -9,6 +9,10 @@
 #include "SDL_ttf.h"
 
 struct MF_Color {
+    /**
+     * @brief Main struct for Mikicrep Framework colors
+     */
+    
     int r = 0;
     int g = 0;
     int b = 0;
