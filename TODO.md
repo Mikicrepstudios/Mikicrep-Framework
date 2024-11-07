@@ -1,5 +1,4 @@
 # Very soon
-- Image loading
 - File support
 
 # Maybe
