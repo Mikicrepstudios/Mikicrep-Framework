@@ -6,7 +6,7 @@
 #include "mf/core.h"
 
 namespace core {
-    void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height) {
+    void InitWindow(core::MF_Window &sdlSettings, std::string title, int width, int height) {
         /**
          * @brief Initilizes window and stuff related to it
          * @param sdlSettings Stuct that contains information about window

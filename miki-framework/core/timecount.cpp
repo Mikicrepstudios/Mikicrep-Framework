@@ -1,22 +1,22 @@
 #include "mf/core.h"
 
 namespace core {
-    void TimeCount(core::SDL_Settings &sdlSettings) {
+    void TimeCount(core::MF_Window &window) {
         /**
          * @brief This function increases time since window is spawned
          * @param sdlSettings Window that you want to cout time for
          */
 
-        sdlSettings.frame++;
-        if(sdlSettings.frame == sdlSettings.fps) {
-            sdlSettings.frame = 0;
-            sdlSettings.timeS++;
-            if(sdlSettings.timeS == 60) {
-                sdlSettings.timeS = 0;
-                sdlSettings.timeM++;
-                if(sdlSettings.timeM == 60) {
-                    sdlSettings.timeM = 0;
-                    sdlSettings.timeH++;
+        window.frame++;
+        if(window.frame == window.fps) {
+            window.frame = 0;
+            window.timeS++;
+            if(window.timeS == 60) {
+                window.timeS = 0;
+                window.timeM++;
+                if(window.timeM == 60) {
+                    window.timeM = 0;
+                    window.timeH++;
                     // ...
                 }
             }

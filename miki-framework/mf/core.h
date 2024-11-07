@@ -17,7 +17,7 @@ struct MF_Color {
  * @brief This namespace contains stuff that are required for Mikicrep Framework to work correctly
  */
 namespace core {
-    struct SDL_Settings {
+    struct MF_Window {
         int width = 1280;
         int height = 800;
         int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
@@ -38,12 +38,12 @@ namespace core {
     };
 
     // Big stuff
-    void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
-    void TimeCount(core::SDL_Settings &sdlSettings);
+    void InitWindow(core::MF_Window &sdlSettings, std::string title, int width, int height);
+    void TimeCount(core::MF_Window &sdlSettings);
 
     // Addional stuff
     SDL_Texture* LoadImg(SDL_Renderer* renderer, std::string path);
 
     // 69 Chad function
-    void miki(core::SDL_Settings sdlSettings); // Best function ever
+    void miki(core::MF_Window sdlSettings); // Best function ever
 }

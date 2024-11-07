@@ -13,19 +13,19 @@ int main(int argc, char* argv[]) {
 
     // Main stuff
     std::string title = "Mikicrep Framework";
-    core::SDL_Settings sdlSettings = {};
+    core::MF_Window window = {};
     SDL_Event event = {};
 
-    core::InitWindow(sdlSettings, title, 1280, 800);
+    core::InitWindow(window, title, 1280, 800);
 
     bool running = true;
     while(running) {
         // Prepare next frame
-        SDL_GetMouseState(&sdlSettings.mouseX, &sdlSettings.mouseY);
+        SDL_GetMouseState(&window.mouseX, &window.mouseY);
 
         // Check for events
         while(SDL_PollEvent(&event) != 0) {
-            sdlSettings.event = event;
+            window.event = event;
             if(event.type == SDL_QUIT) running = false;
             if(event.type == SDL_KEYDOWN) {
                 if(event.key.keysym.sym == SDLK_ESCAPE) running = false;
@@ -33,16 +33,16 @@ int main(int argc, char* argv[]) {
         }
 
         // Clear frame
-        SDL_SetRenderDrawColor(sdlSettings.renderer, 0, 0, 0, 255);
-        SDL_RenderClear(sdlSettings.renderer);
+        SDL_SetRenderDrawColor(window.renderer, 0, 0, 0, 255);
+        SDL_RenderClear(window.renderer);
 
         // Draw stuff
-        core::miki(sdlSettings);
+        core::miki(window);
 
         // Finish frame
-        SDL_RenderPresent(sdlSettings.renderer);
-        core::TimeCount(sdlSettings);
-        SDL_Delay(1000 / sdlSettings.fps);
+        SDL_RenderPresent(window.renderer);
+        core::TimeCount(window);
+        SDL_Delay(1000 / window.fps);
     }
 
     return 0;
