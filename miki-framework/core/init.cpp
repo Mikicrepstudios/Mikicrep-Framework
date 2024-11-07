@@ -1,5 +1,7 @@
 #include <string>
 #include "SDL.h"
+#include "SDL_ttf.h"
+#include "SDL_image.h"
 
 #include "mf/core.h"
 
@@ -20,6 +22,7 @@ namespace core {
         // Init everything
         SDL_Init(SDL_INIT_EVERYTHING);
 	    TTF_Init();
+        IMG_Init(IMG_INIT_PNG);
 
         sdlSettings.font = TTF_OpenFont("mf/font.ttf", 96); // Increase 2nd number if you want better quality font
 
