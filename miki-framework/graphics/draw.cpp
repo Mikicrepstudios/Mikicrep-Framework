@@ -2,8 +2,10 @@
 #include "SDL2/SDL.h"
 #include <SDL_ttf.h>
 
+#include "mf/colors.h"
+
 namespace draw {
-	void DrawButton(SDL_Renderer* renderer, SDL_Rect rect, int colorR, int colorG, int colorB, int mouseX, int mouseY) {
+	void DrawButton(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, int mouseX, int mouseY) {
 		/**
 		 * @brief Draws button which gets darker on mouse hover
 		 * @param renderer Window renderer
@@ -18,18 +20,18 @@ namespace draw {
 		// If mouse hovers button then darken it, if not then dont darken
 		if (mouseX >= rect.x && mouseX <= rect.x + rect.w &&
 			mouseY >= rect.y && mouseY <= rect.y + rect.h) {
-			colorR *= .25;
-			colorG *= .25;
-			colorB *= .25;
-			SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, 255);
+			color.r *= .25;
+			color.g *= .25;
+			color.b *= .25;
+			SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, 255);
 			SDL_RenderFillRect(renderer, &rect);
 		}
 		else
-			SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, 255);
+			SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, 255);
 		SDL_RenderFillRect(renderer, &rect);
 	}
 
-	void DrawRect(SDL_Renderer* renderer, SDL_Rect rect, int colorR, int colorG, int colorB) {
+	void DrawRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color) {
 		/**
 		 * @brief Draws simple rectangle
 		 * @param renderer Window renderer
@@ -39,11 +41,11 @@ namespace draw {
 		 * @param colorB B amount from RGB
 		 */
 
-		SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, 255);
+		SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, 255);
 		SDL_RenderFillRect(renderer, &rect);
 	}
 
-	void DrawTransRect(SDL_Renderer* renderer, SDL_Rect rect, int colorR, int colorG, int colorB, int colorA) {
+	void DrawTransRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, int colorA) {
 		/**
 		 * @brief Draws simple transparent rectangle
 		 * @param renderer Window renderer
@@ -54,7 +56,7 @@ namespace draw {
 		 * @param colorA Opacity of rect (255 - visible, 0 - transparent)
 		 */
 
-		SDL_SetRenderDrawColor(renderer, colorR, colorG, colorB, colorA);
+		SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, colorA);
 		SDL_RenderFillRect(renderer, &rect);
 	}
 

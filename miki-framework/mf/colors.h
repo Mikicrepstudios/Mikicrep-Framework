@@ -6,11 +6,7 @@
 
 #include "SDL.h"
 
-struct MF_Color {
-    int r = 0;
-    int g = 0;
-    int b = 0;
-};
+#include "mf/core.h"
 
 namespace colors {
     /**

@@ -8,6 +8,12 @@
 #include "SDL.h"
 #include "SDL_ttf.h"
 
+struct MF_Color {
+    int r = 0;
+    int g = 0;
+    int b = 0;
+};
+
 namespace core {
     struct SDL_Settings {
         int width = 1280;
@@ -29,6 +35,7 @@ namespace core {
         int timeH = 0;
     };
 
+    
     // Big stuff
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
     void TimeCount(core::SDL_Settings &sdlSettings);
