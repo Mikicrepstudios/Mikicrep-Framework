@@ -1,23 +1,23 @@
-/**
- * @brief This namespace contains stuff that are required for Mikicrep Framework to work correctly
- */
-
 #pragma once
 
 #include <string>
 #include "SDL.h"
 #include "SDL_ttf.h"
 
+/**
+ * @brief Main struct for Mikicrep Framework colors
+ */
 struct MF_Color {
-    /**
-     * @brief Main struct for Mikicrep Framework colors
-     */
     
+
     int r = 0;
     int g = 0;
     int b = 0;
 };
 
+/**
+ * @brief This namespace contains stuff that are required for Mikicrep Framework to work correctly
+ */
 namespace core {
     struct SDL_Settings {
         int width = 1280;
