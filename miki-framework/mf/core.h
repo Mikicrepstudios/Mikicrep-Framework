@@ -8,8 +8,6 @@
  * @brief Main struct for Mikicrep Framework colors
  */
 struct MF_Color {
-    
-
     int r = 0;
     int g = 0;
     int b = 0;
