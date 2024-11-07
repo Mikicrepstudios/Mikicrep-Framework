@@ -15,6 +15,8 @@ struct \mbox{\hyperlink{structcore_1_1SDL__Settings}{SDL\+\_\+\+Settings}}
 \item 
 void \mbox{\hyperlink{namespacecore_a85c483d6350b82caf16dae1e3c9dfc4f}{Init\+Window}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&sdl\+Settings, std\+::string title, int width, int height)
 \item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{Load\+Img}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, std\+::string path)
+\item 
 void \mbox{\hyperlink{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2}{miki}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} sdl\+Settings)
 \item 
 void \mbox{\hyperlink{namespacecore_a52223203f4e82b9a9d348e5a8b2c1ccd}{Time\+Count}} (\mbox{\hyperlink{structcore_1_1SDL__Settings}{core\+::\+SDL\+\_\+\+Settings}} \&sdl\+Settings)
@@ -40,6 +42,19 @@ Initilizes window and stuff related to it
 {\em width} & Width of the window \\
 \hline
 {\em height} & Height of the window\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacecore_a311f090785dd949a5647864c112f9e3f}\index{core@{core}!LoadImg@{LoadImg}}
+\index{LoadImg@{LoadImg}!core@{core}}
+\doxysubsubsection{\texorpdfstring{LoadImg()}{LoadImg()}}
+{\footnotesize\ttfamily \label{namespacecore_a311f090785dd949a5647864c112f9e3f} 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} core\+::\+Load\+Img (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+
+This function loads image and returns it as SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Renderer of your window \\
+\hline
+{\em path} & Path to image (recommended to use / for paths)\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacecore_a7b7a50bd94b533df1f46f60543faa0a2}\index{core@{core}!miki@{miki}}
