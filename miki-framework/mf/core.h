@@ -37,7 +37,6 @@ namespace core {
         int timeH = 0;
     };
 
-    
     // Big stuff
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
     void TimeCount(core::SDL_Settings &sdlSettings);
