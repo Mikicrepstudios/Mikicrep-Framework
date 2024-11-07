@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sdl_5fsettings_0',['SDL_Settings',['../d1/d2d/structcore_1_1SDL__Settings.html',1,'core']]]
+  ['mf_5fcolor_0',['MF_Color',['../db/d6a/structMF__Color.html',1,'']]]
 ];

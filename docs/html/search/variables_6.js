@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['timeh_0',['timeH',['../d1/d2d/structcore_1_1SDL__Settings.html#adafcb37e59771445dcd5bcf8e263ecf8',1,'core::SDL_Settings']]],
-  ['timem_1',['timeM',['../d1/d2d/structcore_1_1SDL__Settings.html#a6d875797153fd08026f61e0a69bd5dc3',1,'core::SDL_Settings']]],
-  ['times_2',['timeS',['../d1/d2d/structcore_1_1SDL__Settings.html#a0d7ff2518c47e0cb71ad623e085abaaf',1,'core::SDL_Settings']]]
+  ['g_0',['g',['../db/d6a/structMF__Color.html#a692f464601d1bf8786f6f41eb059494f',1,'MF_Color']]],
+  ['grassgreen_1',['grassgreen',['../de/d3d/namespacecolors_1_1general.html#aa5e5d7f95ca5855f8df4aaf2cab6a326',1,'colors::general']]],
+  ['gray_2',['gray',['../de/d3d/namespacecolors_1_1general.html#a19f80e141af0096e11d75a7a37062490',1,'colors::general']]]
 ];
