@@ -29,8 +29,13 @@ namespace core {
         int timeH = 0;
     };
 
+    // Big stuff
     void InitWindow(core::SDL_Settings &sdlSettings, std::string title, int width, int height);
     void TimeCount(core::SDL_Settings &sdlSettings);
 
+    // Addional stuff
+    SDL_Texture* LoadImg(SDL_Renderer* renderer, std::string path);
+
+    // 69 Chad function
     void miki(core::SDL_Settings sdlSettings); // Best function ever
 }
