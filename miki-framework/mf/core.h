@@ -38,12 +38,12 @@ namespace core {
     };
 
     // Big stuff
-    void InitWindow(core::MF_Window &sdlSettings, std::string title, int width, int height);
-    void TimeCount(core::MF_Window &sdlSettings);
+    void InitWindow(core::MF_Window &window, std::string title, int width, int height);
+    void TimeCount(core::MF_Window &window);
 
     // Addional stuff
     SDL_Texture* LoadImg(SDL_Renderer* renderer, std::string path);
 
     // 69 Chad function
-    void miki(core::MF_Window sdlSettings); // Best function ever
+    void miki(core::MF_Window window); // Best function ever
 }
