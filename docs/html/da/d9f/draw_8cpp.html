@@ -97,6 +97,7 @@ $(function(){ initResizable(false); });
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &quot;SDL2/SDL.h&quot;</code><br />
 <code>#include &lt;SDL_ttf.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dd8/colors_8h_source.html">mf/colors.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -106,12 +107,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a006272d27ed58b3a8bb5a79b550cbbd0" id="r_a006272d27ed58b3a8bb5a79b550cbbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a006272d27ed58b3a8bb5a79b550cbbd0">draw::DrawButton</a> (SDL_Renderer *renderer, SDL_Rect rect, int colorR, int colorG, int colorB, int mouseX, int mouseY)</td></tr>
-<tr class="separator:a006272d27ed58b3a8bb5a79b550cbbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664c0b7748542e08da6bb59a38148808" id="r_a664c0b7748542e08da6bb59a38148808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a664c0b7748542e08da6bb59a38148808">draw::DrawRect</a> (SDL_Renderer *renderer, SDL_Rect rect, int colorR, int colorG, int colorB)</td></tr>
-<tr class="separator:a664c0b7748542e08da6bb59a38148808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d58697e14f8510a141321c9f5f78f51" id="r_a1d58697e14f8510a141321c9f5f78f51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a1d58697e14f8510a141321c9f5f78f51">draw::DrawTransRect</a> (SDL_Renderer *renderer, SDL_Rect rect, int colorR, int colorG, int colorB, int colorA)</td></tr>
-<tr class="separator:a1d58697e14f8510a141321c9f5f78f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb79d11848aa97911775cdd12fca90f" id="r_a6bb79d11848aa97911775cdd12fca90f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a6bb79d11848aa97911775cdd12fca90f">draw::DrawButton</a> (SDL_Renderer *renderer, SDL_Rect rect, <a class="el" href="../../db/d6a/structMF__Color.html">MF_Color</a> color, int mouseX, int mouseY)</td></tr>
+<tr class="separator:a6bb79d11848aa97911775cdd12fca90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a13233777eb544ff1d2b092b172db83" id="r_a8a13233777eb544ff1d2b092b172db83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a8a13233777eb544ff1d2b092b172db83">draw::DrawRect</a> (SDL_Renderer *renderer, SDL_Rect rect, <a class="el" href="../../db/d6a/structMF__Color.html">MF_Color</a> color)</td></tr>
+<tr class="separator:a8a13233777eb544ff1d2b092b172db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c49fd83b7ff6092c47acfb0cbc72c19" id="r_a5c49fd83b7ff6092c47acfb0cbc72c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a5c49fd83b7ff6092c47acfb0cbc72c19">draw::DrawTransRect</a> (SDL_Renderer *renderer, SDL_Rect rect, <a class="el" href="../../db/d6a/structMF__Color.html">MF_Color</a> color, int colorA)</td></tr>
+<tr class="separator:a5c49fd83b7ff6092c47acfb0cbc72c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39058e0c15c04c4e29db0d905ac2b44c" id="r_a39058e0c15c04c4e29db0d905ac2b44c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a39058e0c15c04c4e29db0d905ac2b44c">draw::DrawTextureRect</a> (SDL_Renderer *renderer, SDL_Rect rect, SDL_Texture *texture)</td></tr>
 <tr class="separator:a39058e0c15c04c4e29db0d905ac2b44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b9dfd5f904ba3b9d931e43b9f143c75" id="r_a1b9dfd5f904ba3b9d931e43b9f143c75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d00/namespacedraw.html#a1b9dfd5f904ba3b9d931e43b9f143c75">draw::DrawText</a> (SDL_Renderer *renderer, TTF_Font *font, SDL_Rect rect, const char *text, SDL_Color textColor)</td></tr>

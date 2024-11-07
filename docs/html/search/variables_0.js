@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blacktextcolor_0',['blackTextColor',['../d9/da7/namespacecolors_1_1text.html#a105a484686dda345e05e6723f9a43665',1,'colors::text']]]
+  ['aqua_0',['aqua',['../de/d3d/namespacecolors_1_1general.html#a08523dd573541241a395ad6a9ab80ef3',1,'colors::general']]]
 ];
