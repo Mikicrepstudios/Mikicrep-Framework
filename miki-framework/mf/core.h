@@ -8,9 +8,9 @@
  * @brief Main struct for Mikicrep Framework colors
  */
 struct MF_Color {
-    int r = 0;
-    int g = 0;
-    int b = 0;
+    uint8_t r = 0;
+    uint8_t g = 0;
+    uint8_t b = 0;
 };
 
 /**
