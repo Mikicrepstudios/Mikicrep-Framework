@@ -10,9 +10,7 @@ namespace draw {
 		 * @brief Draws button which gets darker on mouse hover
 		 * @param renderer Window renderer
 		 * @param rect Cords of button
-		 * @param colorR R amount from RGB
-		 * @param colorG G amount from RGB
-		 * @param colorB B amount from RGB
+		 * @param color Color of drawn element (MF_Color)
 		 * @param mouseX X position of mouse
 		 * @param mouseY Y position of mouse
 		 */
@@ -36,9 +34,7 @@ namespace draw {
 		 * @brief Draws simple rectangle
 		 * @param renderer Window renderer
 		 * @param rect Cords of rectangle
-		 * @param colorR R amount from RGB
-		 * @param colorG G amount from RGB
-		 * @param colorB B amount from RGB
+		 * @param color Color of drawn element (MF_Color)
 		 */
 
 		SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, 255);
@@ -50,9 +46,7 @@ namespace draw {
 		 * @brief Draws simple transparent rectangle
 		 * @param renderer Window renderer
 		 * @param rect Cords of rectangle
-		 * @param colorR R amount from RGB
-		 * @param colorG G amount from RGB
-		 * @param colorB B amount from RGB
+		 * @param color Color of drawn element (MF_Color)
 		 * @param colorA Opacity of rect (255 - visible, 0 - transparent)
 		 */
 
