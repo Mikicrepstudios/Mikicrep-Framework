@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['timecount_0',['TimeCount',['../d9/d0f/namespacecore.html#a52223203f4e82b9a9d348e5a8b2c1ccd',1,'core']]],
+  ['timecount_0',['TimeCount',['../d9/d0f/namespacecore.html#a3d2ea9bae70a098cbe6045b16a95e47c',1,'core']]],
   ['timecount_2ecpp_1',['timecount.cpp',['../dd/df2/timecount_8cpp.html',1,'']]],
-  ['timeh_2',['timeH',['../d1/d2d/structcore_1_1SDL__Settings.html#adafcb37e59771445dcd5bcf8e263ecf8',1,'core::SDL_Settings']]],
-  ['timem_3',['timeM',['../d1/d2d/structcore_1_1SDL__Settings.html#a6d875797153fd08026f61e0a69bd5dc3',1,'core::SDL_Settings']]],
-  ['times_4',['timeS',['../d1/d2d/structcore_1_1SDL__Settings.html#a0d7ff2518c47e0cb71ad623e085abaaf',1,'core::SDL_Settings']]]
+  ['timeh_2',['timeH',['../d6/d67/structcore_1_1MF__Window.html#a4279b6adc48661ea584828a84bf7dd6a',1,'core::MF_Window']]],
+  ['timem_3',['timeM',['../d6/d67/structcore_1_1MF__Window.html#a9ee6bb9fe9732a259a3829f9b92c2fce',1,'core::MF_Window']]],
+  ['times_4',['timeS',['../d6/d67/structcore_1_1MF__Window.html#afc23ddb048a540ddec356bb955f53a70',1,'core::MF_Window']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['font_0',['font',['../d1/d2d/structcore_1_1SDL__Settings.html#aaff04804cdf70c8b9d96adf7d8dfbbc2',1,'core::SDL_Settings']]],
-  ['fps_1',['fps',['../d1/d2d/structcore_1_1SDL__Settings.html#a2bd1d659af72b0fa744d8a6348689718',1,'core::SDL_Settings']]],
-  ['frame_2',['frame',['../d1/d2d/structcore_1_1SDL__Settings.html#aa88e7fa20ae2b01a25cb58143fd59404',1,'core::SDL_Settings']]]
+  ['font_0',['font',['../d6/d67/structcore_1_1MF__Window.html#abdade776f43045dcec5f5fa01a6bcb59',1,'core::MF_Window']]],
+  ['fps_1',['fps',['../d6/d67/structcore_1_1MF__Window.html#a651efe7c62bc6395c08230e0e562b113',1,'core::MF_Window']]],
+  ['frame_2',['frame',['../d6/d67/structcore_1_1MF__Window.html#a9d3027da600daa9dd57eef05b370a182',1,'core::MF_Window']]]
 ];
