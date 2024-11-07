@@ -8,6 +8,7 @@
 
 int main(int argc, char* argv[]) {
     std::cout << "-------Mikicrep Framework-------" << std::endl
+              << "------------Ver: DEV------------" << std::endl
               << "Copyright Mikicrep Studios 2024" << std::endl;
 
     // Main stuff
