@@ -1,7 +1,10 @@
+#include <iostream>
+#include <string>
 #include "SDL.h"
 
 #include "mf/core.h"
 #include "mf/colors.h"
+#include "mf/files.h"
 #include "mf/graphics.h"
 #include "mf/logic.h"
 
