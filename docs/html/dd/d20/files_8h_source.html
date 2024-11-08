@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mikicrep Framework: miki-framework/core/miki.cpp File Reference</title>
+<title>Mikicrep Framework: miki-framework/mf/files.h Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -83,38 +83,24 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_0c1636cc33356c06965c8b759e40cde8.html">miki-framework</a></li><li class="navelem"><a class="el" href="../../dir_214452097eccdf9d91566ca3590445ea.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_0c1636cc33356c06965c8b759e40cde8.html">miki-framework</a></li><li class="navelem"><a class="el" href="../../dir_7b0399cc1f845a9c6e1b34970036c0c2.html">mf</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">miki.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">files.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;SDL.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/dc4/core_8h_source.html">mf/core.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/dd8/colors_8h_source.html">mf/colors.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d20/files_8h_source.html">mf/files.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d04/graphics_8h_source.html">mf/graphics.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/daa/logic_8h_source.html">mf/logic.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0f/namespacecore.html">core</a></td></tr>
-<tr class="memdesc:d9/d0f/namespacecore"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains stuff that are required for Mikicrep Framework to work correctly. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5d8838dafc5234631da7a7931ec97bc7" id="r_a5d8838dafc5234631da7a7931ec97bc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0f/namespacecore.html#a5d8838dafc5234631da7a7931ec97bc7">core::miki</a> (<a class="el" href="../../d6/d67/structcore_1_1MF__Window.html">core::MF_Window</a> window)</td></tr>
-<tr class="separator:a5d8838dafc5234631da7a7931ec97bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+<a href="../../dd/d20/files_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d04/namespacefiles.html">files</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    std::string <a class="code hl_function" href="../../d6/d04/namespacefiles.html#aadcd1c06b8917ce3001ace05e16cff80">ReadFile</a>(std::string path);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<div class="ttc" id="anamespacefiles_html"><div class="ttname"><a href="../../d6/d04/namespacefiles.html">files</a></div><div class="ttdoc">This struct contains all basic functions for file managment.</div><div class="ttdef"><b>Definition</b> readfile.cpp:5</div></div>
+<div class="ttc" id="anamespacefiles_html_aadcd1c06b8917ce3001ace05e16cff80"><div class="ttname"><a href="../../d6/d04/namespacefiles.html#aadcd1c06b8917ce3001ace05e16cff80">files::ReadFile</a></div><div class="ttdeci">std::string ReadFile(std::string path)</div><div class="ttdef"><b>Definition</b> readfile.cpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
