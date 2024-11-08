@@ -1,5 +1,5 @@
 # Very soon
-- File support
+- File support (write file, append file, create file, delete file)
 
 # Maybe
 
