@@ -8,6 +8,8 @@ This struct contains all basic functions for file managment.
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{namespacefiles_a0066aebcde54e5d909725f9a80e6a9bc}{Append\+File}} (std\+::string path, std\+::string content)
+\item 
 bool \mbox{\hyperlink{namespacefiles_a43e569765d76cbc3b55feffd40d3a420}{Check\+File}} (std\+::string path)
 \item 
 int \mbox{\hyperlink{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}{Create\+File}} (std\+::string path)
@@ -22,6 +24,19 @@ std\+::string \mbox{\hyperlink{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}
 This struct contains all basic functions for file managment. 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{namespacefiles_a0066aebcde54e5d909725f9a80e6a9bc}\index{files@{files}!AppendFile@{AppendFile}}
+\index{AppendFile@{AppendFile}!files@{files}}
+\doxysubsubsection{\texorpdfstring{AppendFile()}{AppendFile()}}
+{\footnotesize\ttfamily \label{namespacefiles_a0066aebcde54e5d909725f9a80e6a9bc} 
+void files\+::\+Append\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{, }\item[{std\+::string}]{content}{}\end{DoxyParamCaption})}
+
+This function writes text to file without overwriting existing one 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the file \\
+\hline
+{\em content} & Stuff that you want to write to the file\\
+\hline
+\end{DoxyParams}
 \Hypertarget{namespacefiles_a43e569765d76cbc3b55feffd40d3a420}\index{files@{files}!CheckFile@{CheckFile}}
 \index{CheckFile@{CheckFile}!files@{files}}
 \doxysubsubsection{\texorpdfstring{CheckFile()}{CheckFile()}}
