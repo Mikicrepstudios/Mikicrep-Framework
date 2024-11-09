@@ -30,7 +30,5 @@ namespace core {
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::general::indigo);
         else if(logic::IsMouseTouching(window.mouseX, window.mouseY, rect1))
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::general::red);
-
-        files::AppendFile("test", "hi im test!");
     }
 }
