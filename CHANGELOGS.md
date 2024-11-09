@@ -1,4 +1,4 @@
-## Mikicrep Framework 1.3 released, here is whats new
+## Mikicrep Framework 1.2 released, here is whats new
 
 ### Added:
 - Error handling
