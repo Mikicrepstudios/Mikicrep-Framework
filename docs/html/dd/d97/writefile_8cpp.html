@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mikicrep Framework: miki-framework/mf/files.h File Reference</title>
+<title>Mikicrep Framework: miki-framework/files/writefile.cpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -83,7 +83,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="../../dir_0c1636cc33356c06965c8b759e40cde8.html">miki-framework</a></li><li class="navelem"><a class="el" href="../../dir_7b0399cc1f845a9c6e1b34970036c0c2.html">mf</a></li>  </ul>
+<li class="navelem"><a class="el" href="../../dir_0c1636cc33356c06965c8b759e40cde8.html">miki-framework</a></li><li class="navelem"><a class="el" href="../../dir_7fc601e02f3efc84b6d423e7f180bbf4.html">files</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -91,13 +91,12 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">files.h File Reference</div></div>
+  <div class="headertitle"><div class="title">writefile.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-</div>
-<p><a href="../../dd/d20/files_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html">files</a></td></tr>
@@ -106,16 +105,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a43e569765d76cbc3b55feffd40d3a420" id="r_a43e569765d76cbc3b55feffd40d3a420"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#a43e569765d76cbc3b55feffd40d3a420">files::CheckFile</a> (std::string path)</td></tr>
-<tr class="separator:a43e569765d76cbc3b55feffd40d3a420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd1df757d65d4a42f2c3dde0913fe2c" id="r_a0dd1df757d65d4a42f2c3dde0913fe2c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#a0dd1df757d65d4a42f2c3dde0913fe2c">files::CreateFile</a> (std::string path)</td></tr>
-<tr class="separator:a0dd1df757d65d4a42f2c3dde0913fe2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa94beb256aab79f0c4c86dc82f62a0" id="r_a6fa94beb256aab79f0c4c86dc82f62a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#a6fa94beb256aab79f0c4c86dc82f62a0">files::DeleteFile</a> (std::string path)</td></tr>
-<tr class="separator:a6fa94beb256aab79f0c4c86dc82f62a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadcd1c06b8917ce3001ace05e16cff80" id="r_aadcd1c06b8917ce3001ace05e16cff80"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#aadcd1c06b8917ce3001ace05e16cff80">files::ReadFile</a> (std::string path)</td></tr>
-<tr class="separator:aadcd1c06b8917ce3001ace05e16cff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0066aebcde54e5d909725f9a80e6a9bc" id="r_a0066aebcde54e5d909725f9a80e6a9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#a0066aebcde54e5d909725f9a80e6a9bc">files::AppendFile</a> (std::string path, std::string content)</td></tr>
-<tr class="separator:a0066aebcde54e5d909725f9a80e6a9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06939b6495428b692e88f7c2a035c172" id="r_a06939b6495428b692e88f7c2a035c172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d04/namespacefiles.html#a06939b6495428b692e88f7c2a035c172">files::WriteFile</a> (std::string path, std::string content)</td></tr>
 <tr class="separator:a06939b6495428b692e88f7c2a035c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
