@@ -5,8 +5,10 @@
 #include "mf/core.h"
 #include "mf/graphics.h"
 #include "mf/logic.h"
+#include "mf/sfx.h"
 
 int main(int argc, char* argv[]) {
+    bool running = true;
     std::cout << "-------Mikicrep Framework-------" << std::endl
               << "-------Ver: 1.1.0---------------" << std::endl
               << "Copyright Mikicrep Studios 2024" << std::endl;
@@ -16,9 +18,10 @@ int main(int argc, char* argv[]) {
     core::MF_Window window = {};
     SDL_Event event = {};
 
-    core::InitWindow(window, title, 1280, 800);
+    if(core::InitWindow(window, title, 1280, 800) == false) running = false;
 
-    bool running = true;
+    sfx::PlayBGMusic("output/music.mp3");
+
     while(running) {
         // Prepare next frame
         SDL_GetMouseState(&window.mouseX, &window.mouseY);
