@@ -7,6 +7,7 @@
  */
 namespace files {
     int CreateFile(std::string path);
+    int DeleteFile(std::string path);
 
     bool CheckFile(std::string path);
     std::string ReadFile(std::string path);
