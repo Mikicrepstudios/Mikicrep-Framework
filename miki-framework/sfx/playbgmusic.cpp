@@ -8,6 +8,7 @@ namespace sfx {
          * @brief This function plays music in background
          * @param path Path to music file
          */
+        
         Mix_Music* music = Mix_LoadMUS(path.c_str());
         if (!music) {
             std::cerr << "[MF] Failed to load music file '" << path << "'. SDL_mixer Error: " << Mix_GetError() << '\n';
