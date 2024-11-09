@@ -8,6 +8,7 @@ namespace files {
          * @param path Path to the file
          * @param content Stuff that you want to write to the file
          */
+        
         std::ofstream file(path, std::ios::app);
         file << content;
         file.close();
