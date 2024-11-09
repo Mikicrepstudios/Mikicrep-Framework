@@ -7,6 +7,7 @@ namespace files {
          * @brief This function creates empty file
          * @param path Path of new file
          */
+        
         std::ofstream file(path);
 
         if (file) {
