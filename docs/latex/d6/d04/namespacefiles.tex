@@ -10,6 +10,8 @@ This struct contains all basic functions for file managment.
 \item 
 bool \mbox{\hyperlink{namespacefiles_a43e569765d76cbc3b55feffd40d3a420}{Check\+File}} (std\+::string path)
 \item 
+int \mbox{\hyperlink{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}{Create\+File}} (std\+::string path)
+\item 
 std\+::string \mbox{\hyperlink{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}{Read\+File}} (std\+::string path)
 \end{DoxyCompactItemize}
 
@@ -27,6 +29,17 @@ bool files\+::\+Check\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path
 Checks does file exist, returns 1 if it does and 0 if it doesnt 
 \begin{DoxyParams}{Parameters}
 {\em path} & Path to the file you want to check\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}\index{files@{files}!CreateFile@{CreateFile}}
+\index{CreateFile@{CreateFile}!files@{files}}
+\doxysubsubsection{\texorpdfstring{CreateFile()}{CreateFile()}}
+{\footnotesize\ttfamily \label{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c} 
+int files\+::\+Create\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+
+This function creates empty file 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of new file\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}\index{files@{files}!ReadFile@{ReadFile}}
