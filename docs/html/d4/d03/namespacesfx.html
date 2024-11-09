@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Mikicrep Framework: miki-framework/core/init.cpp File Reference</title>
+<title>Mikicrep Framework: sfx Namespace Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -81,38 +81,55 @@ $(function(){ initResizable(false); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="../../dir_0c1636cc33356c06965c8b759e40cde8.html">miki-framework</a></li><li class="navelem"><a class="el" href="../../dir_214452097eccdf9d91566ca3590445ea.html">core</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">init.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">sfx Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;SDL.h&quot;</code><br />
-<code>#include &quot;SDL_ttf.h&quot;</code><br />
-<code>#include &quot;SDL_image.h&quot;</code><br />
-<code>#include &quot;SDL_mixer.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/dc4/core_8h_source.html">mf/core.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0f/namespacecore.html">core</a></td></tr>
-<tr class="memdesc:d9/d0f/namespacecore"><td class="mdescLeft">&#160;</td><td class="mdescRight">This namespace contains stuff that are required for Mikicrep Framework to work correctly. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+
+<p>This namespace is used to play sounds.  
+<a href="#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adfda035d1f2d94114dbd39b5ecb0f66a" id="r_adfda035d1f2d94114dbd39b5ecb0f66a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0f/namespacecore.html#adfda035d1f2d94114dbd39b5ecb0f66a">core::InitWindow</a> (<a class="el" href="../../d6/d67/structcore_1_1MF__Window.html">core::MF_Window</a> &amp;window, std::string title, int width, int height)</td></tr>
-<tr class="separator:adfda035d1f2d94114dbd39b5ecb0f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb7512ef755bd9dff11936c47d158ba" id="r_a3cb7512ef755bd9dff11936c47d158ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cb7512ef755bd9dff11936c47d158ba">PlayBGMusic</a> (std::string path)</td></tr>
+<tr class="separator:a3cb7512ef755bd9dff11936c47d158ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This namespace is used to play sounds. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a3cb7512ef755bd9dff11936c47d158ba" name="a3cb7512ef755bd9dff11936c47d158ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb7512ef755bd9dff11936c47d158ba">&#9670;&#160;</a></span>PlayBGMusic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfx::PlayBGMusic </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function plays music in background </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to music file</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function plays music in background </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to music file</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

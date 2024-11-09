@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timecount_0',['TimeCount',['../d9/d0f/namespacecore.html#a3d2ea9bae70a098cbe6045b16a95e47c',1,'core']]]
+  ['readfile_0',['ReadFile',['../d6/d04/namespacefiles.html#aadcd1c06b8917ce3001ace05e16cff80',1,'files']]]
 ];
