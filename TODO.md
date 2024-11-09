@@ -1,5 +1,5 @@
 # Very soon
-- File support (write file, append file, create file, delete file, check file existence)
+- File support (write file, append file, create file, delete file)
 
 # Maybe
 - All colors have IDs
