@@ -12,6 +12,8 @@ bool \mbox{\hyperlink{namespacefiles_a43e569765d76cbc3b55feffd40d3a420}{Check\+F
 \item 
 int \mbox{\hyperlink{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}{Create\+File}} (std\+::string path)
 \item 
+int \mbox{\hyperlink{namespacefiles_a6fa94beb256aab79f0c4c86dc82f62a0}{Delete\+File}} (std\+::string path)
+\item 
 std\+::string \mbox{\hyperlink{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}{Read\+File}} (std\+::string path)
 \end{DoxyCompactItemize}
 
@@ -40,6 +42,17 @@ int files\+::\+Create\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path
 This function creates empty file 
 \begin{DoxyParams}{Parameters}
 {\em path} & Path of new file\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacefiles_a6fa94beb256aab79f0c4c86dc82f62a0}\index{files@{files}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!files@{files}}
+\doxysubsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily \label{namespacefiles_a6fa94beb256aab79f0c4c86dc82f62a0} 
+int files\+::\+Delete\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+
+This function deletes specified file 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of file that you want to delete\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}\index{files@{files}!ReadFile@{ReadFile}}
