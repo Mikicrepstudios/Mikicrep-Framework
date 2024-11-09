@@ -23,25 +23,25 @@ namespace core {
 
         // Init everything
         if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0) {
-            std::cerr << "SDL could not initialize! SDL Error: " << SDL_GetError() << '\n';
+            std::cerr << "[MF] SDL could not initialize! SDL Error: " << SDL_GetError() << '\n';
             return false;
         }
 
         if (TTF_Init() == -1) {
-            std::cerr << "TTF could not initialize! SDL_ttf Error: " << TTF_GetError() << '\n';
+            std::cerr << "[MF] TTF could not initialize! SDL_ttf Error: " << TTF_GetError() << '\n';
             SDL_Quit();
             return false;
         }
 
         if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
-            std::cerr << "SDL_image could not initialize! SDL_image Error: " << IMG_GetError() << '\n';
+            std::cerr << "[MF] SDL_image could not initialize! SDL_image Error: " << IMG_GetError() << '\n';
             TTF_Quit();
             SDL_Quit();
             return false;
         }
 
         if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0) {
-            std::cerr << "SDL_mixer could not initialize! SDL_mixer Error: " << Mix_GetError() << '\n';
+            std::cerr << "[MF] SDL_mixer could not initialize! SDL_mixer Error: " << Mix_GetError() << '\n';
             IMG_Quit();
             TTF_Quit();
             SDL_Quit();
@@ -50,7 +50,7 @@ namespace core {
 
         window.font = TTF_OpenFont("mf/font.ttf", 96);
         if (!window.font) {
-            std::cerr << "Failed to load font. SDL_ttf Error: " << TTF_GetError() << '\n';
+            std::cerr << "[MF] Failed to load font. SDL_ttf Error: " << TTF_GetError() << '\n';
             Mix_CloseAudio();
             IMG_Quit();
             TTF_Quit();
@@ -61,7 +61,7 @@ namespace core {
         // Create window and renderer
         window.window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, window.width, window.height, 0);
         if (!window.window) {
-            std::cerr << "Window could not be created! SDL Error: " << SDL_GetError() << '\n';
+            std::cerr << "[MF] Window could not be created! SDL Error: " << SDL_GetError() << '\n';
             TTF_CloseFont(window.font);
             Mix_CloseAudio();
             IMG_Quit();
@@ -72,7 +72,7 @@ namespace core {
 
         window.renderer = SDL_CreateRenderer(window.window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
         if (!window.renderer) {
-            std::cerr << "Renderer could not be created! SDL Error: " << SDL_GetError() << '\n';
+            std::cerr << "[MF] Renderer could not be created! SDL Error: " << SDL_GetError() << '\n';
             SDL_DestroyWindow(window.window);
             TTF_CloseFont(window.font);
             Mix_CloseAudio();
@@ -83,7 +83,7 @@ namespace core {
         }
 
         SDL_SetRenderDrawBlendMode(window.renderer, SDL_BLENDMODE_BLEND); // Transparency
-        
+
         return true;
     }
 }
