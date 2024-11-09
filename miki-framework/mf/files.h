@@ -12,4 +12,5 @@ namespace files {
 
     std::string ReadFile(std::string path);
     void AppendFile(std::string path, std::string content);
+    void WriteFile(std::string path, std::string content);
 }
