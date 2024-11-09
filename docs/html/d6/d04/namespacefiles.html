@@ -105,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:a6fa94beb256aab79f0c4c86dc82f62a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcd1c06b8917ce3001ace05e16cff80" id="r_aadcd1c06b8917ce3001ace05e16cff80"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadcd1c06b8917ce3001ace05e16cff80">ReadFile</a> (std::string path)</td></tr>
 <tr class="separator:aadcd1c06b8917ce3001ace05e16cff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06939b6495428b692e88f7c2a035c172" id="r_a06939b6495428b692e88f7c2a035c172"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06939b6495428b692e88f7c2a035c172">WriteFile</a> (std::string path, std::string content)</td></tr>
+<tr class="separator:a06939b6495428b692e88f7c2a035c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This struct contains all basic functions for file managment. </p>
@@ -223,6 +225,34 @@ Functions</h2></td></tr>
 <p>Reads contents of file and returns them as std::string </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path of file you want to read</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a06939b6495428b692e88f7c2a035c172" name="a06939b6495428b692e88f7c2a035c172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06939b6495428b692e88f7c2a035c172">&#9670;&#160;</a></span>WriteFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void files::WriteFile </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>content</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function writes text to file with overwriting existing one </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to the file </td></tr>
+    <tr><td class="paramname">content</td><td>Stuff that you want to write to the file</td></tr>
   </table>
   </dd>
 </dl>

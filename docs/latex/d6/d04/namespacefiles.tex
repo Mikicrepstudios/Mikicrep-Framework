@@ -17,6 +17,8 @@ int \mbox{\hyperlink{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}{Create\+F
 int \mbox{\hyperlink{namespacefiles_a6fa94beb256aab79f0c4c86dc82f62a0}{Delete\+File}} (std\+::string path)
 \item 
 std\+::string \mbox{\hyperlink{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}{Read\+File}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{namespacefiles_a06939b6495428b692e88f7c2a035c172}{Write\+File}} (std\+::string path, std\+::string content)
 \end{DoxyCompactItemize}
 
 
@@ -79,5 +81,18 @@ std\+::string files\+::\+Read\+File (\begin{DoxyParamCaption}\item[{std\+::strin
 Reads contents of file and returns them as std\+::string 
 \begin{DoxyParams}{Parameters}
 {\em path} & Path of file you want to read\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacefiles_a06939b6495428b692e88f7c2a035c172}\index{files@{files}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!files@{files}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily \label{namespacefiles_a06939b6495428b692e88f7c2a035c172} 
+void files\+::\+Write\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{, }\item[{std\+::string}]{content}{}\end{DoxyParamCaption})}
+
+This function writes text to file with overwriting existing one 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the file \\
+\hline
+{\em content} & Stuff that you want to write to the file\\
 \hline
 \end{DoxyParams}
