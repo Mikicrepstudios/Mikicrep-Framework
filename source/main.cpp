@@ -20,8 +20,6 @@ int main(int argc, char* argv[]) {
 
     if(core::InitWindow(window, title, 1280, 800) == false) running = false;
 
-    sfx::PlayBGMusic("mf/music.mp3");
-
     while(running) {
         // Prepare next frame
         SDL_GetMouseState(&window.mouseX, &window.mouseY);
