@@ -8,5 +8,8 @@ This framework allows you easier writing of SDL code.
 - Extract all sdl2mingw .zip files
 - Extract all output/dll .zip files in output directory
 
+## Documentation
+- You can open documentation on our site or open index.html in docs/html
+
 ## Support
 You can find support at our discord server
