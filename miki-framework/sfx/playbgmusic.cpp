@@ -3,7 +3,7 @@
 #include "SDL_mixer.h"
 
 namespace sfx {
-    void PlayBGMusic(std::string path) {
+    void PlayBGMusic(const std::string path) {
         /**
          * @brief This function plays music in background
          * @param path Path to music file
