@@ -51,10 +51,10 @@ namespace colors {
 
         // Access using colors::general::colorID
         constexpr MF_Color colorID[] = {
-            black, gray, darkgray, darkblue, indigo, aqua, lightblue,
+            black, gray, darkgray, darkblue, purple, indigo, aqua, lightblue,
             darkgreen, leafgreen, olive, grassgreen, lightgreen, cyan, bluishgreen, sky,
             brown, lightbrown, orange, yellow, lightgray, violet, rose, lavanderblue,
-            crimsonred, darkred, red, pink, purple, lightpurple, lavanderrose, white
+            crimsonred, darkred, red, pink, magenta, lightpurple, lavanderrose, white
         };
     };
 
