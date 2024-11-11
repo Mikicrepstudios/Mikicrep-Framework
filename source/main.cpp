@@ -19,6 +19,7 @@ int main(int argc, char* argv[]) {
     core::MF_Window window = {};
     SDL_Event event = {};
 
+    // Create window
     if(core::InitWindow(window, title, 1280, 800) == false) running = false;
 
     while(running) {
