@@ -13,40 +13,49 @@ namespace colors {
      * @brief General colors
      */
     namespace general {
-        constexpr MF_Color black = {0, 0, 0};
-        constexpr MF_Color gray = {130, 124, 112};
-        constexpr MF_Color darkgray = {74, 73, 87};
-        constexpr MF_Color darkblue = {5, 17, 87};
-        constexpr MF_Color indigo = {45, 105, 203};
-        constexpr MF_Color aqua = {0, 166, 238};
-        constexpr MF_Color lightblue = {111, 235, 255};
+        constexpr MF_Color black = {0, 0, 0};              // 0
+        constexpr MF_Color gray = {130, 124, 112};         // 1
+        constexpr MF_Color darkgray = {74, 73, 87};        // 2
+        constexpr MF_Color darkblue = {5, 17, 87};         // 3
+        constexpr MF_Color purple = {79, 2, 236};          // 4
+        constexpr MF_Color indigo = {45, 105, 203};        // 5
+        constexpr MF_Color aqua = {0, 166, 238};           // 6
+        constexpr MF_Color lightblue = {111, 235, 255};    // 7
 
-        constexpr MF_Color darkgreen = {6, 54, 25};
-        constexpr MF_Color leafgreen = {86, 98, 4};
-        constexpr MF_Color olive = {155, 149, 0};
-        constexpr MF_Color grassgreen = {17, 150, 59};
-        constexpr MF_Color lightgreen = {81, 225, 19};
-        constexpr MF_Color cyan = {42, 102, 106};
-        constexpr MF_Color bluishgreen = {8, 162, 154};
-        constexpr MF_Color sky = {8, 253, 204};
+        constexpr MF_Color darkgreen = {6, 54, 25};        // 8
+        constexpr MF_Color leafgreen = {86, 98, 4};        // 9
+        constexpr MF_Color olive = {155, 149, 0};          // 10
+        constexpr MF_Color grassgreen = {17, 150, 59};     // 11
+        constexpr MF_Color lightgreen = {81, 225, 19};     // 12
+        constexpr MF_Color cyan = {42, 102, 106};          // 13
+        constexpr MF_Color bluishgreen = {8, 162, 154};    // 14
+        constexpr MF_Color sky = {8, 253, 204};            // 15
 
-        constexpr MF_Color brown = {90, 59, 28};
-        constexpr MF_Color lightbrown = {174, 101, 7};
-        constexpr MF_Color orange = {247, 170, 48};
-        constexpr MF_Color yellow = {244, 234, 92};
-        constexpr MF_Color lightgray = {172, 190, 156};
-        constexpr MF_Color violet = {142, 123, 164};
-        constexpr MF_Color rose = {214, 160, 144};
-        constexpr MF_Color lavanderblue = {183, 192, 255};
+        constexpr MF_Color brown = {90, 59, 28};           // 16
+        constexpr MF_Color lightbrown = {174, 101, 7};     // 17
+        constexpr MF_Color orange = {247, 170, 48};        // 18
+        constexpr MF_Color yellow = {244, 234, 92};        // 19
+        constexpr MF_Color lightgray = {172, 190, 156};    // 20
+        constexpr MF_Color violet = {142, 123, 164};       // 21
+        constexpr MF_Color rose = {214, 160, 144};         // 22
+        constexpr MF_Color lavanderblue = {183, 192, 255}; // 23
 
-        constexpr MF_Color crimsonred = {71, 1, 31};
-        constexpr MF_Color darkred = {161, 44, 50};
-        constexpr MF_Color red = {254, 59, 30};
-        constexpr MF_Color pink = {250, 47, 122};
-        constexpr MF_Color purple = {153, 47, 124};
-        constexpr MF_Color lightpurple = {230, 28, 247};
-        constexpr MF_Color lavanderrose = {251, 159, 218};
-        constexpr MF_Color white = {255, 255, 255};
+        constexpr MF_Color crimsonred = {71, 1, 31};       // 24
+        constexpr MF_Color darkred = {161, 44, 50};        // 25
+        constexpr MF_Color red = {254, 59, 30};            // 26
+        constexpr MF_Color pink = {250, 47, 122};          // 27
+        constexpr MF_Color magenta = {153, 47, 124};       // 28
+        constexpr MF_Color lightpurple = {230, 28, 247};   // 29
+        constexpr MF_Color lavanderrose = {251, 159, 218}; // 30
+        constexpr MF_Color white = {255, 255, 255};        // 31
+
+        // Access using colors::general::colorID
+        constexpr MF_Color colorID[] = {
+            black, gray, darkgray, darkblue, indigo, aqua, lightblue,
+            darkgreen, leafgreen, olive, grassgreen, lightgreen, cyan, bluishgreen, sky,
+            brown, lightbrown, orange, yellow, lightgray, violet, rose, lavanderblue,
+            crimsonred, darkred, red, pink, purple, lightpurple, lavanderrose, white
+        };
     };
 
     /**
