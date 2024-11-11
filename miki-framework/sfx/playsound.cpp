@@ -5,6 +5,11 @@
 
 namespace sfx {
     void PlaySound(const std::string& path) {
+        /**
+         * @brief This function plays sound, but pauses game while playing it
+         * @param path Path to sound file you want to use
+         */
+
         // Load sound
         Mix_Chunk* sound = Mix_LoadWAV(path.c_str());
         if (!sound) {
