@@ -20,7 +20,7 @@ namespace core {
         SDL_Rect rect2 = {75, 50, 50, 50};
         SDL_Rect rect3 = {62, 75, 50, 50};
 
-        draw::DrawTransRect(window.renderer, rect1, colors::general::red, 255);
+        draw::DrawTransRect(window.renderer, rect1, colors::general::colorID[26], 255); // Color ID for red
         draw::DrawTransRect(window.renderer, rect2, colors::general::indigo, 150);
         draw::DrawTransRect(window.renderer, rect3, colors::general::grassgreen, 150);
 
@@ -29,6 +29,6 @@ namespace core {
         else if(logic::IsMouseTouching(window.mouseX, window.mouseY, rect2))
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::general::indigo);
         else if(logic::IsMouseTouching(window.mouseX, window.mouseY, rect1))
-            draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::general::red);
+            draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::general::colorID[26]); // Color ID for red
     }
 }
