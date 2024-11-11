@@ -8,7 +8,9 @@ This namespace is used to play sounds.
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacesfx_a3cb7512ef755bd9dff11936c47d158ba}{Play\+BGMusic}} (std\+::string path)
+void \mbox{\hyperlink{namespacesfx_aa5ee98835a821a89598a819c39ce301c}{Play\+BGMusic}} (const std\+::string path)
+\item 
+void \mbox{\hyperlink{namespacesfx_a59d39a8da8197b3ecdb279c9c958c4ed}{Play\+Sound}} (const std\+::string \&path)
 \end{DoxyCompactItemize}
 
 
@@ -16,11 +18,11 @@ void \mbox{\hyperlink{namespacesfx_a3cb7512ef755bd9dff11936c47d158ba}{Play\+BGMu
 This namespace is used to play sounds. 
 
 \doxysubsection{Function Documentation}
-\Hypertarget{namespacesfx_a3cb7512ef755bd9dff11936c47d158ba}\index{sfx@{sfx}!PlayBGMusic@{PlayBGMusic}}
+\Hypertarget{namespacesfx_aa5ee98835a821a89598a819c39ce301c}\index{sfx@{sfx}!PlayBGMusic@{PlayBGMusic}}
 \index{PlayBGMusic@{PlayBGMusic}!sfx@{sfx}}
 \doxysubsubsection{\texorpdfstring{PlayBGMusic()}{PlayBGMusic()}}
-{\footnotesize\ttfamily \label{namespacesfx_a3cb7512ef755bd9dff11936c47d158ba} 
-void sfx\+::\+Play\+BGMusic (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacesfx_aa5ee98835a821a89598a819c39ce301c} 
+void sfx\+::\+Play\+BGMusic (\begin{DoxyParamCaption}\item[{const std\+::string}]{path}{}\end{DoxyParamCaption})}
 
 This function plays music in background 
 \begin{DoxyParams}{Parameters}
@@ -30,5 +32,21 @@ This function plays music in background
 This function plays music in background 
 \begin{DoxyParams}{Parameters}
 {\em path} & Path to music file\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacesfx_a59d39a8da8197b3ecdb279c9c958c4ed}\index{sfx@{sfx}!PlaySound@{PlaySound}}
+\index{PlaySound@{PlaySound}!sfx@{sfx}}
+\doxysubsubsection{\texorpdfstring{PlaySound()}{PlaySound()}}
+{\footnotesize\ttfamily \label{namespacesfx_a59d39a8da8197b3ecdb279c9c958c4ed} 
+void sfx\+::\+Play\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path}{}\end{DoxyParamCaption})}
+
+This function plays sound, but pauses game while playing it 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to sound file you want to use\\
+\hline
+\end{DoxyParams}
+This function plays sound, but pauses game while playing it 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to sound file you want to use\\
 \hline
 \end{DoxyParams}

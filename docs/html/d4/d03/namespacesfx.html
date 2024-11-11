@@ -95,14 +95,16 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3cb7512ef755bd9dff11936c47d158ba" id="r_a3cb7512ef755bd9dff11936c47d158ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cb7512ef755bd9dff11936c47d158ba">PlayBGMusic</a> (std::string path)</td></tr>
-<tr class="separator:a3cb7512ef755bd9dff11936c47d158ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ee98835a821a89598a819c39ce301c" id="r_aa5ee98835a821a89598a819c39ce301c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5ee98835a821a89598a819c39ce301c">PlayBGMusic</a> (const std::string path)</td></tr>
+<tr class="separator:aa5ee98835a821a89598a819c39ce301c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d39a8da8197b3ecdb279c9c958c4ed" id="r_a59d39a8da8197b3ecdb279c9c958c4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59d39a8da8197b3ecdb279c9c958c4ed">PlaySound</a> (const std::string &amp;path)</td></tr>
+<tr class="separator:a59d39a8da8197b3ecdb279c9c958c4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This namespace is used to play sounds. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3cb7512ef755bd9dff11936c47d158ba" name="a3cb7512ef755bd9dff11936c47d158ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cb7512ef755bd9dff11936c47d158ba">&#9670;&#160;</a></span>PlayBGMusic()</h2>
+<a id="aa5ee98835a821a89598a819c39ce301c" name="aa5ee98835a821a89598a819c39ce301c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ee98835a821a89598a819c39ce301c">&#9670;&#160;</a></span>PlayBGMusic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,7 +112,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void sfx::PlayBGMusic </td>
           <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td class="paramtype">const std::string</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -124,6 +126,35 @@ Functions</h2></td></tr>
 <p>This function plays music in background </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path to music file</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a59d39a8da8197b3ecdb279c9c958c4ed" name="a59d39a8da8197b3ecdb279c9c958c4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d39a8da8197b3ecdb279c9c958c4ed">&#9670;&#160;</a></span>PlaySound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfx::PlaySound </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function plays sound, but pauses game while playing it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to sound file you want to use</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function plays sound, but pauses game while playing it </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to sound file you want to use</td></tr>
   </table>
   </dd>
 </dl>
