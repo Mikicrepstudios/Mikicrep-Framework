@@ -10,7 +10,7 @@ windows: $(wildcard miki-framework/*.cpp) $(wildcard miki-framework/*/*.cpp) $(w
 
 windows32: $(wildcard miki-framework/*.cpp) $(wildcard miki-framework/*/*.cpp) $(wildcard miki-framework/*/*/*.cpp) $(wildcard source/*.cpp) $(wildcard source/*/*.cpp) $(wildcard source/*/*/*.cpp)
 	echo "You must have "sdl2mingw32" folder."
-	i686-w64-mingw32-g++ $^ -o output/app-x86.exe -I./miki-framework/ -I./source/headers -Isdl2mingw32/include/SDL2 -Lsdl2mingw32/lib -static-libstdc++ -static-libgcc -lmingw32 -lSDL2main -lSDL2_image -lSDL2_ttf -lSDL2
+	i686-w64-mingw32-g++ $^ -o output/app-x86.exe -I./miki-framework/ -I./source/headers -Isdl2mingw32/include/SDL2 -Lsdl2mingw32/lib -static-libstdc++ -static-libgcc -lmingw32 -lSDL2main -lSDL2_image -lSDL2_ttf -lSDL2_mixer -lSDL2
 
 clean:
 	rm output/app
