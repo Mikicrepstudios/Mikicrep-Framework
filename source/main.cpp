@@ -10,7 +10,8 @@
 int main(int argc, char* argv[]) {
     bool running = true;
     std::cout << "-------Mikicrep Framework-------" << std::endl
-              << "-------Ver: D E V---------------" << std::endl
+              << "-------Ver: 1.3.0---------------" << std::endl
+              //<< "-------Ver: D E V---------------" << std::endl
               << "Copyright Mikicrep Studios 2024" << std::endl;
 
     // Main stuff
