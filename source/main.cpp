@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
     if(core::InitWindow(window, title, 1280, 800) == false) running = false;
 
     while(running) {
+    sfx::PlaySound("mf/sound.mp3");
         // Prepare next frame
         SDL_GetMouseState(&window.mouseX, &window.mouseY);
 

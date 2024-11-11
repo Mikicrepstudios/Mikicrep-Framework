@@ -6,5 +6,6 @@
  * @brief This namespace is used to play sounds
  */
 namespace sfx {
-    void PlayBGMusic(std::string path);
+    void PlayBGMusic(const std::string path);
+    void PlaySound(const std::string& path);
 }
