@@ -1,3 +1,5 @@
+#include "SDL.h"
+
 /**
  * @brief This namespace contains functions with useful utilities
  */
