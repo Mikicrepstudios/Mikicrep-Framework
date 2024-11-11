@@ -1,5 +1,5 @@
 # Very soon
-- Play music & sounds
+- Play sounds
 
 # Maybe
 - All colors have IDs
