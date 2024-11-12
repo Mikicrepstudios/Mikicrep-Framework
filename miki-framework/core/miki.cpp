@@ -30,5 +30,8 @@ namespace core {
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::indigo);
         else if(logic::IsMouseTouching(window.mouseX, window.mouseY, rect1))
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::colorID[26]); // Color ID for red
+    
+        draw::DrawRect(window.renderer, {0, 0, 100, 100}, colors::gray);
+        draw::DrawRect(window.renderer, {100, 100, 100, 100}, {100, 100, 100});
     }
 }
