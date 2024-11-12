@@ -49,7 +49,7 @@ namespace colors {
     constexpr MF_Color lavanderrose = {251, 159, 218}; // 30
     constexpr MF_Color white = {255, 255, 255};        // 31
 
-    // Access using colors::general::colorID
+    // Access using colors::colorID[x] where x would be id of one of colors above
     constexpr MF_Color colorID[] = {
         black, gray, darkgray, darkblue, purple, indigo, aqua, lightblue,
         darkgreen, leafgreen, olive, grassgreen, lightgreen, cyan, bluishgreen, sky,
