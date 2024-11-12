@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sky_0',['sky',['../de/d3d/namespacecolors_1_1general.html#a11e6bb766524a342f551d44bb1f103b8',1,'colors::general']]]
+  ['sky_0',['sky',['../dc/d04/namespacecolors.html#a2612d4f664e6eeaae4531f80b35747c7',1,'colors']]]
 ];
