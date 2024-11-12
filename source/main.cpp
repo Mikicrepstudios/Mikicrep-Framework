@@ -88,5 +88,6 @@ int main(int argc, char* argv[]) {
         SDL_Delay(1000 / window.fps);
     }
 
+    core::Exit(window);
     return 0;
 }

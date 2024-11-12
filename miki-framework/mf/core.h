@@ -41,6 +41,7 @@ namespace core {
 
     // Big stuff
     bool InitWindow(core::MF_Window &window, std::string title, int width, int height);
+    void Exit(MF_Window &window);
     void TimeCount(core::MF_Window &window);
 
     // Addional stuff
