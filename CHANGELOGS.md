@@ -1,4 +1,5 @@
-# Mikicrep Framework 1.3 released, here is whats new
+## [[1.3.0] Mikicrep Framework](https://miki.macakom.net/projects/mf)
+### New update just released!
 
 ## Added:
 
