@@ -9,6 +9,7 @@
 #include "mf/core.h"
 
 namespace colors {
+    // 1-8 Colors
     constexpr MF_Color black = {0, 0, 0};              // 0
     constexpr MF_Color gray = {100, 100, 100};         // 1
     constexpr MF_Color darkgray = {74, 73, 87};        // 2
@@ -18,6 +19,7 @@ namespace colors {
     constexpr MF_Color aqua = {0, 166, 238};           // 6
     constexpr MF_Color lightblue = {111, 235, 255};    // 7
 
+    // 9-16 Colors
     constexpr MF_Color darkgreen = {6, 54, 25};        // 8
     constexpr MF_Color leafgreen = {86, 98, 4};        // 9
     constexpr MF_Color olive = {155, 149, 0};          // 10
@@ -27,6 +29,7 @@ namespace colors {
     constexpr MF_Color bluishgreen = {8, 162, 154};    // 14
     constexpr MF_Color sky = {8, 253, 204};            // 15
 
+    // 17-24 Colors
     constexpr MF_Color brown = {90, 59, 28};           // 16
     constexpr MF_Color lightbrown = {174, 101, 7};     // 17
     constexpr MF_Color orange = {247, 170, 48};        // 18
@@ -36,6 +39,7 @@ namespace colors {
     constexpr MF_Color rose = {214, 160, 144};         // 22
     constexpr MF_Color lavanderblue = {183, 192, 255}; // 23
 
+    // 25-32 Colors
     constexpr MF_Color crimsonred = {71, 1, 31};       // 24
     constexpr MF_Color darkred = {161, 44, 50};        // 25
     constexpr MF_Color red = {254, 59, 30};            // 26
