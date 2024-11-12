@@ -1,8 +1,7 @@
 var searchData=
 [
   ['b_0',['b',['../db/d6a/structMF__Color.html#a0a64a78ea69ecd37eaa0e541e5352ab6',1,'MF_Color']]],
-  ['black_1',['black',['../de/d3d/namespacecolors_1_1general.html#a14093e11ad7889f587a2ba474a988bce',1,'colors::general']]],
-  ['blacktextcolor_2',['blackTextColor',['../d9/da7/namespacecolors_1_1text.html#a105a484686dda345e05e6723f9a43665',1,'colors::text']]],
-  ['bluishgreen_3',['bluishgreen',['../de/d3d/namespacecolors_1_1general.html#aa56d04734ee5885fa1de4d97cf37e99a',1,'colors::general']]],
-  ['brown_4',['brown',['../de/d3d/namespacecolors_1_1general.html#ae70327e80a4dc8e977595f4c72361f90',1,'colors::general']]]
+  ['black_1',['black',['../dc/d04/namespacecolors.html#abc0d0a9a2a18b28444a6c541cce5e464',1,'colors']]],
+  ['bluishgreen_2',['bluishgreen',['../dc/d04/namespacecolors.html#a76a20d2d1060e71b90a3597ee9ac044f',1,'colors']]],
+  ['brown_3',['brown',['../dc/d04/namespacecolors.html#aad15adb5f6c8356d230cc22c80977259',1,'colors']]]
 ];

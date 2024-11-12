@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['indigo_0',['indigo',['../de/d3d/namespacecolors_1_1general.html#af466442835590d395be76319ce29261c',1,'colors::general']]],
+  ['indigo_0',['indigo',['../dc/d04/namespacecolors.html#ac9550bd7e69182da5cdd313816d8e105',1,'colors']]],
   ['init_2ecpp_1',['init.cpp',['../d0/dc9/init_8cpp.html',1,'']]],
   ['initwindow_2',['InitWindow',['../d9/d0f/namespacecore.html#adfda035d1f2d94114dbd39b5ecb0f66a',1,'core']]],
   ['ismousetouching_3',['IsMouseTouching',['../d7/df0/namespacelogic.html#a280be3d8537425d568759dd95a3c801c',1,'logic']]],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pink_0',['pink',['../de/d3d/namespacecolors_1_1general.html#aadfe56a4c9c1f090c43e339814c49d0c',1,'colors::general']]],
-  ['purple_1',['purple',['../de/d3d/namespacecolors_1_1general.html#a0ecd2124ea80247c1e8c0dafbb9da397',1,'colors::general']]]
+  ['pink_0',['pink',['../dc/d04/namespacecolors.html#a2105f18c632254f3be2a13fe0bd785ad',1,'colors']]],
+  ['purple_1',['purple',['../dc/d04/namespacecolors.html#a2396a0e3b3e40cdd5fc0b701e68d800e',1,'colors']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['olive_0',['olive',['../de/d3d/namespacecolors_1_1general.html#a6056573a7887d744d07602c258746799',1,'colors::general']]],
-  ['orange_1',['orange',['../de/d3d/namespacecolors_1_1general.html#ae95b6a87aa2a5a6474c4e8895a89e744',1,'colors::general']]]
+  ['olive_0',['olive',['../dc/d04/namespacecolors.html#a4697b499917ba5dca60f332ba0d006a8',1,'colors']]],
+  ['orange_1',['orange',['../dc/d04/namespacecolors.html#a1136d0ab9649c7e95406db620921f5f5',1,'colors']]]
 ];

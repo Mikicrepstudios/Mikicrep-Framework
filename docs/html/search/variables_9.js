@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['lavanderblue_0',['lavanderblue',['../de/d3d/namespacecolors_1_1general.html#a796e11eab76b944a5ea8706288e70cbf',1,'colors::general']]],
-  ['lavanderrose_1',['lavanderrose',['../de/d3d/namespacecolors_1_1general.html#a85c45ade747d95d658394be1928996f5',1,'colors::general']]],
-  ['leafgreen_2',['leafgreen',['../de/d3d/namespacecolors_1_1general.html#a9d6b61232608363e67feb55762fd9745',1,'colors::general']]],
-  ['lightblue_3',['lightblue',['../de/d3d/namespacecolors_1_1general.html#ab6d04cd536b96edfab7547f4a9fd103d',1,'colors::general']]],
-  ['lightbrown_4',['lightbrown',['../de/d3d/namespacecolors_1_1general.html#a7ea74930929f2a38cd1f24ae646a115f',1,'colors::general']]],
-  ['lightgray_5',['lightgray',['../de/d3d/namespacecolors_1_1general.html#a9f4809260ef8f71c804d84e60c898383',1,'colors::general']]],
-  ['lightgreen_6',['lightgreen',['../de/d3d/namespacecolors_1_1general.html#a40fa6b83c5746da589a3fcb5d4a277f6',1,'colors::general']]],
-  ['lightpurple_7',['lightpurple',['../de/d3d/namespacecolors_1_1general.html#a1fe93c2377a37d773b7f64fccaf9afa5',1,'colors::general']]]
+  ['lavanderblue_0',['lavanderblue',['../dc/d04/namespacecolors.html#a7ebd4d21049fb07adea8e9a6e99c943c',1,'colors']]],
+  ['lavanderrose_1',['lavanderrose',['../dc/d04/namespacecolors.html#aa16e92800770b6d7ac238b58d3553bd4',1,'colors']]],
+  ['leafgreen_2',['leafgreen',['../dc/d04/namespacecolors.html#a50411b8d4ac69238fbba9933e4b53f63',1,'colors']]],
+  ['lightblue_3',['lightblue',['../dc/d04/namespacecolors.html#a04eb19b07352117637135efe99ca47a6',1,'colors']]],
+  ['lightbrown_4',['lightbrown',['../dc/d04/namespacecolors.html#abd33b2213e5d24b4f8b249db0a07532e',1,'colors']]],
+  ['lightgray_5',['lightgray',['../dc/d04/namespacecolors.html#a700b70c52c78ef4a10ebe358da16b689',1,'colors']]],
+  ['lightgreen_6',['lightgreen',['../dc/d04/namespacecolors.html#ad3378d04a26aaf9434f936dd657d97ff',1,'colors']]],
+  ['lightpurple_7',['lightpurple',['../dc/d04/namespacecolors.html#a2989b3e15a8cc7f4e6deb29d3ad838c5',1,'colors']]]
 ];
