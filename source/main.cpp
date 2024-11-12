@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
               << "Copyright Mikicrep Studios 2024" << std::endl;
 
     // Main stuff
-    std::string title = "Mikicrep Framework";
+    const std::string title = "Mikicrep Framework";
     core::MF_Window window = {};
     SDL_Event event = {};
 
