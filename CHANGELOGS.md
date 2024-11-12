@@ -6,6 +6,7 @@
 - - isMouseDown variable which is true when mouse button is held and off when its released
 - - Window is now resizable
 - - Window can now be fullscreened
+- - Exit function to free up RAM before closing game
 
 ## Removed:
 
