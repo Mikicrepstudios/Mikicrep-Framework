@@ -28,10 +28,22 @@ int main(int argc, char* argv[]) {
 
         // Check for events
         while(SDL_PollEvent(&event) != 0) {
+            // Handle window events
             window.event = event;
-            if(event.type == SDL_QUIT) running = false;
-            if(event.type == SDL_KEYDOWN) {
-                if(event.key.keysym.sym == SDLK_ESCAPE) running = false;
+            switch(event.type) {
+                case SDL_QUIT:
+                    // Quit game
+                    running = false;
+                    break;
+                case SDL_KEYDOWN:
+                    // Handle keyboard presses
+                    switch(event.key.keysym.sym) {
+                        case SDLK_ESCAPE:
+                            // Quit game
+                            running = false;
+                            break;
+                    }
+                    break;
             }
         }
 
