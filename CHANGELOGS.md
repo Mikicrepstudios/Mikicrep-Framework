@@ -2,6 +2,8 @@
 ### New update just released!
 
 ## Added:
+- Core:
+- - isMouseDown variable which is true when mouse button is held and off when its released
 
 ## Removed:
 
