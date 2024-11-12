@@ -10,7 +10,7 @@
 
 namespace colors {
     constexpr MF_Color black = {0, 0, 0};              // 0
-    constexpr MF_Color gray = {130, 124, 112};         // 1
+    constexpr MF_Color gray = {100, 100, 100};         // 1
     constexpr MF_Color darkgray = {74, 73, 87};        // 2
     constexpr MF_Color darkblue = {5, 17, 87};         // 3
     constexpr MF_Color purple = {79, 2, 236};          // 4
@@ -53,3 +53,7 @@ namespace colors {
         crimsonred, darkred, red, pink, magenta, lightpurple, lavanderrose, white
     };
 }
+
+/* DUMPSTER
+constexpr MF_Color gray = {130, 124, 112};         // 1 OLD GRAY FROM 1.0.0-1.2.0
+*/
