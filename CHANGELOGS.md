@@ -5,6 +5,7 @@
 - Core:
 - - isMouseDown variable which is true when mouse button is held and off when its released
 - - Window is now resizable
+- - Window can now be fullscreened
 
 ## Removed:
 
