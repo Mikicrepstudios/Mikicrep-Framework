@@ -58,6 +58,18 @@ int main(int argc, char* argv[]) {
                             // Quit game
                             running = false;
                             break;
+                        case SDLK_F11:
+                            // Window fullscreening
+                            switch(window.fullscreen) {
+                                case true:
+                                    SDL_SetWindowFullscreen(window.window, 0);
+                                    window.fullscreen = false;
+                                    break;
+                                case false:
+                                    SDL_SetWindowFullscreen(window.window, SDL_WINDOW_FULLSCREEN);
+                                    window.fullscreen = true;
+                                    break;
+                            }
                     }
                     break;
             }
