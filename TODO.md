@@ -1,4 +1,5 @@
 # Soon
+- SetWindowIcon function
 
 # Maybe
 
