@@ -14,7 +14,7 @@ namespace core {
          * @brief This will reamain undocumented, figure it yourself ;)
          */
 
-        draw::DrawText(window.renderer, window.font, {window.width / 2 - 400, 0, 800, 50}, "Mikicrep Framework is working", colors::text::whiteTextColor);
+        draw::DrawText(window.renderer, window.font, {window.width / 2 - 400, 0, 800, 50}, "Mikicrep Framework is working", colors::general::red);
     
         SDL_Rect rect1 = {50, 50, 50, 50};
         SDL_Rect rect2 = {75, 50, 50, 50};
