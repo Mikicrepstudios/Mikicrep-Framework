@@ -59,7 +59,7 @@ namespace core {
         }
 
         // Create window and renderer
-        window.window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, window.width, window.height, 0);
+        window.window = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, window.width, window.height, SDL_WINDOW_RESIZABLE);
         if (!window.window) {
             std::cerr << "[MF] Window could not be created! SDL Error: " << SDL_GetError() << '\n';
             TTF_CloseFont(window.font);
