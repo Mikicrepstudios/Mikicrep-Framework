@@ -22,6 +22,7 @@ namespace core {
         int height = 800;
         int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
 
+        bool isMouseDown = false; // On when mouse button is held, off when its released
         int mouseX = 0;
         int mouseY = 0;
 
