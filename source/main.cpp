@@ -35,6 +35,12 @@ int main(int argc, char* argv[]) {
                     // Quit game
                     running = false;
                     break;
+                
+                case SDL_WINDOWEVENT_RESIZED:
+                    // Handle resizing window
+                    window.width = event.window.data1;
+                    window.height = event.window.data2;
+                    break;
 
                 case SDL_MOUSEBUTTONDOWN:
                     // Mouse button is held
@@ -44,7 +50,7 @@ int main(int argc, char* argv[]) {
                     // Mouse button is released
                     window.isMouseDown = false;
                     break;
-                    
+
                 case SDL_KEYDOWN:
                     // Handle keyboard presses
                     switch(event.key.keysym.sym) {
