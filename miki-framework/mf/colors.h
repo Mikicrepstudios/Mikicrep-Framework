@@ -1,5 +1,5 @@
 /**
- * @brief This namespace contains colors for various elements
+ * @brief This namespace contains colors that you can use for all elements
  */
 
 #pragma once
