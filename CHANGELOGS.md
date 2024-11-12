@@ -2,6 +2,8 @@
 
 ## Added:
 
+## Removed:
+
 ## Changed:
 - Graphics:
 - - DrawText() function now requires MF_Color instead of SDL_Color
