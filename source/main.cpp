@@ -35,6 +35,16 @@ int main(int argc, char* argv[]) {
                     // Quit game
                     running = false;
                     break;
+
+                case SDL_MOUSEBUTTONDOWN:
+                    // Mouse button is held
+                    window.isMouseDown = true;
+                    break;
+                case SDL_MOUSEBUTTONUP:
+                    // Mouse button is released
+                    window.isMouseDown = false;
+                    break;
+                    
                 case SDL_KEYDOWN:
                     // Handle keyboard presses
                     switch(event.key.keysym.sym) {
