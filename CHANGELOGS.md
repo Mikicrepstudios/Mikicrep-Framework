@@ -2,6 +2,8 @@
 ### New update just released!
 
 ## Added:
+- Core:
+- - Added function which changes window icon
 - Graphics:
 - - Added ability to draw shaking rects
 - - Added SetDrawColor() function
