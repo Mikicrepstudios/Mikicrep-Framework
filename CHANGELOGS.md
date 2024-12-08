@@ -4,6 +4,8 @@
 ## Added:
 - Graphics:
 - - Added ability to draw shaking rects
+- Logic:
+- - Added chance generator
 
 ## Removed:
 
