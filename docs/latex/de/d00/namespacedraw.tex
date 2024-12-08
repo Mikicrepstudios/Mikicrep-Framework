@@ -12,11 +12,13 @@ void \mbox{\hyperlink{namespacedraw_a6bb79d11848aa97911775cdd12fca90f}{Draw\+But
 \item 
 void \mbox{\hyperlink{namespacedraw_a8a13233777eb544ff1d2b092b172db83}{Draw\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
-void \mbox{\hyperlink{namespacedraw_a5c49fd83b7ff6092c47acfb0cbc72c19}{Draw\+Trans\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int colorA)
+void \mbox{\hyperlink{namespacedraw_a75f2625456c6793af020760ff869bb70}{Draw\+Shaking\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int intensity)
+\item 
+void \mbox{\hyperlink{namespacedraw_a578bc027371215cd91e20b154a7fd18c}{Draw\+Text}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}font, SDL\+\_\+\+Rect rect, const char \texorpdfstring{$\ast$}{*}text, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
 void \mbox{\hyperlink{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c}{Draw\+Texture\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
 \item 
-void \mbox{\hyperlink{namespacedraw_a578bc027371215cd91e20b154a7fd18c}{Draw\+Text}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}font, SDL\+\_\+\+Rect rect, const char \texorpdfstring{$\ast$}{*}text, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
+void \mbox{\hyperlink{namespacedraw_a5c49fd83b7ff6092c47acfb0cbc72c19}{Draw\+Trans\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int colorA)
 \end{DoxyCompactItemize}
 
 
@@ -56,6 +58,23 @@ Draws simple rectangle
 {\em rect} & Cords of rectangle \\
 \hline
 {\em color} & Color of drawn element (\doxylink{structMF__Color}{MF\+\_\+\+Color})\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a75f2625456c6793af020760ff869bb70}\index{draw@{draw}!DrawShakingRect@{DrawShakingRect}}
+\index{DrawShakingRect@{DrawShakingRect}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawShakingRect()}{DrawShakingRect()}}
+{\footnotesize\ttfamily \label{namespacedraw_a75f2625456c6793af020760ff869bb70} 
+void draw\+::\+Draw\+Shaking\+Rect (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{, }\item[{int}]{intensity}{}\end{DoxyParamCaption})}
+
+Draws rectangle that shakes every frame 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Cords of rectangle \\
+\hline
+{\em color} & Color of drawn element (\doxylink{structMF__Color}{MF\+\_\+\+Color}) \\
+\hline
+{\em intensity} & How much rect will shake in all directions (in pixels)\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacedraw_a578bc027371215cd91e20b154a7fd18c}\index{draw@{draw}!DrawText@{DrawText}}
