@@ -10,6 +10,8 @@ This namespace contains functions with useful utilities.
 \item 
 bool \mbox{\hyperlink{namespacelogic_a45419233f017d9dd624f403feae8b266}{Are\+Rects\+Touching}} (const SDL\+\_\+\+Rect \&rect1, SDL\+\_\+\+Rect \&rect2)
 \item 
+bool \mbox{\hyperlink{namespacelogic_a63fb3df46ba93a8fb47414366cb920b7}{chancegen}} (int chance)
+\item 
 int \mbox{\hyperlink{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}{Gen\+Ran\+Num}} (int min, int max)
 \item 
 bool \mbox{\hyperlink{namespacelogic_a280be3d8537425d568759dd95a3c801c}{Is\+Mouse\+Touching}} (int mouseX, int mouseY, SDL\+\_\+\+Rect \&rect)
@@ -31,6 +33,17 @@ This function compares 2 rectangles, and returns 1 if they are touching
 {\em rect1} & First rect \\
 \hline
 {\em rect2} & Second rect\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacelogic_a63fb3df46ba93a8fb47414366cb920b7}\index{logic@{logic}!chancegen@{chancegen}}
+\index{chancegen@{chancegen}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{chancegen()}{chancegen()}}
+{\footnotesize\ttfamily \label{namespacelogic_a63fb3df46ba93a8fb47414366cb920b7} 
+bool logic\+::chancegen (\begin{DoxyParamCaption}\item[{int}]{chance}{}\end{DoxyParamCaption})}
+
+This function got chance to give true 
+\begin{DoxyParams}{Parameters}
+{\em chance} & What chance to return true (1 in \{chance\})\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}\index{logic@{logic}!GenRanNum@{GenRanNum}}
