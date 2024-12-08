@@ -2,6 +2,8 @@
 ### New update just released!
 
 ## Added:
+- Graphics:
+- - Added ability to draw shaking rects
 
 ## Removed:
 
