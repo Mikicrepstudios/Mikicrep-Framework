@@ -23,9 +23,11 @@ namespace core {
         int height = 800;
         int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
 
-        bool isMouseDown = false; // On when mouse button is held, off when its released
-        int mouseX = 0;
-        int mouseY = 0;
+        struct Mouse {
+            bool isDown = false; // On when mouse button is held, off when its released
+            int x = 0;
+            int y = 0;
+        } mouse;
 
         SDL_Window* window = {};
         SDL_Renderer* renderer = {};
