@@ -4,6 +4,7 @@
 ## Added:
 - Graphics:
 - - Added ability to draw shaking rects
+- - Added SetDrawColor() function
 - Logic:
 - - Added chance generator
 
