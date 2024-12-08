@@ -10,6 +10,8 @@
 
 namespace draw {
     // Core
+	void SetDrawColor(SDL_Renderer* renderer, MF_Color color);
+
 	void DrawButton(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, int mouseX, int mouseY);
 
 	void DrawRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color);
