@@ -5,7 +5,7 @@
 - Core:
 - - Added function which changes window icon
 - Graphics:
-- - Added ability to draw shaking rects
+- - Added function to draw shaking rects
 - - Added SetDrawColor() function
 - Logic:
 - - Added chance generator
