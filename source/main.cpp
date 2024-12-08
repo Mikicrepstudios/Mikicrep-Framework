@@ -24,7 +24,7 @@ int main(int argc, char* argv[]) {
 
     while(running) {
         // Prepare next frame
-        SDL_GetMouseState(&window.mouseX, &window.mouseY);
+        SDL_GetMouseState(&window.mouse.x, &window.mouse.y);
 
         // Check for events
         while(SDL_PollEvent(&event) != 0) {
@@ -44,11 +44,11 @@ int main(int argc, char* argv[]) {
 
                 case SDL_MOUSEBUTTONDOWN:
                     // Mouse button is held
-                    window.isMouseDown = true;
+                    window.mouse.isDown = true;
                     break;
                 case SDL_MOUSEBUTTONUP:
                     // Mouse button is released
-                    window.isMouseDown = false;
+                    window.mouse.isDown = false;
                     break;
 
                 case SDL_KEYDOWN:
