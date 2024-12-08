@@ -19,6 +19,8 @@ void \mbox{\hyperlink{namespacedraw_a578bc027371215cd91e20b154a7fd18c}{Draw\+Tex
 void \mbox{\hyperlink{namespacedraw_a39058e0c15c04c4e29db0d905ac2b44c}{Draw\+Texture\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}texture)
 \item 
 void \mbox{\hyperlink{namespacedraw_a5c49fd83b7ff6092c47acfb0cbc72c19}{Draw\+Trans\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int colorA)
+\item 
+void \mbox{\hyperlink{namespacedraw_a47ed218c3a1917f6958f6d43247de0b0}{Set\+Draw\+Color}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \end{DoxyCompactItemize}
 
 
@@ -124,5 +126,18 @@ Draws simple transparent rectangle
 {\em color} & Color of drawn element (\doxylink{structMF__Color}{MF\+\_\+\+Color}) \\
 \hline
 {\em colorA} & Opacity of rect (255 -\/ visible, 0 -\/ transparent)\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a47ed218c3a1917f6958f6d43247de0b0}\index{draw@{draw}!SetDrawColor@{SetDrawColor}}
+\index{SetDrawColor@{SetDrawColor}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{SetDrawColor()}{SetDrawColor()}}
+{\footnotesize\ttfamily \label{namespacedraw_a47ed218c3a1917f6958f6d43247de0b0} 
+void draw\+::\+Set\+Draw\+Color (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+If you need to change your draw color for some reason, here you have it 
+\begin{DoxyParams}{Parameters}
+{\em rendered} & Window renderer \\
+\hline
+{\em color} & Color which to be set as draw color\\
 \hline
 \end{DoxyParams}
