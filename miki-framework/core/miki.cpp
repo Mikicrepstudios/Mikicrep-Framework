@@ -33,9 +33,5 @@ namespace core {
 
         SDL_Rect shakingRect = {150, 75, 50, 50};
         draw::DrawShakingRect(window.renderer, shakingRect, colors::gray, 5);
-
-        bool chance = logic::chancegen(10);
-        if(chance) std::cout << "JACKPOT!" << std::endl;
-        else std::cout << "0" << std::endl;
     }
 }
