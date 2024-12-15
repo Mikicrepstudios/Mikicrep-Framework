@@ -6,3 +6,5 @@
 ## Removed:
 
 ## Changed:
+- Core
+- - Fixed window resizing
