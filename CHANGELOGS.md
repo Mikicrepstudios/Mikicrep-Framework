@@ -4,6 +4,8 @@
 ## Added:
 - Core
 - - Added ability to print Mikicrep Framework version
+- - Added castToInt() function
+- - Added castToFloat() function
 
 ## Removed:
 
