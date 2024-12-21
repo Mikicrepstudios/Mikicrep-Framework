@@ -92,6 +92,7 @@ int main(int argc, char* argv[]) {
         SDL_Delay(1000 / window.fps);
     }
 
+    // Cleanup variables from memory
     core::Exit(window);
     return 0;
 }
