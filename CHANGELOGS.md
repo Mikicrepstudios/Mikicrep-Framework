@@ -2,6 +2,8 @@
 ### New update just released!
 
 ## Added:
+- Core
+- - Added ability to print Mikicrep Framework version
 
 ## Removed:
 
