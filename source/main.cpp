@@ -9,10 +9,10 @@
 
 int main(int argc, char* argv[]) {
     bool running = true;
-    std::cout << "-------Mikicrep Framework-------" << std::endl
-              //<< "-------Ver: 1.4.0---------------" << std::endl
-              << "-------Ver: D E V---------------" << std::endl
-              << "Copyright Mikicrep Studios 2024" << std::endl;
+
+    // MUST USE LINE BELOW
+    //core::printver("1.4.0", 1);
+    core::printver("", 3); // DEV Version
 
     // Main stuff
     const std::string title = "Mikicrep Framework";
