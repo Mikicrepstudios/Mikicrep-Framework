@@ -89,6 +89,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d7/d12/structcore_1_1MF__Window-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core::MF_Window Struct Reference</div></div>
@@ -97,6 +98,11 @@ $(function(){ initResizable(false); });
 
 <p><code>#include &lt;<a class="el" href="../../d5/dc4/core_8h_source.html">core.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d05/structcore_1_1MF__Window_1_1Mouse.html">Mouse</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7378d3b1aea5369b48dd7b922816ded1" id="r_a7378d3b1aea5369b48dd7b922816ded1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7378d3b1aea5369b48dd7b922816ded1">fullscreen</a> = false</td></tr>
@@ -107,12 +113,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af13d979a31c42d7207ede3fba2b231a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651efe7c62bc6395c08230e0e562b113" id="r_a651efe7c62bc6395c08230e0e562b113"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a651efe7c62bc6395c08230e0e562b113">fps</a> = 60</td></tr>
 <tr class="separator:a651efe7c62bc6395c08230e0e562b113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad24d36bf9cba23774536f40a8e155275" id="r_ad24d36bf9cba23774536f40a8e155275"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad24d36bf9cba23774536f40a8e155275">isMouseDown</a> = false</td></tr>
-<tr class="separator:ad24d36bf9cba23774536f40a8e155275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144e65ca76cbabe094bb7218c094972c" id="r_a144e65ca76cbabe094bb7218c094972c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a144e65ca76cbabe094bb7218c094972c">mouseX</a> = 0</td></tr>
-<tr class="separator:a144e65ca76cbabe094bb7218c094972c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeabd996b922896783ae6c889ab23f188" id="r_aeabd996b922896783ae6c889ab23f188"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeabd996b922896783ae6c889ab23f188">mouseY</a> = 0</td></tr>
-<tr class="separator:aeabd996b922896783ae6c889ab23f188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb2766e034d039c6d7e3f0eece5733c9" id="r_acb2766e034d039c6d7e3f0eece5733c9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="../../db/d05/structcore_1_1MF__Window_1_1Mouse.html">core::MF_Window::Mouse</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb2766e034d039c6d7e3f0eece5733c9">mouse</a></td></tr>
+<tr class="separator:acb2766e034d039c6d7e3f0eece5733c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a504e0b5bb813dade447d1e7f6224e3e9" id="r_a504e0b5bb813dade447d1e7f6224e3e9"><td class="memItemLeft" align="right" valign="top">SDL_Window *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a504e0b5bb813dade447d1e7f6224e3e9">window</a> = {}</td></tr>
 <tr class="separator:a504e0b5bb813dade447d1e7f6224e3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02406a6886b58f0b4cbc5dd24b16f6e0" id="r_a02406a6886b58f0b4cbc5dd24b16f6e0"><td class="memItemLeft" align="right" valign="top">SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02406a6886b58f0b4cbc5dd24b16f6e0">renderer</a> = {}</td></tr>
@@ -215,42 +217,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad24d36bf9cba23774536f40a8e155275" name="ad24d36bf9cba23774536f40a8e155275"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad24d36bf9cba23774536f40a8e155275">&#9670;&#160;</a></span>isMouseDown</h2>
+<a id="acb2766e034d039c6d7e3f0eece5733c9" name="acb2766e034d039c6d7e3f0eece5733c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2766e034d039c6d7e3f0eece5733c9">&#9670;&#160;</a></span>mouse</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool core::MF_Window::isMouseDown = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a144e65ca76cbabe094bb7218c094972c" name="a144e65ca76cbabe094bb7218c094972c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a144e65ca76cbabe094bb7218c094972c">&#9670;&#160;</a></span>mouseX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int core::MF_Window::mouseX = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeabd996b922896783ae6c889ab23f188" name="aeabd996b922896783ae6c889ab23f188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabd996b922896783ae6c889ab23f188">&#9670;&#160;</a></span>mouseY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int core::MF_Window::mouseY = 0</td>
+          <td class="memname">struct <a class="el" href="../../db/d05/structcore_1_1MF__Window_1_1Mouse.html">core::MF_Window::Mouse</a> core::MF_Window::mouse</td>
         </tr>
       </table>
 </div><div class="memdoc">

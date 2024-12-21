@@ -21,6 +21,8 @@ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecore_a31
 \item 
 void \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} window)
 \item 
+void \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{printver}} (std\+::string ver, int type)
+\item 
 void \mbox{\hyperlink{namespacecore_a1fb511e8957cf8995e78e8609453916f}{Set\+Window\+Icon}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window, std\+::string path)
 \item 
 void \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{Time\+Count}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window)
@@ -78,7 +80,20 @@ This function loads image and returns it as SDL\+\_\+\+Texture\texorpdfstring{$\
 {\footnotesize\ttfamily \label{namespacecore_a5d8838dafc5234631da7a7931ec97bc7} 
 void core\+::miki (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}}}]{window}{}\end{DoxyParamCaption})}
 
-This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a1fb511e8957cf8995e78e8609453916f}\index{core@{core}!SetWindowIcon@{SetWindowIcon}}
+This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a10a183a5bca03383767eae49dcb04b52}\index{core@{core}!printver@{printver}}
+\index{printver@{printver}!core@{core}}
+\doxysubsubsection{\texorpdfstring{printver()}{printver()}}
+{\footnotesize\ttfamily \label{namespacecore_a10a183a5bca03383767eae49dcb04b52} 
+void core\+::printver (\begin{DoxyParamCaption}\item[{std\+::string}]{ver}{, }\item[{int}]{type}{}\end{DoxyParamCaption})}
+
+You MUST use this function when you use Mikicrep Framework, it gives us credits for framwork and prints version for easier support 
+\begin{DoxyParams}{Parameters}
+{\em ver} & MF Version \\
+\hline
+{\em type} & Type of version... Check below comments\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacecore_a1fb511e8957cf8995e78e8609453916f}\index{core@{core}!SetWindowIcon@{SetWindowIcon}}
 \index{SetWindowIcon@{SetWindowIcon}!core@{core}}
 \doxysubsubsection{\texorpdfstring{SetWindowIcon()}{SetWindowIcon()}}
 {\footnotesize\ttfamily \label{namespacecore_a1fb511e8957cf8995e78e8609453916f} 
