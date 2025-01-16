@@ -1,7 +1,6 @@
 # Soon
-- Flip flop button
-- Pixel struct
 
 # Maybe
+- Flip flop button
 
 # Unfinished docs
