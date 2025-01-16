@@ -15,47 +15,52 @@
 \DoxyCodeLine{00014\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{structMF__Color_a0a64a78ea69ecd37eaa0e541e5352ab6}{b}}\ =\ 0;}
 \DoxyCodeLine{00015\ \};}
 \DoxyCodeLine{00016\ }
-\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacecore}{core}}\ \{}
-\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1MF__Window}{MF\_Window}}\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcore_1_1MF__Window_a7378d3b1aea5369b48dd7b922816ded1}{fullscreen}}\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Is\ window\ fullscreened}}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9b5084a7fc4af3d1c1cc36033361f405}{width}}\ =\ 1280;}
-\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_af13d979a31c42d7207ede3fba2b231a1}{height}}\ =\ 800;}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a651efe7c62bc6395c08230e0e562b113}{fps}}\ =\ 60;\ \textcolor{comment}{//\ THIS\ IS\ NOT\ FPS\ COUNTER,\ IT\ IS\ MAXIMUM\ FPS}}
-\DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse}{Mouse}}\ \{}
-\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_a6f5aa3efb95c8d0b1eba1d4686c18000}{isDown}}\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ On\ when\ mouse\ button\ is\ held,\ off\ when\ its\ released}}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_ac0da7e86d2c0f4ed085282a3bf672ba5}{x}}\ =\ 0;}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_ac3ca0ead7e4e5ad98a4c09dc4a1c023d}{y}}\ =\ 0;}
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{structcore_1_1MF__Window_acb2766e034d039c6d7e3f0eece5733c9}{mouse}};}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{structcore_1_1MF__Window_a504e0b5bb813dade447d1e7f6224e3e9}{window}}\ =\ \{\};}
-\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{structcore_1_1MF__Window_a02406a6886b58f0b4cbc5dd24b16f6e0}{renderer}}\ =\ \{\};}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ SDL\_Event\ \textcolor{keyword}{event}\ =\ \{\};}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ TTF\_Font*\ \mbox{\hyperlink{structcore_1_1MF__Window_abdade776f43045dcec5f5fa01a6bcb59}{font}}\ =\ \{\};}
-\DoxyCodeLine{00037\ }
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ How\ long\ window\ existed}}
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9d3027da600daa9dd57eef05b370a182}{frame}}\ =\ 0;}
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_afc23ddb048a540ddec356bb955f53a70}{timeS}}\ =\ 0;}
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9ee6bb9fe9732a259a3829f9b92c2fce}{timeM}}\ =\ 0;}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a4279b6adc48661ea584828a84bf7dd6a}{timeH}}\ =\ 0;}
-\DoxyCodeLine{00043\ \ \ \ \ \};}
-\DoxyCodeLine{00044\ }
-\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Big\ stuff}}
-\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacecore_adfda035d1f2d94114dbd39b5ecb0f66a}{InitWindow}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window,\ std::string\ title,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
-\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_aadd81bfb6626643332d104f6709ad387}{Exit}}(\mbox{\hyperlink{structcore_1_1MF__Window}{MF\_Window}}\ \&window);}
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{TimeCount}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window);}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ Timers}}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a4925035ca463850a2ed9dd07de22faa4}{AddTimer}}(Uint32\ interval,\ std::function<\textcolor{keywordtype}{void}()>\ callback,\ \textcolor{keywordtype}{bool}\ repeat\ =\ \textcolor{keyword}{true});}
-\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}{UpdateTimers}}();}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Addional\ stuff}}
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{printver}}(std::string\ ver,\ \textcolor{keywordtype}{int}\ type);}
-\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a1fb511e8957cf8995e78e8609453916f}{SetWindowIcon}}(SDL\_Window*\ window,\ std::string\ path);}
-\DoxyCodeLine{00057\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{LoadImg}}(SDL\_Renderer*\ renderer,\ std::string\ path);}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ 69\ Chad\ function}}
-\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ window);\ \textcolor{comment}{//\ Best\ function\ ever}}
-\DoxyCodeLine{00061\ \}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structMF__Pixel}{MF\_Pixel}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMF__Pixel_a38473cae84088d3fc94e3b58126e032c}{x}}\ =\ 0;}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structMF__Pixel_a112af11fe91f88a39f837a6e9a40fd73}{y}}\ =\ 0;}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacecore}{core}}\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1MF__Window}{MF\_Window}}\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcore_1_1MF__Window_a7378d3b1aea5369b48dd7b922816ded1}{fullscreen}}\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Is\ window\ fullscreened}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9b5084a7fc4af3d1c1cc36033361f405}{width}}\ =\ 1280;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_af13d979a31c42d7207ede3fba2b231a1}{height}}\ =\ 800;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a651efe7c62bc6395c08230e0e562b113}{fps}}\ =\ 60;\ \textcolor{comment}{//\ THIS\ IS\ NOT\ FPS\ COUNTER,\ IT\ IS\ MAXIMUM\ FPS}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse}{Mouse}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_a6f5aa3efb95c8d0b1eba1d4686c18000}{isDown}}\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ On\ when\ mouse\ button\ is\ held,\ off\ when\ its\ released}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_ac0da7e86d2c0f4ed085282a3bf672ba5}{x}}\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse_ac3ca0ead7e4e5ad98a4c09dc4a1c023d}{y}}\ =\ 0;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{structcore_1_1MF__Window_acb2766e034d039c6d7e3f0eece5733c9}{mouse}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ SDL\_Window*\ \mbox{\hyperlink{structcore_1_1MF__Window_a504e0b5bb813dade447d1e7f6224e3e9}{window}}\ =\ \{\};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ SDL\_Renderer*\ \mbox{\hyperlink{structcore_1_1MF__Window_a02406a6886b58f0b4cbc5dd24b16f6e0}{renderer}}\ =\ \{\};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ SDL\_Event\ \textcolor{keyword}{event}\ =\ \{\};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ TTF\_Font*\ \mbox{\hyperlink{structcore_1_1MF__Window_abdade776f43045dcec5f5fa01a6bcb59}{font}}\ =\ \{\};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ How\ long\ window\ existed}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9d3027da600daa9dd57eef05b370a182}{frame}}\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_afc23ddb048a540ddec356bb955f53a70}{timeS}}\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a9ee6bb9fe9732a259a3829f9b92c2fce}{timeM}}\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcore_1_1MF__Window_a4279b6adc48661ea584828a84bf7dd6a}{timeH}}\ =\ 0;}
+\DoxyCodeLine{00051\ \ \ \ \ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//\ Big\ stuff}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacecore_adfda035d1f2d94114dbd39b5ecb0f66a}{InitWindow}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window,\ std::string\ title,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_aadd81bfb6626643332d104f6709ad387}{Exit}}(\mbox{\hyperlink{structcore_1_1MF__Window}{MF\_Window}}\ \&window);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{TimeCount}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ \&window);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ Timers}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a4925035ca463850a2ed9dd07de22faa4}{AddTimer}}(Uint32\ interval,\ std::function<\textcolor{keywordtype}{void}()>\ callback,\ \textcolor{keywordtype}{bool}\ repeat\ =\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}{UpdateTimers}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ Addional\ stuff}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{printver}}(std::string\ ver,\ \textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a1fb511e8957cf8995e78e8609453916f}{SetWindowIcon}}(SDL\_Window*\ window,\ std::string\ path);}
+\DoxyCodeLine{00065\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{namespacecore_a311f090785dd949a5647864c112f9e3f}{LoadImg}}(SDL\_Renderer*\ renderer,\ std::string\ path);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ 69\ Chad\ function}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}}(\mbox{\hyperlink{structcore_1_1MF__Window}{core::MF\_Window}}\ window);\ \textcolor{comment}{//\ Best\ function\ ever}}
+\DoxyCodeLine{00069\ \}}
 
 \end{DoxyCode}
