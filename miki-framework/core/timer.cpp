@@ -16,7 +16,7 @@ namespace core {
         /**
          * @brief This adds function that will be executed after specified amount of time
          * @param interval Run timer every x miliseconds
-         * @param callback Function that will be ran (can also just be basic block of code {})
+         * @param callback Function that will be ran (can also just be basic block of code [](){code})
          * @param repeat Should timer be executed only once or every x miliseconds
          */
 
