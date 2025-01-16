@@ -48,8 +48,8 @@ namespace core {
     void TimeCount(core::MF_Window &window);
 
     // Timers
-    void addTimer(Uint32 interval, std::function<void()> callback, bool repeat = true);
-    void updateTimers();
+    void AddTimer(Uint32 interval, std::function<void()> callback, bool repeat = true);
+    void UpdateTimers();
 
     // Addional stuff
     void printver(std::string ver, int type);

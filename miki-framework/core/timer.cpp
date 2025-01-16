@@ -12,7 +12,7 @@ namespace core {
 
     std::vector<Timer> timers;
 
-    void addTimer(Uint32 interval, std::function<void()> callback, bool repeat = true) {
+    void AddTimer(Uint32 interval, std::function<void()> callback, bool repeat = true) {
         /**
          * @brief This adds function that will be executed after specified amount of time
          * @param interval Run timer every x miliseconds
@@ -23,7 +23,7 @@ namespace core {
         timers.push_back({ SDL_GetTicks(), interval, callback, repeat });
     }
 
-    void updateTimers() {
+    void UpdateTimers() {
         /**
          * @brief Run added timers if needed
          */
