@@ -3,10 +3,8 @@
 
 ## Added:
 - Core
-- - Added ability to print Mikicrep Framework version
-- - Added castToInt() function
-- - Added castToFloat() function
-- - Added timers: You can now run a function after a specified amount of time and repeat it if desired.
+- - Added MF_Pixel struct
+- - Added timers: You can now run a function after a specified amount of time and repeat it if desired
 - Graphics
 - - Added DrawPixel() function
 - - Added DrawLine() function
@@ -16,5 +14,3 @@
 ## Removed:
 
 ## Changed:
-- Core
-- - Fixed window resizing
