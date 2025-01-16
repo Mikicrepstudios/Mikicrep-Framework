@@ -15,6 +15,14 @@ struct MF_Color {
 };
 
 /**
+ * @brief Main struct for Mikicrep Framework pixels
+ */
+struct MF_Pixel {
+    int x = 0;
+    int y = 0;
+};
+
+/**
  * @brief This namespace contains stuff that are required for Mikicrep Framework to work correctly
  */
 namespace core {
