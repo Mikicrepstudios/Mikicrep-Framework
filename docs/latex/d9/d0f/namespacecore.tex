@@ -9,6 +9,8 @@ This namespace contains stuff that are required for Mikicrep Framework to work c
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structcore_1_1MF__Window}{MF\+\_\+\+Window}}
+\item 
+struct \mbox{\hyperlink{structcore_1_1Timer}{Timer}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -26,6 +28,15 @@ void \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{printver}
 void \mbox{\hyperlink{namespacecore_a1fb511e8957cf8995e78e8609453916f}{Set\+Window\+Icon}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window, std\+::string path)
 \item 
 void \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{Time\+Count}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{namespacecore_a4925035ca463850a2ed9dd07de22faa4}{Add\+Timer}} (Uint32 interval, std\+::function$<$ void()$>$ callback, bool repeat=true)
+\item 
+void \mbox{\hyperlink{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}{Update\+Timers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structcore_1_1Timer}{Timer}} $>$ \mbox{\hyperlink{namespacecore_a5a4ecc1e1a9201d78988929e1df5f058}{timers}}
 \end{DoxyCompactItemize}
 
 
@@ -33,6 +44,21 @@ void \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{Time\+Cou
 This namespace contains stuff that are required for Mikicrep Framework to work correctly. 
 
 \doxysubsection{Function Documentation}
+\Hypertarget{namespacecore_a4925035ca463850a2ed9dd07de22faa4}\index{core@{core}!AddTimer@{AddTimer}}
+\index{AddTimer@{AddTimer}!core@{core}}
+\doxysubsubsection{\texorpdfstring{AddTimer()}{AddTimer()}}
+{\footnotesize\ttfamily \label{namespacecore_a4925035ca463850a2ed9dd07de22faa4} 
+void core\+::\+Add\+Timer (\begin{DoxyParamCaption}\item[{Uint32}]{interval}{, }\item[{std\+::function$<$ void()$>$}]{callback}{, }\item[{bool}]{repeat}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+This adds function that will be executed after specified amount of time, check usage in \doxylink{timer_8cpp}{timer.\+cpp} 
+\begin{DoxyParams}{Parameters}
+{\em interval} & Run timer every x miliseconds \\
+\hline
+{\em callback} & Function that will be ran (can also just be basic block of code \mbox{[}\mbox{]}()\{code\}) \\
+\hline
+{\em repeat} & Should timer be executed only once or every x miliseconds\\
+\hline
+\end{DoxyParams}
 \Hypertarget{namespacecore_aadd81bfb6626643332d104f6709ad387}\index{core@{core}!Exit@{Exit}}
 \index{Exit@{Exit}!core@{core}}
 \doxysubsubsection{\texorpdfstring{Exit()}{Exit()}}
@@ -117,3 +143,18 @@ This function increases time since window is spawned
 {\em sdl\+Settings} & Window that you want to cout time for\\
 \hline
 \end{DoxyParams}
+\Hypertarget{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}\index{core@{core}!UpdateTimers@{UpdateTimers}}
+\index{UpdateTimers@{UpdateTimers}!core@{core}}
+\doxysubsubsection{\texorpdfstring{UpdateTimers()}{UpdateTimers()}}
+{\footnotesize\ttfamily \label{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3} 
+void core\+::\+Update\+Timers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Run added timers if needed
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacecore_a5a4ecc1e1a9201d78988929e1df5f058}\index{core@{core}!timers@{timers}}
+\index{timers@{timers}!core@{core}}
+\doxysubsubsection{\texorpdfstring{timers}{timers}}
+{\footnotesize\ttfamily \label{namespacecore_a5a4ecc1e1a9201d78988929e1df5f058} 
+std\+::vector$<$\mbox{\hyperlink{structcore_1_1Timer}{Timer}}$>$ core\+::timers}
+

@@ -1,5 +1,6 @@
 \doxysection{miki-\/framework/mf/core.h File Reference}
 \hypertarget{core_8h}{}\label{core_8h}\index{miki-\/framework/mf/core.h@{miki-\/framework/mf/core.h}}
+{\ttfamily \#include $<$functional$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include "{}SDL.\+h"{}}\newline
 {\ttfamily \#include "{}SDL\+\_\+ttf.\+h"{}}\newline
@@ -25,6 +26,10 @@ bool \mbox{\hyperlink{namespacecore_adfda035d1f2d94114dbd39b5ecb0f66a}{core\+::\
 void \mbox{\hyperlink{namespacecore_aadd81bfb6626643332d104f6709ad387}{core\+::\+Exit}} (\mbox{\hyperlink{structcore_1_1MF__Window}{MF\+\_\+\+Window}} \&window)
 \item 
 void \mbox{\hyperlink{namespacecore_a3d2ea9bae70a098cbe6045b16a95e47c}{core\+::\+Time\+Count}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{namespacecore_a4925035ca463850a2ed9dd07de22faa4}{core\+::\+Add\+Timer}} (Uint32 interval, std\+::function$<$ void()$>$ callback, bool repeat=true)
+\item 
+void \mbox{\hyperlink{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}{core\+::\+Update\+Timers}} ()
 \item 
 void \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{core\+::printver}} (std\+::string ver, int type)
 \item 

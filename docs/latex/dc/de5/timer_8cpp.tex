@@ -1,0 +1,27 @@
+\doxysection{miki-\/framework/core/timer.cpp File Reference}
+\hypertarget{timer_8cpp}{}\label{timer_8cpp}\index{miki-\/framework/core/timer.cpp@{miki-\/framework/core/timer.cpp}}
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcore_1_1Timer}{core\+::\+Timer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacecore}{core}}
+\begin{DoxyCompactList}\small\item\em This namespace contains stuff that are required for Mikicrep Framework to work correctly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacecore_a4925035ca463850a2ed9dd07de22faa4}{core\+::\+Add\+Timer}} (Uint32 interval, std\+::function$<$ void()$>$ callback, bool repeat=true)
+\item 
+void \mbox{\hyperlink{namespacecore_a1dcfddfa3cf19087d90baedb91def7a3}{core\+::\+Update\+Timers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structcore_1_1Timer}{Timer}} $>$ \mbox{\hyperlink{namespacecore_a5a4ecc1e1a9201d78988929e1df5f058}{core\+::timers}}
+\end{DoxyCompactItemize}
