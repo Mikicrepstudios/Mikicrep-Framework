@@ -4,7 +4,7 @@
 #include "mf/graphics.h"
 
 namespace draw {
-    void DrawCircle(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color) {
+    void DrawCircleBorder(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color) {
         int centerX = rect.x + rect.w / 2;
         int centerY = rect.y + rect.h / 2;
         int radius = (rect.w < rect.h ? rect.w : rect.h) / 2;

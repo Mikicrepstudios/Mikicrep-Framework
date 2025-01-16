@@ -35,6 +35,6 @@ namespace core {
         draw::DrawShakingRect(window.renderer, shakingRect, colors::gray, 5);
 
         SDL_Rect circle = {window.width - 125, 25, 100, 100};
-        draw::DrawCircle(window.renderer, circle, colors::red);
+        draw::DrawCircleBorder(window.renderer, circle, colors::red);
     }
 }

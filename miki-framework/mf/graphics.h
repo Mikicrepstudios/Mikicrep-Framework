@@ -22,7 +22,7 @@ namespace draw {
 	void DrawTextureRect(SDL_Renderer* renderer, SDL_Rect rect, SDL_Texture* texture);
 
 	// Circle
-	void DrawCircle(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color);
+	void DrawCircleBorder(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color);
 	
 	void DrawText(SDL_Renderer* renderer, TTF_Font* font, SDL_Rect rect, const char* text, MF_Color color);
 }
