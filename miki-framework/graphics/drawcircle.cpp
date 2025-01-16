@@ -4,10 +4,16 @@
 #include "mf/graphics.h"
 
 namespace draw {
-    void DrawCircle(SDL_Renderer* renderer, int centerX, int centerY, int radius) {
+    void DrawCircle(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color) {
+        int centerX = rect.x + rect.w / 2;
+        int centerY = rect.y + rect.h / 2;
+        int radius = (rect.w < rect.h ? rect.w : rect.h) / 2;
+
         int x = 0;
         int y = radius;
         int decision = 1 - radius;
+
+        draw::SetDrawColor(renderer, color);
 
         while (x <= y) {
             // Draw the 8 symmetric points of the circle
