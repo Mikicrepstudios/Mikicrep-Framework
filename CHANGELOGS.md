@@ -7,6 +7,8 @@
 - - Added castToInt() function
 - - Added castToFloat() function
 - - Added timers: You can now run a function after a specified amount of time and repeat it if desired.
+- Graphics
+- - Added DrawPixel() function
 
 ## Removed:
 
