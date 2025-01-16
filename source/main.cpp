@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
     bool running = true;
 
     // MUST USE LINE BELOW
-    //core::printver("1.5.0", 1);
+    //core::printver("1.6.0", 1);
     core::printver("", 3); // DEV Version
 
     // Main stuff
