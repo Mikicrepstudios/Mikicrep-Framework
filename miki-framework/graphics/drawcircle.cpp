@@ -4,6 +4,13 @@
 
 namespace draw {
     void DrawCircle(SDL_Renderer* renderer, SDL_Rect &rect, MF_Color color) {
+        /**
+         * @param Draws This function draws circle
+         * @param renderer Window renderer
+         * @param rect Where to draw
+         * @param color Color of circle
+         */
+        
         int centerX = rect.x + rect.w / 2;
         int centerY = rect.y + rect.h / 2;
         int radius = (rect.w < rect.h ? rect.w : rect.h) / 2;
