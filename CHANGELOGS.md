@@ -1,4 +1,4 @@
-## [[1.5.0] Mikicrep Framework](https://miki.macakom.net/projects/mf)
+## [[1.6.0] Mikicrep Framework](https://miki.macakom.net/projects/mf)
 ### New update just released!
 
 ## Added:
