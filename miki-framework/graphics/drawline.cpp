@@ -1,7 +1,9 @@
 #include <SDL.h>
 
+#include <mf/core.h>
+
 namespace draw {
-    void DrawLine(SDL_Renderer* renderer, int x1, int y1, int x2, int y2) {
+    void DrawLine(SDL_Renderer* renderer, MF_Pixel start, MF_Pixel end) {
         /**
          * @brief Draws line
          * @param x1 X coordinate of the first point
@@ -10,6 +12,6 @@ namespace draw {
          * @param y2 Y coordinate of the second point
          */
         
-        SDL_RenderDrawLine(renderer, x1, y1, x2, y2);
+        SDL_RenderDrawLine(renderer, start.x, start.y, end.x, end.y);
     }
 }
