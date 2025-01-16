@@ -9,6 +9,7 @@
 - - Added timers: You can now run a function after a specified amount of time and repeat it if desired.
 - Graphics
 - - Added DrawPixel() function
+- - Added DrawLine() function
 - - Added DrawCircleBorder() function
 
 ## Removed:
