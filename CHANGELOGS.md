@@ -10,6 +10,7 @@
 - Graphics
 - - Added DrawPixel() function
 - - Added DrawLine() function
+- - Added DrawCircle() function
 - - Added DrawCircleBorder() function
 
 ## Removed:
