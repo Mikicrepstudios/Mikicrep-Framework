@@ -10,6 +10,10 @@ This namespace contains functions for drawing elements.
 \item 
 void \mbox{\hyperlink{namespacedraw_a6bb79d11848aa97911775cdd12fca90f}{Draw\+Button}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int mouseX, int mouseY)
 \item 
+void \mbox{\hyperlink{namespacedraw_af88c7fbf03a209ccde9f0e0f70ac498d}{Draw\+Circle\+Border}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect \&rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
+\item 
+void \mbox{\hyperlink{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589}{Draw\+Pixel}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y)
+\item 
 void \mbox{\hyperlink{namespacedraw_a8a13233777eb544ff1d2b092b172db83}{Draw\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
 void \mbox{\hyperlink{namespacedraw_a75f2625456c6793af020760ff869bb70}{Draw\+Shaking\+Rect}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int intensity)
@@ -47,6 +51,27 @@ Draws button which gets darker on mouse hover
 {\em mouseY} & Y position of mouse\\
 \hline
 \end{DoxyParams}
+\Hypertarget{namespacedraw_af88c7fbf03a209ccde9f0e0f70ac498d}\index{draw@{draw}!DrawCircleBorder@{DrawCircleBorder}}
+\index{DrawCircleBorder@{DrawCircleBorder}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawCircleBorder()}{DrawCircleBorder()}}
+{\footnotesize\ttfamily \label{namespacedraw_af88c7fbf03a209ccde9f0e0f70ac498d} 
+void draw\+::\+Draw\+Circle\+Border (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect \&}]{rect}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+This function draws a circle border 
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Window renderer \\
+\hline
+{\em rect} & Where to draw \\
+\hline
+{\em color} & Color of circle\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589}\index{draw@{draw}!DrawPixel@{DrawPixel}}
+\index{DrawPixel@{DrawPixel}!draw@{draw}}
+\doxysubsubsection{\texorpdfstring{DrawPixel()}{DrawPixel()}}
+{\footnotesize\ttfamily \label{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589} 
+void draw\+::\+Draw\+Pixel (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
 \Hypertarget{namespacedraw_a8a13233777eb544ff1d2b092b172db83}\index{draw@{draw}!DrawRect@{DrawRect}}
 \index{DrawRect@{DrawRect}!draw@{draw}}
 \doxysubsubsection{\texorpdfstring{DrawRect()}{DrawRect()}}
