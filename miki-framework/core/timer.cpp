@@ -2,6 +2,12 @@
 #include <vector>
 #include <functional>
 
+/*
+// Example usage:
+core::AddTimer(5000, [](){std::cout << "Execute every 5s" << std::endl;}, true);
+core::AddTimer(500, [](){std::cout << "Execute once after 500ms" << std::endl;}, false);
+*/
+
 namespace core {
     struct Timer {
         Uint32 lastExecution;
@@ -14,7 +20,7 @@ namespace core {
 
     void AddTimer(Uint32 interval, std::function<void()> callback, bool repeat = true) {
         /**
-         * @brief This adds function that will be executed after specified amount of time
+         * @brief This adds function that will be executed after specified amount of time, check usage in timer.cpp
          * @param interval Run timer every x miliseconds
          * @param callback Function that will be ran (can also just be basic block of code [](){code})
          * @param repeat Should timer be executed only once or every x miliseconds
