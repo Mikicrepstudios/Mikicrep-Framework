@@ -101,8 +101,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa1dba2c233e7c94de8074985cc97ff42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88c7fbf03a209ccde9f0e0f70ac498d" id="r_af88c7fbf03a209ccde9f0e0f70ac498d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af88c7fbf03a209ccde9f0e0f70ac498d">DrawCircleBorder</a> (SDL_Renderer *renderer, SDL_Rect &amp;rect, <a class="el" href="../../db/d6a/structMF__Color.html">MF_Color</a> color)</td></tr>
 <tr class="separator:af88c7fbf03a209ccde9f0e0f70ac498d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72e0c7ec6aec785d9e6bda8c369e7d9" id="r_ad72e0c7ec6aec785d9e6bda8c369e7d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad72e0c7ec6aec785d9e6bda8c369e7d9">DrawLine</a> (SDL_Renderer *renderer, int x1, int y1, int x2, int y2)</td></tr>
-<tr class="separator:ad72e0c7ec6aec785d9e6bda8c369e7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c58397dac444ade910ea41f952294d" id="r_a37c58397dac444ade910ea41f952294d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c58397dac444ade910ea41f952294d">DrawLine</a> (SDL_Renderer *renderer, <a class="el" href="../../d8/d5f/structMF__Pixel.html">MF_Pixel</a> start, <a class="el" href="../../d8/d5f/structMF__Pixel.html">MF_Pixel</a> end)</td></tr>
+<tr class="separator:a37c58397dac444ade910ea41f952294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdfd1c2a98504489058e29e64c1c589" id="r_a2cdfd1c2a98504489058e29e64c1c589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cdfd1c2a98504489058e29e64c1c589">DrawPixel</a> (SDL_Renderer *renderer, int x, int y)</td></tr>
 <tr class="separator:a2cdfd1c2a98504489058e29e64c1c589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a13233777eb544ff1d2b092b172db83" id="r_a8a13233777eb544ff1d2b092b172db83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a13233777eb544ff1d2b092b172db83">DrawRect</a> (SDL_Renderer *renderer, SDL_Rect rect, <a class="el" href="../../db/d6a/structMF__Color.html">MF_Color</a> color)</td></tr>
@@ -236,8 +236,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad72e0c7ec6aec785d9e6bda8c369e7d9" name="ad72e0c7ec6aec785d9e6bda8c369e7d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72e0c7ec6aec785d9e6bda8c369e7d9">&#9670;&#160;</a></span>DrawLine()</h2>
+<a id="a37c58397dac444ade910ea41f952294d" name="a37c58397dac444ade910ea41f952294d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c58397dac444ade910ea41f952294d">&#9670;&#160;</a></span>DrawLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,31 +250,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x1</em></span>, </td>
+          <td class="paramtype"><a class="el" href="../../d8/d5f/structMF__Pixel.html">MF_Pixel</a></td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x2</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>y2</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d8/d5f/structMF__Pixel.html">MF_Pixel</a></td>          <td class="paramname"><span class="paramname"><em>end</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Draws line </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>X coordinate of the first point </td></tr>
-    <tr><td class="paramname">y1</td><td>Y coordinate of the first point </td></tr>
-    <tr><td class="paramname">x2</td><td>X coordinate of the second point </td></tr>
-    <tr><td class="paramname">y2</td><td>Y coordinate of the second point</td></tr>
+    <tr><td class="paramname">start</td><td>Start point </td></tr>
+    <tr><td class="paramname">end</td><td>End point</td></tr>
   </table>
   </dd>
 </dl>

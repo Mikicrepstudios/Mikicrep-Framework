@@ -14,7 +14,7 @@ void \mbox{\hyperlink{namespacedraw_aa1dba2c233e7c94de8074985cc97ff42}{Draw\+Cir
 \item 
 void \mbox{\hyperlink{namespacedraw_af88c7fbf03a209ccde9f0e0f70ac498d}{Draw\+Circle\+Border}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect \&rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
-void \mbox{\hyperlink{namespacedraw_ad72e0c7ec6aec785d9e6bda8c369e7d9}{Draw\+Line}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x1, int y1, int x2, int y2)
+void \mbox{\hyperlink{namespacedraw_a37c58397dac444ade910ea41f952294d}{Draw\+Line}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} start, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} end)
 \item 
 void \mbox{\hyperlink{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589}{Draw\+Pixel}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y)
 \item 
@@ -87,21 +87,17 @@ This function draws a circle border
 {\em color} & Color of circle\\
 \hline
 \end{DoxyParams}
-\Hypertarget{namespacedraw_ad72e0c7ec6aec785d9e6bda8c369e7d9}\index{draw@{draw}!DrawLine@{DrawLine}}
+\Hypertarget{namespacedraw_a37c58397dac444ade910ea41f952294d}\index{draw@{draw}!DrawLine@{DrawLine}}
 \index{DrawLine@{DrawLine}!draw@{draw}}
 \doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}}
-{\footnotesize\ttfamily \label{namespacedraw_ad72e0c7ec6aec785d9e6bda8c369e7d9} 
-void draw\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{int}]{x1}{, }\item[{int}]{y1}{, }\item[{int}]{x2}{, }\item[{int}]{y2}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacedraw_a37c58397dac444ade910ea41f952294d} 
+void draw\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{start}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{end}{}\end{DoxyParamCaption})}
 
 Draws line 
 \begin{DoxyParams}{Parameters}
-{\em x1} & X coordinate of the first point \\
+{\em start} & Start point \\
 \hline
-{\em y1} & Y coordinate of the first point \\
-\hline
-{\em x2} & X coordinate of the second point \\
-\hline
-{\em y2} & Y coordinate of the second point\\
+{\em end} & End point\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589}\index{draw@{draw}!DrawPixel@{DrawPixel}}
