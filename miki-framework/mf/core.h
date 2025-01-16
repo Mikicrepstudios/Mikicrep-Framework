@@ -1,5 +1,6 @@
 #pragma once
 
+#include <functional>
 #include <string>
 #include "SDL.h"
 #include "SDL_ttf.h"
@@ -45,6 +46,10 @@ namespace core {
     bool InitWindow(core::MF_Window &window, std::string title, int width, int height);
     void Exit(MF_Window &window);
     void TimeCount(core::MF_Window &window);
+
+    // Timers
+    void addTimer(Uint32 interval, std::function<void()> callback, bool repeat = true);
+    void updateTimers();
 
     // Addional stuff
     void printver(std::string ver, int type);
