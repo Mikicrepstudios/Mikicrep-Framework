@@ -19,6 +19,9 @@ int main(int argc, char* argv[]) {
     core::MF_Window window = {};
     SDL_Event event = {};
 
+    core::AddTimer(5000, [](){std::cout << "Before loop, every 5s" << std::endl;}, true);
+    core::AddTimer(1000, [](){std::cout << "I want to be executed only once" << std::endl;}, false);
+
     // Create window
     if(core::InitWindow(window, title, 1280, 800) == false) running = false;
 
