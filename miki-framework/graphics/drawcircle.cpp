@@ -10,7 +10,7 @@ namespace draw {
          * @param rect Where to draw
          * @param color Color of circle
          */
-        
+
         int centerX = rect.x + rect.w / 2;
         int centerY = rect.y + rect.h / 2;
         int radius = (rect.w < rect.h ? rect.w : rect.h) / 2;
@@ -23,10 +23,10 @@ namespace draw {
 
         while (x <= y) {
             // Draw horizontal lines to fill the circle
-            DrawLine(renderer, centerX - x, centerY + y, centerX + x, centerY + y);
-            DrawLine(renderer, centerX - x, centerY - y, centerX + x, centerY - y);
-            DrawLine(renderer, centerX - y, centerY + x, centerX + y, centerY + x);
-            DrawLine(renderer, centerX - y, centerY - x, centerX + y, centerY - x);
+            DrawLine(renderer, {centerX - x, centerY + y}, {centerX + x, centerY + y});
+            DrawLine(renderer, {centerX - x, centerY - y}, {centerX + x, centerY - y});
+            DrawLine(renderer, {centerX - y, centerY + x}, {centerX + y, centerY + x});
+            DrawLine(renderer, {centerX - y, centerY - x}, {centerX + y, centerY - x});
 
             if (decision < 0) {
                 decision += 2 * x + 3;
