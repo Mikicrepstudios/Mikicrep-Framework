@@ -1,8 +1,9 @@
 # Mikicrep Framework
 ## By Mikicrep
 
-This is framework written in C++ and uses SDL2 as GUI library.
-This framework allows you easier writing of SDL code.
+## About Mikicrep Framework
+
+Mikicrep Framework is a C++ framework that utilizes SDL2 as its GUI library. It simplifies the process of writing SDL code, making it easier and more efficient for developers.
 
 ## Setuping env
 - Extract all sdl2mingw .zip files
