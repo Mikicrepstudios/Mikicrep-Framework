@@ -10,7 +10,7 @@ Mikicrep Framework is a C++ framework that utilizes SDL2 as its GUI library. It 
 - Extract all output/dll .zip files in output directory
 
 ## Documentation
-- You can find our documentation on [our site](https://miki.macakom.net/projects/docs/mf/index.html)
+You can find our documentation on [our site](https://miki.macakom.net/projects/docs/mf/index.html)
 
 ## Support
 You can find support at our discord server
