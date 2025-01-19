@@ -11,8 +11,7 @@ int main(int argc, char* argv[]) {
     bool running = true;
 
     // MUST USE LINE BELOW
-    //core::printver("1.6.0", 1);
-    core::printver("", 3); // DEV Version
+    core::printver(3);
 
     // Main stuff
     const std::string title = "Mikicrep Framework";
