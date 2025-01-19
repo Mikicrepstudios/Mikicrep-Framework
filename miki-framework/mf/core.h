@@ -60,7 +60,7 @@ namespace core {
     void UpdateTimers();
 
     // Addional stuff
-    void printver(std::string ver, int type);
+    void printver(int type);
     void SetWindowIcon(SDL_Window* window, std::string path);
     SDL_Texture* LoadImg(SDL_Renderer* renderer, std::string path);
 
