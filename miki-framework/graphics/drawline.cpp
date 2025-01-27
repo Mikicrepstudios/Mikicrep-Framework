@@ -10,11 +10,17 @@ namespace draw {
          * @param start Start point
          * @param end End point
          */
-        
+
         draw::SetDrawColor(renderer, color);
         
-		for (int i = -thickness / 2; i <= thickness / 2; ++i) {
-        	SDL_RenderDrawLine(renderer, start.x, start.y, end.x, end.y);
-    	}
+        // Way less performance intensive to draw normal line than thick line
+        if(thickness == 1)
+            SDL_RenderDrawLine(renderer, start.x, start.y, end.x, end.y);
+        else {
+            for (int i = -thickness / 2; i <= thickness / 2; ++i) {
+                SDL_RenderDrawLine(renderer, start.x + i, start.y, end.x + i, end.y); // Offset in x-direction
+                SDL_RenderDrawLine(renderer, start.x, start.y + i, end.x, end.y + i); // Offset in y-direction
+            }
+        }
     }
 }
