@@ -4,7 +4,7 @@
 #include "mf/graphics.h"
 
 namespace draw {
-    void DrawLine(SDL_Renderer* renderer, MF_Pixel start, MF_Pixel end, MF_Color color, int thickness) {
+    void DrawLine(SDL_Renderer* renderer, MF_Pixel start, MF_Pixel end, int thickness, MF_Color color) {
         /**
          * @brief Draws line
          * @param start Start point
