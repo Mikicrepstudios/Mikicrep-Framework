@@ -18,7 +18,7 @@ namespace core {
         draw::DrawText(window.renderer, window.font, {window.width / 2 - 400, 0, 800, 50}, "Mikicrep Framework is working", colors::white);
         MF_Pixel TextUnderLineS = {window.width / 2 - 400, 50};
         MF_Pixel TextUnderLineE = {window.width / 2 + 400, 50};
-        draw::DrawLine(window.renderer, TextUnderLineS, TextUnderLineE, colors::red, 2);
+        draw::DrawLine(window.renderer, TextUnderLineS, TextUnderLineE, 2, colors::red);
     
         // RGB rects
         SDL_Rect rect1 = {50, 50, 50, 50};
