@@ -36,6 +36,10 @@ namespace core {
         else if(logic::IsMouseTouching(window.mouse.x, window.mouse.y, rect1))
             draw::DrawRect(window.renderer, {window.width - 50, window.height - 50, 50, 50}, colors::colorID[26]); // Color ID for red
 
+        // BUtton
+        SDL_Rect buttonRect = {50, 150, 90, 30};
+        draw::DrawButton(window.renderer, buttonRect, colors::lightgreen, window.mouse.x, window.mouse.y);
+
         // Shaking rect
         SDL_Rect shakingRect = {150, 75, 50, 50};
         draw::DrawShakingRect(window.renderer, shakingRect, colors::gray, 5);
