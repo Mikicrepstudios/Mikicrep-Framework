@@ -1,3 +1,5 @@
+# Debug stuff with -g and -fsanitize=address in CXXFLAGS next to -Wall and -fsanitize=address in LDFLAGS at end, dont forget to do make fullclean before and after
+
 # Compiler and flags
 CXX := g++
 CXXFLAGS := -std=c++17 -Wall -I/usr/include/SDL2 -I./miki-framework/ -I./source/headers
@@ -32,6 +34,10 @@ open:
 run: $(APP)
 	$<
 
+# Open app using gdb
+dopen:
+	gdb ./output/app
+
 # Link all object files
 $(APP): $(OBJS)
 	$(CXX) $^ -o $@ $(CXXFLAGS) $(LDFLAGS)
@@ -54,6 +60,9 @@ windows32: $(SRCS)
 
 # Clean output directories
 clean:
+	rm -rf $(OBJ_DIR)/source/*
+
+fullclean:
 	rm -rf $(OBJ_DIR)/*
 
 # -fsanitize=address - memory thingie
