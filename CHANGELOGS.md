@@ -7,3 +7,4 @@
 ## Removed:
 
 ## Changed:
+- Button hover effect is now weaker
