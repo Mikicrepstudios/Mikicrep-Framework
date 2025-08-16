@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/miki-framework/headers"
+                "${workspaceFolder}/miki-framework/mf/**",
+                "/usr/include/SDL2"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
