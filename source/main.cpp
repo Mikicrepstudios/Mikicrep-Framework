@@ -86,10 +86,7 @@ int main(int argc, char* argv[]) {
         core::miki(window);
 
         // Finish frame
-        core::UpdateTimers();
-        SDL_RenderPresent(window.renderer);
-        core::TimeCount(window);
-        SDL_Delay(1000 / window.fps);
+        core::PostWindowLogic(window);
     }
 
     // Cleanup variables from memory
