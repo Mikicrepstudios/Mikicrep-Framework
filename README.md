@@ -15,6 +15,11 @@ core::printver(1);
 - Extract all sdl2mingw .zip files
 - Extract all output/dll .zip files in output directory
 
+## Compiling
+- [Arch](https://github.com/Mikicrepstudios/Mikicrep-Framework/blob/main/random/instructions/compileonarch.md) (Main)
+- [Ubuntu](https://github.com/Mikicrepstudios/Mikicrep-Framework/blob/main/random/instructions/compileonubuntu.md)
+- Compilation on other operating systems may also be possible. If you successfully compile the framework on an unsupported OS, please share your experience and instructions by joining our Discord server or opening a new thread.
+
 ## Documentation
 You can find our documentation on [our site](https://miki.macakom.net/projects/docs/mf/index.html)
 
