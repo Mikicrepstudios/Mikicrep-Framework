@@ -47,5 +47,10 @@ namespace core {
         // Draw logo
         SDL_Rect bordercircle = {window.width - 125, 25, 100, 100};
         draw::DrawCircleBorder(window.renderer, bordercircle, colors::red);
+
+        // Draw real fps
+        SDL_Rect realFPSCounterRect = {window.width - 250, window.height - 50, 250, 50};
+        std::string fpsText = "FPS: " + std::to_string(window.fpsAdv.realFPS);
+        draw::DrawText(window.renderer, window.font, realFPSCounterRect, fpsText.c_str(), colors::white);
     }
 }
