@@ -2,11 +2,12 @@
 ### New update just released!
 
 ## Added:
-- `draw::DrawLine()` now requires thickness and color argument
 - `window.fpsAdv.realFPS` which is used to get real window fps
+- `files::lsDir()` - function that lets you list contents of some directory and return it as std::vector
 
 ## Removed:
 
 ## Changed:
 - Button hover effect is now weaker
 - Now you have to remove all window logic under `# Finish frame` and replace it with `core::PostWindowLogic(window);`
+- `draw::DrawLine()` now requires thickness and color argument
