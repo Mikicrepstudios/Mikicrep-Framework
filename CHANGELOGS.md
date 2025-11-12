@@ -4,6 +4,8 @@
 ## Added:
 - `window.fpsAdv.realFPS` which is used to get real window fps
 - `files::lsDir()` - function that lets you list contents of some directory and return it as std::vector
+- Added error detection to `core::LoadImg(), core::SetWindowIcon(), files::AppendFile(), files::CreateFile(), files::DeleteFile(), files::ReadFile(), files::WriteFile(), draw::DrawTextureRect()`
+- Added extra logs to `core::Exit()`
 
 ## Removed:
 
@@ -11,4 +13,4 @@
 - Button hover effect is now weaker
 - Now you have to remove all window logic under `# Finish frame` and replace it with `core::PostWindowLogic(window);`
 - `draw::DrawLine()` now requires thickness and color argument
-- `draw::DrawButton()` and `logic::isMouseTouching()` no longer takes `int mouseX, mouseY` instead it now takes `MF_Window::Mouse` (`window.mouse`)
+- `draw::DrawButton()` and `logic::IsMouseTouching()` no longer takes `int mouseX, mouseY` instead it now takes `MF_Window::Mouse` (`window.mouse`)
