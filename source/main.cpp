@@ -7,6 +7,8 @@
 #include "mf/logic.h"
 #include "mf/sfx.h"
 
+#include "mf/files.h"
+
 int main(int argc, char* argv[]) {
     bool running = true;
 
@@ -20,6 +22,8 @@ int main(int argc, char* argv[]) {
 
     // Create window
     if(core::InitWindow(window, title, 1280, 800) == false) running = false;
+
+    files::CheckFile("testtest");
 
     while(running) {
         // Prepare next frame
