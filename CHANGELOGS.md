@@ -11,3 +11,4 @@
 - Button hover effect is now weaker
 - Now you have to remove all window logic under `# Finish frame` and replace it with `core::PostWindowLogic(window);`
 - `draw::DrawLine()` now requires thickness and color argument
+- `draw::DrawButton()` and `logic::isMouseTouching()` no longer takes `int mouseX, mouseY` instead it now takes `MF_Window::Mouse` (`window.mouse`)
