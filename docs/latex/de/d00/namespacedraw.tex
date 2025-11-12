@@ -8,13 +8,13 @@ This namespace contains functions for drawing elements.
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{namespacedraw_a6bb79d11848aa97911775cdd12fca90f}{Draw\+Button}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, int mouseX, int mouseY)
+void \mbox{\hyperlink{namespacedraw_a3fd29241ad901835e17240d5de4a0ea1}{Draw\+Button}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color, \mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse}{core\+::\+MF\+\_\+\+Window\+::\+Mouse}} mouse)
 \item 
 void \mbox{\hyperlink{namespacedraw_aa1dba2c233e7c94de8074985cc97ff42}{Draw\+Circle}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect \&rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
 void \mbox{\hyperlink{namespacedraw_af88c7fbf03a209ccde9f0e0f70ac498d}{Draw\+Circle\+Border}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect \&rect, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
-void \mbox{\hyperlink{namespacedraw_a37c58397dac444ade910ea41f952294d}{Draw\+Line}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} start, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} end)
+void \mbox{\hyperlink{namespacedraw_a12f971f7c33ed6f285cf1b54b459f6b6}{Draw\+Line}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} start, \mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}} end, int thickness, \mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}} color)
 \item 
 void \mbox{\hyperlink{namespacedraw_a2cdfd1c2a98504489058e29e64c1c589}{Draw\+Pixel}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y)
 \item 
@@ -35,12 +35,14 @@ void \mbox{\hyperlink{namespacedraw_a47ed218c3a1917f6958f6d43247de0b0}{Set\+Draw
 \doxysubsection{Detailed Description}
 This namespace contains functions for drawing elements. 
 
+\label{doc-func-members}
+\Hypertarget{namespacedraw_doc-func-members}
 \doxysubsection{Function Documentation}
-\Hypertarget{namespacedraw_a6bb79d11848aa97911775cdd12fca90f}\index{draw@{draw}!DrawButton@{DrawButton}}
+\Hypertarget{namespacedraw_a3fd29241ad901835e17240d5de4a0ea1}\index{draw@{draw}!DrawButton@{DrawButton}}
 \index{DrawButton@{DrawButton}!draw@{draw}}
 \doxysubsubsection{\texorpdfstring{DrawButton()}{DrawButton()}}
-{\footnotesize\ttfamily \label{namespacedraw_a6bb79d11848aa97911775cdd12fca90f} 
-void draw\+::\+Draw\+Button (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{, }\item[{int}]{mouseX}{, }\item[{int}]{mouseY}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacedraw_a3fd29241ad901835e17240d5de4a0ea1} 
+void draw\+::\+Draw\+Button (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{SDL\+\_\+\+Rect}]{rect}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{, }\item[{\mbox{\hyperlink{structcore_1_1MF__Window_1_1Mouse}{core\+::\+MF\+\_\+\+Window\+::\+Mouse}}}]{mouse}{}\end{DoxyParamCaption})}
 
 Draws button which gets darker on mouse hover 
 \begin{DoxyParams}{Parameters}
@@ -50,9 +52,7 @@ Draws button which gets darker on mouse hover
 \hline
 {\em color} & Color of drawn element (\doxylink{structMF__Color}{MF\+\_\+\+Color}) \\
 \hline
-{\em mouseX} & X position of mouse \\
-\hline
-{\em mouseY} & Y position of mouse\\
+{\em mouse} & Window mouse\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacedraw_aa1dba2c233e7c94de8074985cc97ff42}\index{draw@{draw}!DrawCircle@{DrawCircle}}
@@ -87,11 +87,11 @@ This function draws a circle border
 {\em color} & Color of circle\\
 \hline
 \end{DoxyParams}
-\Hypertarget{namespacedraw_a37c58397dac444ade910ea41f952294d}\index{draw@{draw}!DrawLine@{DrawLine}}
+\Hypertarget{namespacedraw_a12f971f7c33ed6f285cf1b54b459f6b6}\index{draw@{draw}!DrawLine@{DrawLine}}
 \index{DrawLine@{DrawLine}!draw@{draw}}
 \doxysubsubsection{\texorpdfstring{DrawLine()}{DrawLine()}}
-{\footnotesize\ttfamily \label{namespacedraw_a37c58397dac444ade910ea41f952294d} 
-void draw\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{start}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{end}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacedraw_a12f971f7c33ed6f285cf1b54b459f6b6} 
+void draw\+::\+Draw\+Line (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{start}{, }\item[{\mbox{\hyperlink{structMF__Pixel}{MF\+\_\+\+Pixel}}}]{end}{, }\item[{int}]{thickness}{, }\item[{\mbox{\hyperlink{structMF__Color}{MF\+\_\+\+Color}}}]{color}{}\end{DoxyParamCaption})}
 
 Draws line 
 \begin{DoxyParams}{Parameters}

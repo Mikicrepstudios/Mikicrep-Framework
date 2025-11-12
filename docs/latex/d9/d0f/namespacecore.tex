@@ -8,9 +8,9 @@ This namespace contains stuff that are required for Mikicrep Framework to work c
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{structcore_1_1MF__Window}{MF\+\_\+\+Window}}
-\item 
 struct \mbox{\hyperlink{structcore_1_1Timer}{Timer}}
+\item 
+struct \mbox{\hyperlink{structcore_1_1MF__Window}{MF\+\_\+\+Window}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
@@ -23,7 +23,9 @@ SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacecore_a31
 \item 
 void \mbox{\hyperlink{namespacecore_a5d8838dafc5234631da7a7931ec97bc7}{miki}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} window)
 \item 
-void \mbox{\hyperlink{namespacecore_a10a183a5bca03383767eae49dcb04b52}{printver}} (std\+::string ver, int type)
+void \mbox{\hyperlink{namespacecore_a74125652f1db2077f6b69f3507d6fae4}{Post\+Window\+Logic}} (\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&window)
+\item 
+void \mbox{\hyperlink{namespacecore_aadb667124f03d3a7335e18eeee07f6b2}{printver}} (int type)
 \item 
 void \mbox{\hyperlink{namespacecore_a1fb511e8957cf8995e78e8609453916f}{Set\+Window\+Icon}} (SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window, std\+::string path)
 \item 
@@ -43,6 +45,8 @@ std\+::vector$<$ \mbox{\hyperlink{structcore_1_1Timer}{Timer}} $>$ \mbox{\hyperl
 \doxysubsection{Detailed Description}
 This namespace contains stuff that are required for Mikicrep Framework to work correctly. 
 
+\label{doc-func-members}
+\Hypertarget{namespacecore_doc-func-members}
 \doxysubsection{Function Documentation}
 \Hypertarget{namespacecore_a4925035ca463850a2ed9dd07de22faa4}\index{core@{core}!AddTimer@{AddTimer}}
 \index{AddTimer@{AddTimer}!core@{core}}
@@ -106,11 +110,17 @@ This function loads image and returns it as SDL\+\_\+\+Texture\texorpdfstring{$\
 {\footnotesize\ttfamily \label{namespacecore_a5d8838dafc5234631da7a7931ec97bc7} 
 void core\+::miki (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}}}]{window}{}\end{DoxyParamCaption})}
 
-This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a10a183a5bca03383767eae49dcb04b52}\index{core@{core}!printver@{printver}}
+This will reamain undocumented, figure it yourself ;)\Hypertarget{namespacecore_a74125652f1db2077f6b69f3507d6fae4}\index{core@{core}!PostWindowLogic@{PostWindowLogic}}
+\index{PostWindowLogic@{PostWindowLogic}!core@{core}}
+\doxysubsubsection{\texorpdfstring{PostWindowLogic()}{PostWindowLogic()}}
+{\footnotesize\ttfamily \label{namespacecore_a74125652f1db2077f6b69f3507d6fae4} 
+void core\+::\+Post\+Window\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcore_1_1MF__Window}{core\+::\+MF\+\_\+\+Window}} \&}]{window}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacecore_aadb667124f03d3a7335e18eeee07f6b2}\index{core@{core}!printver@{printver}}
 \index{printver@{printver}!core@{core}}
 \doxysubsubsection{\texorpdfstring{printver()}{printver()}}
-{\footnotesize\ttfamily \label{namespacecore_a10a183a5bca03383767eae49dcb04b52} 
-void core\+::printver (\begin{DoxyParamCaption}\item[{std\+::string}]{ver}{, }\item[{int}]{type}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{namespacecore_aadb667124f03d3a7335e18eeee07f6b2} 
+void core\+::printver (\begin{DoxyParamCaption}\item[{int}]{type}{}\end{DoxyParamCaption})}
 
 You MUST use this function when you use Mikicrep Framework, it gives us credits for framwork and prints version for easier support 
 \begin{DoxyParams}{Parameters}
@@ -151,6 +161,8 @@ void core\+::\+Update\+Timers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption
 
 Run added timers if needed
 
+\label{doc-var-members}
+\Hypertarget{namespacecore_doc-var-members}
 \doxysubsection{Variable Documentation}
 \Hypertarget{namespacecore_a5a4ecc1e1a9201d78988929e1df5f058}\index{core@{core}!timers@{timers}}
 \index{timers@{timers}!core@{core}}

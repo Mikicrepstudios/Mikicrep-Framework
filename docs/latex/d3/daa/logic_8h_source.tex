@@ -2,17 +2,20 @@
 \hypertarget{logic_8h_source}{}\label{logic_8h_source}\index{miki-\/framework/mf/logic.h@{miki-\/framework/mf/logic.h}}
 \mbox{\hyperlink{logic_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}SDL.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{core_8h}{mf/core.h}}"{}}}
 \DoxyCodeLine{00006\ }
-\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacelogic}{logic}}\ \{}
-\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ Random}}
-\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}{GenRanNum}}(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ max);}
-\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a63fb3df46ba93a8fb47414366cb920b7}{chancegen}}(\textcolor{keywordtype}{int}\ chance);}
-\DoxyCodeLine{00011\ \ \ \ \ }
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ Collisions}}
-\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a45419233f017d9dd624f403feae8b266}{AreRectsTouching}}(\textcolor{keyword}{const}\ SDL\_Rect\&\ rect1,\ SDL\_Rect\&\ rect2);}
-\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a280be3d8537425d568759dd95a3c801c}{IsMouseTouching}}(\textcolor{keywordtype}{int}\ mouseX,\ \textcolor{keywordtype}{int}\ mouseY,\ SDL\_Rect\&\ rect);}
-\DoxyCodeLine{00015\ \}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacelogic}{logic}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ Random}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{namespacelogic_a2097bfdcb36ac647c66a40f180508a22}{GenRanNum}}(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ max);}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a63fb3df46ba93a8fb47414366cb920b7}{chancegen}}(\textcolor{keywordtype}{int}\ chance);}
+\DoxyCodeLine{00014\ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Collisions}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a45419233f017d9dd624f403feae8b266}{AreRectsTouching}}(\textcolor{keyword}{const}\ SDL\_Rect\&\ rect1,\ SDL\_Rect\&\ rect2);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespacelogic_a0f76ec9e58fc91c6ef99a45d234b06fe}{IsMouseTouching}}(core::MF\_Window::Mouse\ mouse,\ SDL\_Rect\&\ rect);}
+\DoxyCodeLine{00018\ \}}
 
 \end{DoxyCode}
