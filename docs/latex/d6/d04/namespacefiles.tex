@@ -16,6 +16,8 @@ int \mbox{\hyperlink{namespacefiles_a0dd1df757d65d4a42f2c3dde0913fe2c}{Create\+F
 \item 
 int \mbox{\hyperlink{namespacefiles_a6fa94beb256aab79f0c4c86dc82f62a0}{Delete\+File}} (std\+::string path)
 \item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacefiles_a6595f808830cdb5c13fb460a56220f5c}{ls\+Dir}} (std\+::string path)
+\item 
 std\+::string \mbox{\hyperlink{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}{Read\+File}} (std\+::string path)
 \item 
 void \mbox{\hyperlink{namespacefiles_a06939b6495428b692e88f7c2a035c172}{Write\+File}} (std\+::string path, std\+::string content)
@@ -25,6 +27,8 @@ void \mbox{\hyperlink{namespacefiles_a06939b6495428b692e88f7c2a035c172}{Write\+F
 \doxysubsection{Detailed Description}
 This struct contains all basic functions for file managment. 
 
+\label{doc-func-members}
+\Hypertarget{namespacefiles_doc-func-members}
 \doxysubsection{Function Documentation}
 \Hypertarget{namespacefiles_a0066aebcde54e5d909725f9a80e6a9bc}\index{files@{files}!AppendFile@{AppendFile}}
 \index{AppendFile@{AppendFile}!files@{files}}
@@ -70,6 +74,17 @@ int files\+::\+Delete\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{path
 This function deletes specified file 
 \begin{DoxyParams}{Parameters}
 {\em path} & Path of file that you want to delete\\
+\hline
+\end{DoxyParams}
+\Hypertarget{namespacefiles_a6595f808830cdb5c13fb460a56220f5c}\index{files@{files}!lsDir@{lsDir}}
+\index{lsDir@{lsDir}!files@{files}}
+\doxysubsubsection{\texorpdfstring{lsDir()}{lsDir()}}
+{\footnotesize\ttfamily \label{namespacefiles_a6595f808830cdb5c13fb460a56220f5c} 
+std\+::vector$<$ std\+::string $>$ files\+::ls\+Dir (\begin{DoxyParamCaption}\item[{std\+::string}]{path}{}\end{DoxyParamCaption})}
+
+This function lists directory contents and returns vector containing all files 
+\begin{DoxyParams}{Parameters}
+{\em path} & Path of folder that you want to ls\\
 \hline
 \end{DoxyParams}
 \Hypertarget{namespacefiles_aadcd1c06b8917ce3001ace05e16cff80}\index{files@{files}!ReadFile@{ReadFile}}

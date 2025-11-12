@@ -1,7 +1,7 @@
 var searchData=
 [
   ['callback_0',['callback',['../da/dac/structcore_1_1Timer.html#aac8c79a6973a03f74317772e5dea34fa',1,'core::Timer']]],
-  ['casttofloat_1',['castToFloat',['../d8/d7c/namespaceextra.html#a00901a8423663c59ce76f81752c32f67',1,'extra']]],
+  ['casttofloat_1',['castToFloat',['../d8/d7c/namespaceextra.html#a69501401a0f650217e96c840a4c7838b',1,'extra']]],
   ['casttofloat_2ecpp_2',['casttofloat.cpp',['../d4/dcd/casttofloat_8cpp.html',1,'']]],
   ['casttoint_3',['castToInt',['../d8/d7c/namespaceextra.html#a63fbb878239d130eaf0f6919c9d7ced2',1,'extra']]],
   ['casttoint_2ecpp_4',['casttoint.cpp',['../d2/d94/casttoint_8cpp.html',1,'']]],
