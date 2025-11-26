@@ -28,7 +28,14 @@ namespace draw {
 			SDL_SetRenderDrawColor(window.renderer, color.r, color.g, color.b, 255);
 		SDL_RenderFillRect(window.renderer, &rect);
 
-        draw::DrawText(window.renderer, window.font, rect, inputText.c_str(), colors::white);
+		if(inputText.length() != 0) {
+			int fontRectWidth = inputText.length() * (rect.w / 10);
+			if(fontRectWidth > rect.w) fontRectWidth = rect.w;
+			
+			SDL_Rect fontRect = {rect.x, rect.y, fontRectWidth, rect.h};
+			
+			draw::DrawText(window.renderer, window.font, fontRect, inputText.c_str(), colors::white);
+			}
 
         if(window.mouse.isDown && logic::IsMouseTouching(window.mouse, rect)) {
             window.typingVariable = &inputText;
