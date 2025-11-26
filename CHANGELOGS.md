@@ -2,6 +2,7 @@
 ### New update just released!
 
 ## Added:
+- Added text input fields! `draw::DrawInputRect()`
 
 ## Removed:
 
