@@ -33,9 +33,13 @@ namespace draw {
 			if(fontRectWidth > rect.w) fontRectWidth = rect.w;
 			
 			SDL_Rect fontRect = {rect.x, rect.y, fontRectWidth, rect.h};
-			
-			draw::DrawText(window.renderer, window.font, fontRect, inputText.c_str(), colors::white);
-			}
+			MF_Color fontColor = {};
+
+			if(color.r < 128 && color.g < 128 < color.b < 128) fontColor = colors::white;
+			else fontColor = colors::black;
+
+			draw::DrawText(window.renderer, window.font, fontRect, inputText.c_str(), fontColor);
+		}
 
         if(window.mouse.isDown && logic::IsMouseTouching(window.mouse, rect)) {
             window.typingVariable = &inputText;
