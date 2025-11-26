@@ -35,8 +35,8 @@ namespace draw {
 			SDL_Rect fontRect = {rect.x, rect.y, fontRectWidth, rect.h};
 			MF_Color fontColor = {};
 
-			if(color.r < 117 && color.g < 117 && color.b < 117) fontColor = colors::white;
-			else fontColor = colors::black;
+			if(color.r > 117 && color.g > 117 && color.b > 117) fontColor = colors::black;
+			else fontColor = colors::white;
 
 			draw::DrawText(window.renderer, window.font, fontRect, inputText.c_str(), fontColor);
 		}
