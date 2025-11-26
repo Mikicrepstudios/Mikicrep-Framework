@@ -75,5 +75,5 @@ namespace core {
     SDL_Texture* LoadImg(SDL_Renderer* renderer, std::string path);
 
     // 69 Chad function
-    void miki(core::MF_Window window); // Best function ever
+    void miki(core::MF_Window &window); // Best function ever
 }
