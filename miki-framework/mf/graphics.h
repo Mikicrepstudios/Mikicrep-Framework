@@ -17,6 +17,7 @@ namespace draw {
 	void DrawButton(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, core::MF_Window::Mouse mouse);
 
 	// Rectangle
+	void DrawInputRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, core::MF_Window::Mouse mouse, std::string &inputText);
 	void DrawRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color);
 	void DrawTransRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, int colorA);
 	void DrawShakingRect(SDL_Renderer* renderer, SDL_Rect rect, MF_Color color, int intensity);
