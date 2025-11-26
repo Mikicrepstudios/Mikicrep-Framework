@@ -11,7 +11,7 @@
 std::string inputText = "";
 
 namespace core {
-    void miki(core::MF_Window window) {
+    void miki(core::MF_Window &window) {
         /**
          * @brief This will reamain undocumented, figure it yourself ;)
          */
