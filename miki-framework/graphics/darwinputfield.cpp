@@ -32,6 +32,9 @@ namespace draw {
 
         if(window.mouse.isDown && logic::IsMouseTouching(window.mouse, rect)) {
             window.typingVariable = &inputText;
+			if(!window.isTypingActive) {
+				SDL_StartTextInput();
+			}
             window.isTypingActive = true;
         }
 	}

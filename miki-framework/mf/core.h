@@ -33,7 +33,7 @@ namespace core {
         int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
 
         bool isTypingActive = false; // Is some text input field selected?
-        std::string *typingVariable = NULL;
+        std::string *typingVariable = nullptr;
 
         struct Mouse {
             bool isDown = false; // On when mouse button is held, off when its released

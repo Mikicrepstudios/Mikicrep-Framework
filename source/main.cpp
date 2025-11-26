@@ -56,13 +56,29 @@ int main(int argc, char* argv[]) {
                     window.mouse.isDown = false;
                     break;
 
+                case SDL_TEXTINPUT:
+                    if(window.typingVariable) window.typingVariable->append(event.text.text);
+                    break;
+
                 case SDL_KEYDOWN:
                     // Handle keyboard presses
                     switch(event.key.keysym.sym) {
                         case SDLK_ESCAPE:
                             // Quit game
-                            running = false;
+                            if(window.isTypingActive) {window.isTypingActive = false; window.typingVariable = nullptr; SDL_StopTextInput();}
+                            else running = false;
                             break;
+
+                        case SDLK_BACKSPACE:
+                            // Next line is for input fields, if you want to add another thing to backspace, do it below if statement line
+                            if(window.isTypingActive && window.typingVariable && !window.typingVariable->empty()) window.typingVariable->pop_back();
+                            break;
+
+                        case SDLK_RETURN:
+                            // Next line is for input fields, if you want to add another thing to enter, do it below if statement line
+                            if(window.isTypingActive) {window.isTypingActive = false; window.typingVariable = nullptr; SDL_StopTextInput();}
+                            break;
+
                         case SDLK_F11:
                             // Window fullscreening
                             switch(window.fullscreen) {

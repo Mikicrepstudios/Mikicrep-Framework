@@ -57,6 +57,6 @@ namespace core {
 
         // Draw input field
         SDL_Rect inputRect = {275, 75, 200, 50};
-        draw::DrawInputRect(window.renderer, inputRect, colors::aqua, window.mouse, inputText);
+        draw::DrawInputRect(window, inputRect, colors::aqua, inputText);
     }
 }
