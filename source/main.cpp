@@ -25,11 +25,15 @@ int main(int argc, char* argv[]) {
 
     while(running) {
         // Prepare next frame
-        SDL_GetMouseState(&window.mouse.x, &window.mouse.y);
+        core::BeginMouseFrame(window);
 
         // Check for events
         while(SDL_PollEvent(&event) != 0) {
-            core::UpdateMouseState(window); // Update mouse
+            // Handle mouse events
+            if(event.type == SDL_MOUSEBUTTONDOWN || 
+            event.type == SDL_MOUSEBUTTONUP) {
+                core::HandleMouseEvent(window);
+            }
 
             // Handle window events
             window.event = event;
@@ -88,6 +92,7 @@ int main(int argc, char* argv[]) {
                     break;
             }
         }
+        core::EndMouseFrame(window);
 
         // Clear frame
         SDL_SetRenderDrawColor(window.renderer, 0, 0, 0, 255);
