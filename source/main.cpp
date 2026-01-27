@@ -29,6 +29,8 @@ int main(int argc, char* argv[]) {
 
         // Check for events
         while(SDL_PollEvent(&event) != 0) {
+            core::UpdateMouseState(window); // Update mouse
+
             // Handle window events
             window.event = event;
             switch(event.type) {
@@ -46,15 +48,6 @@ int main(int argc, char* argv[]) {
 							break;
 					}
 					break;
-
-                case SDL_MOUSEBUTTONDOWN:
-                    // Mouse button is held
-                    window.mouse.isDown = true;
-                    break;
-                case SDL_MOUSEBUTTONUP:
-                    // Mouse button is released
-                    window.mouse.isDown = false;
-                    break;
 
                 case SDL_TEXTINPUT:
                     if(window.typingVariable) window.typingVariable->append(event.text.text);
