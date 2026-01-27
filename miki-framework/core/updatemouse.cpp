@@ -1,23 +1,28 @@
 #include "mf/core.h"
 
 namespace core {
-    void UpdateMouseState(core::MF_Window &window) {
-        /**
-         * @brief This function updates variables like window.mouse.isDown, window.mouse.isPressed...
-         */
+    // Call this ONCE at start of frame
+    void BeginMouseFrame(core::MF_Window &window) {
+        // Store mouse x and y
+        SDL_GetMouseState(&window.mouse.x, &window.mouse.y);
 
+        // Reset pressed for this frame
+        window.mouse.isPressed = false;
+    }
+
+    // Call this for EACH mouse event
+    void HandleMouseEvent(core::MF_Window &window) {
         if(window.event.type == SDL_MOUSEBUTTONDOWN) {
-            // Mouse button is held
             window.mouse.isDown = true;
-
-            // Store previous state
-            window.mouse.wasDown = window.mouse.isDown;
-            window.mouse.isPressed = window.mouse.isDown && !window.mouse.wasDown;
-        }
-
-        else if(window.event.type == SDL_MOUSEBUTTONUP) {
-            // Mouse button is released
+        } else if(window.event.type == SDL_MOUSEBUTTONUP) {
             window.mouse.isDown = false;
         }
+    }
+    
+    // Call this ONCE after processing ALL events
+    void EndMouseFrame(core::MF_Window &window) {
+        window.mouse.isPressed = window.mouse.isDown && !window.mouse.wasDown;
+        
+        window.mouse.wasDown = window.mouse.isDown;
     }
 }

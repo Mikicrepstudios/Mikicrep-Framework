@@ -69,7 +69,9 @@ namespace core {
     void PostWindowLogic(core::MF_Window &window);
     void TimeCount(core::MF_Window &window);
 
-    void UpdateMouseState(core::MF_Window &window);
+    void BeginMouseFrame(core::MF_Window &window);
+    void HandleMouseEvent(core::MF_Window &window);
+    void EndMouseFrame(core::MF_Window &window);
 
     // Timers
     void AddTimer(Uint32 interval, std::function<void()> callback, bool repeat = true);
