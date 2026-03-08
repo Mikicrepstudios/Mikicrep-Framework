@@ -4,6 +4,7 @@
 ## Added:
 - Added text input fields! `draw::DrawInputRect()`
 - Added window.mouse.isPressed which is activated only one frame compared to window.mouse.isDown
+- Added window.mouse.leftButtonPressed and window.mouse.rightButtonPressed
 
 ## Removed:
 

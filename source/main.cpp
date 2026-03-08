@@ -1,6 +1,6 @@
+#include "SDL.h"
 #include <iostream>
 #include <string>
-#include "SDL.h"
 
 #include "mf/core.h"
 #include "mf/graphics.h"
@@ -9,103 +9,117 @@
 
 #include "mf/files.h"
 
-int main(int argc, char* argv[]) {
-    bool running = true;
+int main(int argc, char *argv[]) {
+  bool running = true;
 
-    // MUST USE LINE BELOW
-    core::printver(3);
+  // MUST USE LINE BELOW
+  core::printver(3);
 
-    // Main stuff
-    const std::string title = "Mikicrep Framework";
-    core::MF_Window window = {};
-    SDL_Event event = {};
+  // Main stuff
+  const std::string title = "Mikicrep Framework";
+  core::MF_Window window = {};
+  SDL_Event event = {};
 
-    // Create window
-    if(core::InitWindow(window, title, 1280, 800) == false) running = false;
+  // Create window
+  if (core::InitWindow(window, title, 1280, 800) == false)
+    running = false;
 
-    while(running) {
-        // Prepare next frame
-        core::BeginMouseFrame(window);
+  while (running) {
+    // Prepare next frame
+    core::BeginMouseFrame(window);
 
-        // Check for events
-        while(SDL_PollEvent(&event) != 0) {
-            // Handle mouse events
-            if(event.type == SDL_MOUSEBUTTONDOWN || 
-            event.type == SDL_MOUSEBUTTONUP) {
-                core::HandleMouseEvent(window);
-            }
+    // Check for events
+    while (SDL_PollEvent(&event) != 0) {
+      // Handle mouse events
+      if (event.type == SDL_MOUSEBUTTONDOWN ||
+          event.type == SDL_MOUSEBUTTONUP) {
+        core::HandleMouseEvent(window);
+      }
 
-            // Handle window events
-            window.event = event;
-            switch(event.type) {
-                case SDL_QUIT:
-                    // Quit game
-                    running = false;
-                    break;
-               
-				case SDL_WINDOWEVENT:
-					switch(event.window.event) {
-						case SDL_WINDOWEVENT_RESIZED:
-							// Handle resizing window
-							window.width = event.window.data1;
-							window.height = event.window.data2;
-							break;
-					}
-					break;
+      // Handle window events
+      window.event = event;
+      switch (event.type) {
+      case SDL_QUIT:
+        // Quit game
+        running = false;
+        break;
 
-                case SDL_TEXTINPUT:
-                    if(window.typingVariable) window.typingVariable->append(event.text.text);
-                    break;
-
-                case SDL_KEYDOWN:
-                    // Handle keyboard presses
-                    switch(event.key.keysym.sym) {
-                        case SDLK_ESCAPE:
-                            // Quit game
-                            if(window.isTypingActive) {window.isTypingActive = false; window.typingVariable = nullptr; SDL_StopTextInput();}
-                            else running = false;
-                            break;
-
-                        case SDLK_BACKSPACE:
-                            // Next line is for input fields, if you want to add another thing to backspace, do it below if statement line
-                            if(window.isTypingActive && window.typingVariable && !window.typingVariable->empty()) window.typingVariable->pop_back();
-                            break;
-
-                        case SDLK_RETURN:
-                            // Next line is for input fields, if you want to add another thing to enter, do it below if statement line
-                            if(window.isTypingActive) {window.isTypingActive = false; window.typingVariable = nullptr; SDL_StopTextInput();}
-                            break;
-
-                        case SDLK_F11:
-                            // Window fullscreening
-                            switch(window.fullscreen) {
-                                case true:
-                                    SDL_SetWindowFullscreen(window.window, 0);
-                                    window.fullscreen = false;
-                                    break;
-                                case false:
-                                    SDL_SetWindowFullscreen(window.window, SDL_WINDOW_FULLSCREEN);
-                                    window.fullscreen = true;
-                                    break;
-                            }
-                    }
-                    break;
-            }
+      case SDL_WINDOWEVENT:
+        switch (event.window.event) {
+        case SDL_WINDOWEVENT_RESIZED:
+          // Handle resizing window
+          window.width = event.window.data1;
+          window.height = event.window.data2;
+          break;
         }
-        core::EndMouseFrame(window);
+        break;
 
-        // Clear frame
-        SDL_SetRenderDrawColor(window.renderer, 0, 0, 0, 255);
-        SDL_RenderClear(window.renderer);
+      case SDL_TEXTINPUT:
+        if (window.typingVariable)
+          window.typingVariable->append(event.text.text);
+        break;
 
-        // Draw stuff
-        core::miki(window);
+      case SDL_KEYDOWN:
+        // Handle keyboard presses
+        switch (event.key.keysym.sym) {
+        case SDLK_ESCAPE:
+          // Quit game
+          if (window.isTypingActive) {
+            window.isTypingActive = false;
+            window.typingVariable = nullptr;
+            SDL_StopTextInput();
+          } else
+            running = false;
+          break;
 
-        // Finish frame
-        core::PostWindowLogic(window);
+        case SDLK_BACKSPACE:
+          // Next line is for input fields, if you want to add another thing to
+          // backspace, do it below if statement line
+          if (window.isTypingActive && window.typingVariable &&
+              !window.typingVariable->empty())
+            window.typingVariable->pop_back();
+          break;
+
+        case SDLK_RETURN:
+          // Next line is for input fields, if you want to add another thing to
+          // enter, do it below if statement line
+          if (window.isTypingActive) {
+            window.isTypingActive = false;
+            window.typingVariable = nullptr;
+            SDL_StopTextInput();
+          }
+          break;
+
+        case SDLK_F11:
+          // Window fullscreening
+          switch (window.fullscreen) {
+          case true:
+            SDL_SetWindowFullscreen(window.window, 0);
+            window.fullscreen = false;
+            break;
+          case false:
+            SDL_SetWindowFullscreen(window.window, SDL_WINDOW_FULLSCREEN);
+            window.fullscreen = true;
+            break;
+          }
+        }
+        break;
+      }
     }
+    core::EndMouseFrame(window);
 
-    // Cleanup variables from memory
-    core::Exit(window);
-    return 0;
+    // Clear frame
+    SDL_SetRenderDrawColor(window.renderer, 0, 0, 0, 255);
+    SDL_RenderClear(window.renderer);
+
+    // Draw stuff
+    core::miki(window);
+
+    // Finish frame
+    core::PostWindowLogic(window);
+  }
+
+  // Cleanup variables from memory
+  core::Exit(window);
+  return 0;
 }
