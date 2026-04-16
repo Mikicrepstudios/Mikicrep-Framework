@@ -32,6 +32,7 @@ struct MF_Window {
   int width = 1280;
   int height = 800;
   int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
+  Uint64 currentTick = 0;
 
   bool isTypingActive = false; // Is some text input field selected?
   std::string *typingVariable = nullptr;
@@ -81,9 +82,8 @@ void HandleMouseEvent(core::MF_Window &window);
 void EndMouseFrame(core::MF_Window &window);
 
 // Timers
-void AddTimer(Uint32 interval, std::function<void()> callback,
-              bool repeat = true);
-void UpdateTimers();
+void AddTimer(Uint32 interval, std::function<void()> callback, bool repeat);
+void UpdateTimers(MF_Window &window);
 
 // Addional stuff
 void printver(int type);
