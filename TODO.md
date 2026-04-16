@@ -3,6 +3,10 @@
 - Bignum
 - Merging 2 colors/adding tint
 
+- Timer IDs (return on AddTImer)
+- Cancelling timers
+- Pausing timers
+
 # Maybe
 - Flip flop button
 
