@@ -1,5 +1,5 @@
 #include "mf/core.h"
-
+#include "SDL_timer.h"
 namespace core {
     void TimeCount(core::MF_Window &window) {
         /**
@@ -7,9 +7,8 @@ namespace core {
          * @param sdlSettings Window that you want to cout time for
          */
 
-        window.frame++;
-        if(window.frame == window.fps) {
-            window.frame = 0;
+        if(SDL_GetTicks64() - window.frame >= 1000) {
+            window.frame = SDL_GetTicks64();
             window.timeS++;
             if(window.timeS == 60) {
                 window.timeS = 0;

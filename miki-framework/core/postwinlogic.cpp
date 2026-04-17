@@ -23,6 +23,5 @@ void PostWindowLogic(core::MF_Window &window) {
 
   // Show frame
   SDL_RenderPresent(window.renderer);
-  SDL_Delay(1000 / window.fps);
 }
 } // namespace core
