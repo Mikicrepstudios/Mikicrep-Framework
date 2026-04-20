@@ -31,7 +31,6 @@ struct MF_Window {
   bool fullscreen = false; // Is window fullscreened
   int width = 1280;
   int height = 800;
-  int fps = 60; // THIS IS NOT FPS COUNTER, IT IS MAXIMUM FPS
   Uint64 currentTick = 0;
 
   bool isTypingActive = false; // Is some text input field selected?

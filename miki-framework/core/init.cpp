@@ -28,6 +28,7 @@ bool InitWindow(core::MF_Window &window, std::string title, int width,
               << '\n';
     return false;
   }
+  SDL_SetHint(SDL_HINT_RENDER_VSYNC, "1"); // VSync on
 
   if (TTF_Init() == -1) {
     std::cerr << "[MF] TTF could not initialize! SDL_ttf Error: "
@@ -79,8 +80,7 @@ bool InitWindow(core::MF_Window &window, std::string title, int width,
     return false;
   }
 
-  window.renderer = SDL_CreateRenderer(
-      window.window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+  window.renderer = SDL_CreateRenderer(window.window, -1, 0);
   if (!window.renderer) {
     std::cerr << "[MF] Renderer could not be created! SDL Error: "
               << SDL_GetError() << '\n';
