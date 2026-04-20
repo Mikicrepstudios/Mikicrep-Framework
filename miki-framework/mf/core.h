@@ -4,7 +4,7 @@
 #include "SDL_ttf.h"
 #include <functional>
 #include <string>
-#define SDL_HINT_RENDER_VSYNC 1
+
 /**
  * @brief Main struct for Mikicrep Framework colors
  */
